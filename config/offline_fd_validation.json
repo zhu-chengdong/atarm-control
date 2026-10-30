@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "calibration_id": "synthetic-pty-v3-001",
+  "calibration_kind": "synthetic-pty-validation",
+  "controller": {
+    "initial_jacobian": [
+      [
+        1.0,
+        0.1,
+        0.1
+      ],
+      [
+        -0.05,
+        0.9,
+        -0.05
+      ],
+      [
+        0.05,
+        0.0,
+        1.1
+      ]
+    ],
+    "cable_mix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        -0.5,
+        0.8660254037844386
+      ],
+      [
+        -0.5,
+        -0.8660254037844386
+      ]
+    ],
+    "reference_lengths_m": [
+      0.0,
+      0.0,
+      0.0,
+      0.04
+    ],
+    "min_lengths_m": [
+      -0.04,
+      -0.04,
+      -0.04,
+      0.0
+    ],
+    "max_lengths_m": [
+      0.04,
+      0.04,
+      0.04,
+      0.08
+    ],
+    "strategy": "alternating",
+    "position_tolerance_m": 0.0005,
+    "camera_noise_bound_m": 6e-05,
+    "max_pose_age_s": 0.15,
+    "max_motor_age_s": 0.1,
+    "stable_s": 0.1,
+    "settle_s": 0.05,
+    "poll_s": 0.01,
+    "max_speed_m_s": 0.6,
+    "pose_step_margin_m": 0.0003,
+    "motor_tolerance_m": 0.0001,
+    "max_motor_step_m": 0.0025,
+    "min_step_m": 1e-05,
+    "max_total_travel_m": 0.6,
+    "max_model_radius_m": 0.1,
+    "max_steps": 100,
+    "timeout_s": 40.0,
+    "settle_timeout_s": 1.0,
+    "gain": 0.75,
+    "damping": 0.06,
+    "min_singular_value": 0.15,
+    "max_condition": 15.0,
+    "no_progress_steps": 8,
+    "min_progress_m": 1.5e-05,
+    "filter_frames": 5,
+    "online_update": true,
+    "learning_rate": 0.65,
+    "min_learning_step_m": 0.00015,
+    "max_pair_s": 2.0,
+    "max_update_fraction": 0.25
+  },
+  "channels": [
+    {
+      "bus": "active",
+      "motor_id": 1,
+      "direction": 1,
+      "radius_m": 0.026,
+      "gear_ratio": 9.1,
+      "encoder_reference_rad": 0.0,
+      "length_reference_m": 0.0,
+      "kp": 0.06,
+      "kd": 0.08,
+      "max_feedback_torque_nm": 5.0,
+      "max_temperature_c": 60.0
+    },
+    {
+      "bus": "active",
+      "motor_id": 0,
+      "direction": 1,
+      "radius_m": 0.026,
+      "gear_ratio": 9.1,
+      "encoder_reference_rad": 0.0,
+      "length_reference_m": 0.0,
+      "kp": 0.06,
+      "kd": 0.08,
+      "max_feedback_torque_nm": 5.0,
+      "max_temperature_c": 60.0
+    },
+    {
+      "bus": "active",
+      "motor_id": 2,
+      "direction": -1,
+      "radius_m": 0.026,
+      "gear_ratio": 9.1,
+      "encoder_reference_rad": 0.0,
+      "length_reference_m": 0.0,
+      "kp": 0.06,
+      "kd": 0.08,
+      "max_feedback_torque_nm": 5.0,
+      "max_temperature_c": 60.0
+    },
+    {
+      "bus": "deploy",
+      "motor_id": 2,
+      "direction": -1,
+      "radius_m": 0.026,
+      "gear_ratio": 9.1,
+      "encoder_reference_rad": 0.0,
+      "length_reference_m": 0.04,
+      "kp": 0.06,
+      "kd": 0.08,
+      "max_feedback_torque_nm": 5.0,
+      "max_temperature_c": 60.0
+    }
+  ],
+  "speed_m_s": 0.04,
+  "vision": {
+    "source_parent": "source_map",
+    "camera_child": "sensor_camera",
+    "target_parent": "control_base",
+    "control_child": "tcp",
+    "map_epoch": "validation_map_0",
+    "base_from_source_translation": [
+      0.1,
+      -0.02,
+      0.03
+    ],
+    "base_from_source_quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "camera_from_control_translation": [
+      0.02,
+      0,
+      0
+    ],
+    "camera_from_control_quaternion": [
+      0,
+      0,
+      0,
+      1
+    ]
+  }
+}

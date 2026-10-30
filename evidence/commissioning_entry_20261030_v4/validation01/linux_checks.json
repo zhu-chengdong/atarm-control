@@ -1,0 +1,8 @@
+{
+  "tests": 4,
+  "passed": true,
+  "physical_devices_opened": false,
+  "only_test_created_ptys": true,
+  "errors": 0,
+  "failures": 0
+}

@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "reference": {
+    "parent_frame": "sim_base_fixed",
+    "child_frame": "sim_tip_camera",
+    "map_epoch": "bend-map-1"
+  },
+  "goals": {
+    "retracted": {
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "deployed": {
+      "position_m": [
+        0.0,
+        0.0,
+        0.05
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "bend": [
+      {
+        "position_m": [
+          0.008,
+          -0.006,
+          0.05
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  "camera_config": {
+    "max_age_s": 0.15,
+    "position_tolerance_m": 0.0005,
+    "orientation_tolerance_rad": 0.05,
+    "settle_s": 0.05,
+    "progress_min_m": 0.0001,
+    "progress_timeout_s": 0.8,
+    "max_speed_m_s": 4.0,
+    "step_margin_m": 0.004
+  },
+  "bend_camera_config": {
+    "max_age_s": 0.15,
+    "position_tolerance_m": 0.001,
+    "orientation_tolerance_rad": 0.05,
+    "settle_s": 0.05,
+    "progress_min_m": 0.0001,
+    "progress_timeout_s": 0.8,
+    "max_speed_m_s": 4.0,
+    "step_margin_m": 0.004
+  },
+  "visual_servo_config": {
+    "jacobian_column": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "min_length_m": -0.012,
+    "max_length_m": 0.075,
+    "max_offset_m": 0.02,
+    "max_total_correction_m": 0.04,
+    "max_step_m": 0.002,
+    "gain": 0.6,
+    "deadband_m": 4e-05,
+    "resume_error_m": 8e-05,
+    "min_step_m": 1e-05,
+    "settle_wait_s": 0.004,
+    "update_period_s": 0.01,
+    "max_duration_s": 4.0,
+    "min_improvement_m": 3e-05,
+    "max_adjustments": 24,
+    "no_progress_steps": 3,
+    "filter_frames": 3,
+    "online_update": null
+  },
+  "bend_servo_config": {
+    "cable_mix": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        -0.5,
+        0.8660254037844386
+      ],
+      [
+        -0.5,
+        -0.8660254037844386
+      ]
+    ],
+    "initial_jacobian": [
+      [
+        1.15,
+        0.0
+      ],
+      [
+        0.0,
+        1.15
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "min_lengths_m": [
+      -0.04,
+      -0.04,
+      -0.04
+    ],
+    "max_lengths_m": [
+      0.04,
+      0.04,
+      0.04
+    ],
+    "online_update": {
+      "position_noise_bound_m": 0.0001,
+      "min_norm": 0.15,
+      "max_norm": 3.0,
+      "learning_rate": 0.5,
+      "regularization_m": 0.0002,
+      "min_actuation_m": 0.001,
+      "min_translation_m": 0.0003,
+      "min_signal_to_noise": 1.5,
+      "max_fractional_change": 0.25,
+      "max_observation_angle_rad": 0.8,
+      "max_update_angle_rad": 0.2,
+      "motor_window_spread_m": 0.00025,
+      "other_motor_tolerance_m": 0.0002,
+      "tracking_tolerance_m": 0.0004,
+      "max_pair_duration_s": 1.0
+    },
+    "camera_noise_bound_m": 0.0001,
+    "gain": 0.6,
+    "damping": 0.05,
+    "max_step_m": 0.0025,
+    "max_offset_m": 0.04,
+    "max_total_travel_m": 0.2,
+    "speed_m_s": 0.08,
+    "period_s": 0.01,
+    "settle_s": 0.006,
+    "extra_settle_s": 0.004,
+    "timeout_s": 4.0,
+    "motor_timeout_s": 0.3,
+    "motor_progress_m": 0.0002,
+    "motor_tolerance_m": 0.0004,
+    "deploy_hold_tolerance_m": 0.0003,
+    "mix_residual_tolerance_m": 0.0003,
+    "min_improvement_m": 0.0002,
+    "min_singular_value": 0.15,
+    "max_condition": 10.0,
+    "max_steps": 24,
+    "no_progress_steps": 4,
+    "filter_frames": 3
+  },
+  "cycle_config": {
+    "timeout_s": 18.0,
+    "verification_timeout_s": 1.0,
+    "verification_period_s": 0.01,
+    "position_tolerance_m": 0.001,
+    "orientation_tolerance_rad": 0.05,
+    "noise_bound_m": 0.0001,
+    "max_pose_age_s": 0.15,
+    "settle_s": 0.05,
+    "motor_tolerance_m": 0.0005,
+    "neutral_tolerance_m": 0.0003,
+    "max_bend_goals": 8
+  },
+  "recovery_config": {
+    "timeout_s": 3.0,
+    "period_s": 0.01,
+    "settle_s": 0.05,
+    "max_pose_age_s": 0.15,
+    "position_tolerance_m": 0.0005,
+    "noise_bound_m": 0.0001,
+    "orientation_tolerance_rad": 0.05,
+    "motor_stable_m": 0.0001,
+    "motor_velocity_m_s": 0.005
+  },
+  "probe_config": {
+    "waypoints": [
+      {
+        "name": "EXTEND_SMALL",
+        "joint_offset_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.002
+        ],
+        "camera_offset_m": [
+          0.0,
+          0.0,
+          0.002
+        ]
+      },
+      {
+        "name": "BEND_U",
+        "joint_offset_m": [
+          0.0015,
+          -0.00075,
+          -0.00075,
+          0.002
+        ],
+        "camera_offset_m": [
+          0.0010475,
+          0.00011691342951089922,
+          0.002
+        ]
+      },
+      {
+        "name": "RETURN_U",
+        "joint_offset_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.002
+        ],
+        "camera_offset_m": [
+          0.0,
+          0.0,
+          0.002
+        ]
+      },
+      {
+        "name": "BEND_V",
+        "joint_offset_m": [
+          0.0,
+          0.001299038105676658,
+          -0.001299038105676658,
+          0.002
+        ],
+        "camera_offset_m": [
+          0.00016887495373796557,
+          0.0009524999999999998,
+          0.002
+        ]
+      },
+      {
+        "name": "RETURN_V",
+        "joint_offset_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.002
+        ],
+        "camera_offset_m": [
+          0.0,
+          0.0,
+          0.002
+        ]
+      },
+      {
+        "name": "RETURN_HOME",
+        "joint_offset_m": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "camera_offset_m": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "max_excursion_m": [
+      0.0015,
+      0.0015,
+      0.0015,
+      0.002
+    ],
+    "max_total_joint_travel_m": 0.02,
+    "max_step_m": 0.0002,
+    "speed_m_s": 0.05,
+    "period_s": 0.002,
+    "settle_s": 0.025,
+    "timeout_s": 1.5,
+    "stage_timeout_s": 0.3,
+    "no_progress_s": 0.08,
+    "motor_tolerance_m": 8e-05,
+    "camera_tolerance_m": 0.00025,
+    "camera_noise_bound_m": 4e-05,
+    "min_camera_motion_m": 0.0003,
+    "max_pose_age_s": 0.07,
+    "direction_cos_min": 0.7
+  },
+  "window_progress_config": {
+    "window_s": 0.4,
+    "max_window_s": 0.5,
+    "grace_s": 0.02,
+    "allowed_pause_s": 0.04,
+    "minimum_fraction": 0.2,
+    "closing_fraction": 0.25,
+    "noise_bound_m": 4e-05,
+    "bad_windows": 2,
+    "min_frames": 6,
+    "expected_deploy_rate_m_s": 0.2,
+    "reference_deploy_speed_m_s": 1.0,
+    "expected_bend_rate_m_s": 0.04,
+    "reference_bend_speed_m_s": 0.6,
+    "reference_bend_step_m": 0.0025,
+    "severe_fraction": 0.6,
+    "severe_confirm_s": 0.2,
+    "severe_confirm_frames": 3,
+    "confirm_sampling_slack_s": 0.0
+  },
+  "pause_budget_config": {
+    "pause_s": 0.08,
+    "sampling_slack_s": 0.02
+  }
+}

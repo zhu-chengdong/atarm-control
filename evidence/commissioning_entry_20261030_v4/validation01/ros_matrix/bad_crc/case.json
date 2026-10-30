@@ -1,0 +1,155 @@
+{
+  "case": "bad_crc",
+  "passed": true,
+  "premature": {
+    "request_id": "before_confirm",
+    "accepted": false,
+    "success": false,
+    "complete": false,
+    "reason": "REFERENCE_NOT_CONFIRMED"
+  },
+  "confirm": {
+    "success": true,
+    "body": {
+      "request_id": null,
+      "accepted": true,
+      "success": true,
+      "complete": false,
+      "reason": "REFERENCE_CHECK_ACCEPTED"
+    },
+    "sent_ns": 54220441243616,
+    "received_ns": 54220441802692
+  },
+  "accepted": {
+    "request_id": "main",
+    "accepted": true,
+    "success": true,
+    "complete": false,
+    "reason": "ACCEPTED",
+    "job_id": 1
+  },
+  "final": {
+    "execution_domain": "fd-actuator",
+    "calibration_id": "synthetic-pty-v3-001",
+    "ready": false,
+    "fault": "ACTUATOR_FEEDBACK_BAD_CRC",
+    "reference": {
+      "parent_frame": "control_base",
+      "child_frame": "tcp",
+      "map_epoch": "validation_map_0"
+    },
+    "job": {
+      "request_id": "main",
+      "job_id": 1,
+      "success": false,
+      "complete": false,
+      "state": "FAULT",
+      "reason": "ACTUATOR_FEEDBACK_BAD_CRC",
+      "stop_receipts": [
+        {
+          "actuator_index": 3,
+          "bus": "deploy",
+          "motor_id": 2,
+          "reply_valid": false,
+          "status": "BAD_CRC",
+          "transport_frame_id": 0,
+          "tx_ns": 54220548063694,
+          "rx_ns": 0
+        },
+        {
+          "actuator_index": 0,
+          "bus": "active",
+          "motor_id": 1,
+          "reply_valid": false,
+          "status": "QUARANTINED",
+          "transport_frame_id": 0,
+          "tx_ns": 0,
+          "rx_ns": 0
+        },
+        {
+          "actuator_index": 1,
+          "bus": "active",
+          "motor_id": 0,
+          "reply_valid": false,
+          "status": "QUARANTINED",
+          "transport_frame_id": 0,
+          "tx_ns": 0,
+          "rx_ns": 0
+        },
+        {
+          "actuator_index": 2,
+          "bus": "active",
+          "motor_id": 2,
+          "reply_valid": false,
+          "status": "QUARANTINED",
+          "transport_frame_id": 0,
+          "tx_ns": 0,
+          "rx_ns": 0
+        }
+      ]
+    },
+    "observation": {
+      "position_m": [
+        0.3,
+        0.05,
+        0.18
+      ],
+      "pose_frame_id": 15,
+      "capture_s": 54220.52131009102,
+      "motor_positions_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.04
+      ],
+      "motor_frame_ids": [
+        82,
+        83,
+        84,
+        28
+      ],
+      "motor_received_s": [
+        54220.536741541,
+        54220.536988195,
+        54220.53727143,
+        54220.537536828
+      ],
+      "time_domain": "host_monotonic_seconds"
+    },
+    "vision": {
+      "accepted": 17,
+      "pose_callbacks": 17,
+      "status_callbacks": 17,
+      "duplicates": 0,
+      "fault": null,
+      "latest_source_frame": 18,
+      "latest_capture_s": 54220.58131766319,
+      "startup_stale_drops": 2
+    },
+    "state_sequence": 7,
+    "published_ros_stamp_ns": 1793355035471022922
+  },
+  "retry": {
+    "request_id": "retry",
+    "accepted": false,
+    "success": false,
+    "complete": false,
+    "reason": "EXPLICIT_RESTART_REQUIRED"
+  },
+  "server_returncode": 0,
+  "source_returncode": 0,
+  "source_pid": 416,
+  "physical_end_q": [
+    0.0,
+    0.0,
+    0.0,
+    0.04
+  ],
+  "controller_pid": 417,
+  "client_pid": 38,
+  "states_count": 6,
+  "io_threads": [
+    "cartesian-fd-owner"
+  ],
+  "native_transactions": 121
+}

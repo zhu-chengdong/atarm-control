@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "scope": "Pure Python, synthetic plant, no hardware or ROS access",
+  "groups": [
+    {
+      "name": "test_commissioning",
+      "exit_code": 0
+    },
+    {
+      "name": "test_fd_interfaces",
+      "exit_code": 0
+    },
+    {
+      "name": "test_cartesian_offline",
+      "exit_code": 0
+    },
+    {
+      "name": "test_cartesian_jobs",
+      "exit_code": 0
+    },
+    {
+      "name": "alternating",
+      "exit_code": 0
+    },
+    {
+      "name": "coordinated",
+      "exit_code": 0
+    }
+  ]
+}

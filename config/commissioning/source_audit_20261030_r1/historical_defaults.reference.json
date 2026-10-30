@@ -1,0 +1,465 @@
+{
+  "reference_only": true,
+  "launch_config": false,
+  "date": "2026-10-30",
+  "sources_are_not_current_commissioning": true,
+  "records": [
+    {
+      "name": "historical_active_port",
+      "status": "历史记录",
+      "value": "/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0",
+      "verification_scope": "2026-09-17三份真实bag的6条dry_run=False启动日志，并与原代码一致",
+      "source_ids": [
+        "historical_live_ports",
+        "original_node",
+        "original_launch"
+      ],
+      "template_paths": [
+        "site.ports.active.by_id_path"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "当前设备是否仍相同未核实；不得仅由by-id字符串推断sysfs VID/PID/序列属性。"
+    },
+    {
+      "name": "historical_deploy_port",
+      "status": "历史记录",
+      "value": "/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0",
+      "verification_scope": "同上，已证实当时使用的部署路径，不是当前现场USB检查",
+      "source_ids": [
+        "historical_live_ports",
+        "original_node",
+        "original_launch"
+      ],
+      "template_paths": [
+        "site.ports.deploy.by_id_path"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "motor_ids",
+      "status": "历史默认",
+      "value": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "verification_scope": "原节点、launch和控制库一致，缺少当前实物/总线逐路读回证据",
+      "source_ids": [
+        "original_node",
+        "original_launch",
+        "original_base_defaults"
+      ],
+      "template_paths": [
+        "session.channels[0].motor_id",
+        "session.channels[1].motor_id",
+        "session.channels[2].motor_id",
+        "session.channels[3].motor_id"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "bend_directions",
+      "status": "历史默认",
+      "value": [
+        1,
+        1,
+        -1
+      ],
+      "verification_scope": "原节点、launch和控制库一致，未确认当前索路安装",
+      "source_ids": [
+        "original_node",
+        "original_launch",
+        "original_base_defaults"
+      ],
+      "template_paths": [
+        "session.channels[0].direction",
+        "session.channels[1].direction",
+        "session.channels[2].direction"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "deploy_direction",
+      "status": "存在冲突",
+      "value": {
+        "node_and_library": -1,
+        "launch": 1
+      },
+      "verification_scope": "原代码不同入口给出相反值，不能自行选边",
+      "source_ids": [
+        "original_node",
+        "original_launch",
+        "original_base_defaults"
+      ],
+      "template_paths": [
+        "session.channels[3].direction"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "deploy_gain_scale",
+      "status": "存在冲突",
+      "value": {
+        "node_and_library": 3.0,
+        "launch": 1.0
+      },
+      "verification_scope": "不同入口倍率不一致，历史实际调用入口/覆盖值未确定",
+      "source_ids": [
+        "original_node",
+        "original_launch",
+        "original_base_defaults"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "v4已采用显式逐路协议增益，不再有同名倍率字段；不能直接套用。"
+    },
+    {
+      "name": "bobbin_radius",
+      "status": "历史默认",
+      "value": 0.026,
+      "verification_scope": "原A1Motor中的模型半径26mm，非实测有效绕索半径",
+      "source_ids": [
+        "original_radius"
+      ],
+      "template_paths": [
+        "session.channels[0].radius_m",
+        "session.channels[1].radius_m",
+        "session.channels[2].radius_m",
+        "session.channels[3].radius_m"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "sdk_baud_default",
+      "status": "历史默认",
+      "value": 4000000,
+      "verification_scope": "固定SDK头文件默认与仅传端口名的Python绑定相连；机器人当年安装SDK版本未确认",
+      "source_ids": [
+        "sdk_serial_defaults",
+        "sdk_python_serial_constructor",
+        "original_serial_call",
+        "sdk_version_not_verified"
+      ],
+      "template_paths": [
+        "site.ports.active.baud_rate",
+        "site.ports.deploy.baud_rate"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "不是已测现场波特率；4800000是PTY测试值，57600属于末端舵机。"
+    },
+    {
+      "name": "sdk_receive_timeout_default",
+      "status": "历史默认",
+      "value": 0.02,
+      "verification_scope": "固定SDK C++ timeOutUs=20000；不是机器人实际端到端回复时延",
+      "source_ids": [
+        "sdk_serial_defaults"
+      ],
+      "template_paths": [
+        "site.ports.active.reply_timeout_s",
+        "site.ports.deploy.reply_timeout_s"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "original_output_gains",
+      "status": "历史默认",
+      "value": {
+        "output_kp": 15.0,
+        "output_kd": 2.5,
+        "kp_divisor": 26.07,
+        "kd_multiplier": 100.0
+      },
+      "verification_scope": "原代码的输出侧参数及转换公式，不能直接赋给v4转子协议字段",
+      "source_ids": [
+        "original_gains"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "derived_rotor_gains_scale_1",
+      "status": "历史默认",
+      "value": {
+        "kp": 0.006948122124085402,
+        "kd": 3.0189590629151075
+      },
+      "verification_scope": "按已核实原公式和A1 SDK 9.1计算的参考值，非新实机整定",
+      "source_ids": [
+        "original_gains",
+        "sdk_codec_result"
+      ],
+      "template_paths": [
+        "session.channels[0].kp",
+        "session.channels[0].kd",
+        "session.channels[1].kp",
+        "session.channels[1].kd",
+        "session.channels[2].kp",
+        "session.channels[2].kd",
+        "session.channels[3].kp",
+        "session.channels[3].kd"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "derived_rotor_gains_scale_3",
+      "status": "历史默认",
+      "value": {
+        "kp": 0.020844366372256205,
+        "kd": 9.056877188745322
+      },
+      "verification_scope": "若使用节点/控制库倍率3的展开支路；launch倍率1则不同",
+      "source_ids": [
+        "original_gains",
+        "original_node",
+        "original_launch"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "冲突未解决，两种计算均保留，不写入执行参数。"
+    },
+    {
+      "name": "original_command_torque_limit",
+      "status": "历史默认",
+      "value": {
+        "base_nm": 10.0,
+        "deploy_if_scale_3_nm": 30.0
+      },
+      "verification_scope": "原代码的命令tau裁剪量，不是实测安全承载/电流或v4反馈力矩报警阈值",
+      "source_ids": [
+        "original_radius",
+        "original_torque"
+      ],
+      "template_paths": [
+        "session.channels[0].max_feedback_torque_nm",
+        "session.channels[1].max_feedback_torque_nm",
+        "session.channels[2].max_feedback_torque_nm",
+        "session.channels[3].max_feedback_torque_nm"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "original_motion_defaults",
+      "status": "历史默认",
+      "value": {
+        "deploy_delta_length_m": 0.05,
+        "micro_adjust_max_step_m": 0.01,
+        "bend_step_m": 0.002,
+        "step_rate_hz": 50.0,
+        "publish_rate_hz": 20.0,
+        "old_bend_total_error_m": 0.003
+      },
+      "verification_scope": "原动作代码默认，原完成量是命令误差，非三维末端精度，也非安全行程",
+      "source_ids": [
+        "original_node",
+        "original_step_limit",
+        "original_bend_completion"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "original_geometry",
+      "status": "历史默认",
+      "value": {
+        "stage_edge_lengths_m": [
+          0.190526,
+          0.190526,
+          0.190526,
+          0.190526
+        ],
+        "stage_saddle_lengths_m": [
+          0.123236,
+          0.123236,
+          0.123236,
+          0.123236
+        ],
+        "neutral_include_angles_deg": [
+          27.936,
+          27.936,
+          27.936
+        ],
+        "fixed_length_m": 0.155564,
+        "cable_angles_deg": [
+          0.0,
+          120.0,
+          240.0
+        ],
+        "max_bending_angle_deg": 60.0
+      },
+      "verification_scope": "王师兄运动学模型常数；不等于现场几何标定、J或安全工作区",
+      "source_ids": [
+        "original_geometry",
+        "original_bend_limit",
+        "original_fixed_length"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "reported_supply_voltage",
+      "status": "历史报告",
+      "value": 24.0,
+      "verification_scope": "Mark录音描述原电机供电标称24V；新转换器负载表现仍待测",
+      "source_ids": [
+        "mark_24v_report",
+        "mark_supply_not_tested"
+      ],
+      "template_paths": [
+        "site.electrical.nominal_voltage_v"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "recorded_camera_profile",
+      "status": "历史记录",
+      "value": {
+        "width": 848,
+        "height": 480,
+        "fps": 15,
+        "depth_encoding": "16UC1",
+        "depth_unit_m": 0.001,
+        "rgbd_depth_map_factor": 1000.0,
+        "pair_tolerance_ms": 2.0
+      },
+      "verification_scope": "历史真实bag与离线链路配置；未证明当前安装设备、原始畸变和外参不变",
+      "source_ids": [
+        "historical_depth",
+        "vision_topics"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "保留为采集参考；v4位姿控制模板没有原始相机内参字段，不将去畸变输出内参冒充raw CameraInfo。"
+    },
+    {
+      "name": "excluded_simulation_values",
+      "status": "不能采用",
+      "value": {
+        "baud_in_pty_test": 4800000,
+        "end_servo_baud_default": 57600,
+        "synthetic_base_position_m": [
+          0.3,
+          0.05,
+          0.18
+        ],
+        "initial_jacobian": "synthetic",
+        "cable_mix": "synthetic"
+      },
+      "verification_scope": "PTY速率测试、末端设备设置和合成模型均不是主臂实机参数",
+      "source_ids": [
+        "v4_simulation_excluded",
+        "native_kernel_checks"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "绝不填入主臂波特率、初始J、控制点、零位和实际噪声。"
+    },
+    {
+      "name": "unknown_calibration",
+      "status": "待实测",
+      "value": null,
+      "verification_scope": "未找到当前编码器零位、实际索长参考、基座/工具外参、完整三维J及可用工作区的实测证据",
+      "source_ids": [
+        "historical_no_base_transform",
+        "no_synchronous_motion"
+      ],
+      "template_paths": [
+        "session.calibration_id",
+        "session.controller.initial_jacobian",
+        "session.controller.cable_mix",
+        "session.controller.reference_lengths_m",
+        "session.controller.min_lengths_m",
+        "session.controller.max_lengths_m"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "original_bending_limit_conflict",
+      "status": "存在冲突",
+      "value": {
+        "implemented_limit_deg": 60.0,
+        "docstring_upper_limit_deg": 30.0
+      },
+      "verification_scope": "最大角度变量为60度，但函数注释写pi/6；均不能当作已验证安全工作区",
+      "source_ids": [
+        "original_bend_limit",
+        "original_bend_doc_limit"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    }
+  ],
+  "historical_live_startup_logs": [
+    {
+      "bag": "rosbag2_2026_09_17-14_58_15_0.db3",
+      "record_start_ns": 1789653495196788072,
+      "time_s": 56.895234681,
+      "message": "Unitree tensegrity controller initialised. dry_run=False, active_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0, deploy_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0."
+    },
+    {
+      "bag": "rosbag2_2026_09_17-14_58_15_0.db3",
+      "record_start_ns": 1789653495196788072,
+      "time_s": 94.911918006,
+      "message": "Unitree tensegrity controller initialised. dry_run=False, active_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0, deploy_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0."
+    },
+    {
+      "bag": "rosbag2_2026_09_17-15_08_24_0.db3",
+      "record_start_ns": 1789654104701442505,
+      "time_s": 77.449722982,
+      "message": "Unitree tensegrity controller initialised. dry_run=False, active_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0, deploy_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0."
+    },
+    {
+      "bag": "rosbag2_2026_09_17-15_08_24_0.db3",
+      "record_start_ns": 1789654104701442505,
+      "time_s": 269.604891541,
+      "message": "Unitree tensegrity controller initialised. dry_run=False, active_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0, deploy_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0."
+    },
+    {
+      "bag": "rosbag2_2026_09_17-15_14_51_0.db3",
+      "record_start_ns": 1789654491282736982,
+      "time_s": 3.073140516,
+      "message": "Unitree tensegrity controller initialised. dry_run=False, active_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0, deploy_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0."
+    },
+    {
+      "bag": "rosbag2_2026_09_17-15_14_51_0.db3",
+      "record_start_ns": 1789654491282736982,
+      "time_s": 139.617305134,
+      "message": "Unitree tensegrity controller initialised. dry_run=False, active_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0, deploy_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0."
+    }
+  ]
+}

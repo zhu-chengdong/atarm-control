@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "protected_local_files_unchanged": 1672,
+  "original_r1_materials_identical": 8,
+  "remote_release": "/home/zcd/codex-runs/atarm-commissioning-entry-20261030-01a1831d/releases/source_audit_20261030_r1",
+  "expected_refusals": 3,
+  "remote_old_project_files_unchanged": 42,
+  "remote_old_results_files_unchanged": 233,
+  "no_physical_run": true,
+  "ppt_unchanged": true
+}

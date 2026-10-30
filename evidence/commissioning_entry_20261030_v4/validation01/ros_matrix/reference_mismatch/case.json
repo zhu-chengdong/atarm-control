@@ -1,0 +1,96 @@
+{
+  "case": "reference_mismatch",
+  "passed": true,
+  "premature": {
+    "request_id": "before_confirm",
+    "accepted": false,
+    "success": false,
+    "complete": false,
+    "reason": "REFERENCE_NOT_CONFIRMED"
+  },
+  "confirm": {
+    "success": true,
+    "body": {
+      "request_id": null,
+      "accepted": true,
+      "success": true,
+      "complete": false,
+      "reason": "REFERENCE_CHECK_ACCEPTED"
+    },
+    "sent_ns": 54229875171580,
+    "received_ns": 54229875564350
+  },
+  "final": {
+    "execution_domain": "fd-actuator",
+    "calibration_id": "synthetic-pty-v3-001",
+    "ready": false,
+    "fault": null,
+    "reference": {
+      "parent_frame": "control_base",
+      "child_frame": "tcp",
+      "map_epoch": "validation_map_0"
+    },
+    "job": {
+      "state": "UNCONFIRMED",
+      "success": false,
+      "complete": false,
+      "reason": "ACTUATOR_MECHANICAL_REFERENCE_MISMATCH"
+    },
+    "observation": {
+      "position_m": [
+        0.30310449218749996,
+        0.04954170932769776,
+        0.18047563217163085
+      ],
+      "pose_frame_id": 15,
+      "capture_s": 54229.96131896973,
+      "motor_positions_m": [
+        0.0054785156249999994,
+        0.0,
+        0.0,
+        0.04
+      ],
+      "motor_frame_ids": [
+        79,
+        80,
+        81,
+        27
+      ],
+      "motor_received_s": [
+        54229.96711721,
+        54229.96740927,
+        54229.967683277,
+        54229.9679744
+      ],
+      "time_domain": "host_monotonic_seconds"
+    },
+    "vision": {
+      "accepted": 15,
+      "pose_callbacks": 15,
+      "status_callbacks": 15,
+      "duplicates": 0,
+      "fault": null,
+      "latest_source_frame": 15,
+      "latest_capture_s": 54229.96131896973,
+      "startup_stale_drops": 0
+    },
+    "state_sequence": 6,
+    "published_ros_stamp_ns": 1793355044854873597
+  },
+  "server_returncode": 0,
+  "source_returncode": 0,
+  "source_pid": 662,
+  "physical_end_q": [
+    0.0054785156249999994,
+    0.0,
+    0.0,
+    0.04
+  ],
+  "controller_pid": 663,
+  "client_pid": 38,
+  "states_count": 3,
+  "io_threads": [
+    "cartesian-fd-owner"
+  ],
+  "native_transactions": 112
+}

@@ -1,0 +1,1755 @@
+{
+  "scope": "actual ROS2 Jazzy/rclpy/DDS, separate node/client processes, synthetic camera and motors",
+  "ros_distro": "jazzy",
+  "rclpy_file": "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py",
+  "cases": [
+    {
+      "case": "complete",
+      "controller_pid": 20,
+      "client_pid": 1,
+      "acceptance": {
+        "request_id": "complete_goal",
+        "accepted": true,
+        "success": true,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_ACCEPTED",
+        "execution_domain": "simulation-only",
+        "job_id": 1
+      },
+      "duplicate": {
+        "request_id": "complete_goal",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_DUPLICATE_ID",
+        "execution_domain": "simulation-only"
+      },
+      "busy": {
+        "request_id": "overlap",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_BUSY",
+        "execution_domain": "simulation-only"
+      },
+      "reset_while_busy": {
+        "success": false,
+        "body": {
+          "request_id": null,
+          "accepted": false,
+          "success": false,
+          "complete": false,
+          "reason": "ROS_CARTESIAN_BUSY",
+          "execution_domain": "simulation-only"
+        },
+        "sent_ns": 21410319168293,
+        "received_ns": 21410319480107
+      },
+      "final": {
+        "schema_version": 1,
+        "execution_domain": "simulation-only",
+        "reference": {
+          "parent_frame": "sim_base",
+          "child_frame": "camera_optical",
+          "map_epoch": "sim_map_0"
+        },
+        "needs_reset": false,
+        "job": {
+          "job_id": 1,
+          "request_id": "complete_goal",
+          "state": "SUCCEEDED",
+          "success": true,
+          "complete": true,
+          "result": {
+            "success": true,
+            "complete": true,
+            "state": "SUCCEEDED",
+            "reason": "CARTESIAN_POSITION_CONFIRMED",
+            "measured_error_m": 0.00021844327510550115,
+            "verification": {
+              "p": [
+                0.3124105302162381,
+                0.037546166287930983,
+                0.19475127208383256
+              ],
+              "q": [
+                0.01203605816547525,
+                -0.012909894554163777,
+                0.000873836388688525,
+                0.05378376645728525
+              ],
+              "first_frame": 440,
+              "last_frame": 444,
+              "first_s": 13.2,
+              "last_s": 13.32,
+              "spread_m": 5.2627754262550505e-05,
+              "max_goal_error_m": 0.000225458079192781
+            }
+          },
+          "submitted_ns": 21410318085185,
+          "cancel_received_ns": null,
+          "stop_wall_ns": null,
+          "ended_ns": 21411214297069,
+          "simulation_truth_error_m": 0.00020536367438587648,
+          "simulation_truth_position_m": [
+            0.3124043338625435,
+            0.03755764398305492,
+            0.19476979430586727
+          ],
+          "final_motor_positions_m": [
+            0.01203605816547525,
+            -0.012909894554163777,
+            0.000873836388688525,
+            0.05378376645728525
+          ],
+          "step_count": 12,
+          "io_threads": [
+            "cartesian-sim-owner"
+          ]
+        },
+        "observation": {
+          "position_m": [
+            0.3124182837340469,
+            0.037546166287930983,
+            0.19475127208383256
+          ],
+          "frame_id": 444,
+          "capture_s": 13.32,
+          "tracking_ok": true,
+          "map_epoch": "sim_map_0",
+          "motor_positions_m": [
+            0.01203605816547525,
+            -0.012909894554163777,
+            0.000873836388688525,
+            0.05378376645728525
+          ],
+          "time_domain": "synthetic_monotonic_seconds"
+        },
+        "simulation_speed": 4.0,
+        "strategy": "alternating",
+        "state_sequence": 20,
+        "published_ros_stamp_ns": 1793322226097941381
+      },
+      "independent_truth_error_m": 0.00020536367438590207,
+      "invalid": {
+        "request_id": "bad_nan",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_INVALID_GOAL",
+        "execution_domain": "simulation-only",
+        "detail": "CARTESIAN_INVALID_GOAL"
+      },
+      "reset": {
+        "success": true,
+        "body": {
+          "request_id": null,
+          "accepted": true,
+          "success": true,
+          "complete": false,
+          "reason": "ROS_SIM_EXPLICIT_RESET",
+          "execution_domain": "simulation-only",
+          "map_epoch": "sim_map_1"
+        },
+        "sent_ns": 21411218228648,
+        "received_ns": 21411218656693
+      },
+      "old_map": {
+        "request_id": "old_map",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_REFERENCE_MISMATCH",
+        "execution_domain": "simulation-only"
+      },
+      "after_reset": {
+        "schema_version": 1,
+        "execution_domain": "simulation-only",
+        "reference": {
+          "parent_frame": "sim_base",
+          "child_frame": "camera_optical",
+          "map_epoch": "sim_map_1"
+        },
+        "needs_reset": false,
+        "job": {
+          "job_id": 2,
+          "request_id": "after_reset",
+          "state": "SUCCEEDED",
+          "success": true,
+          "complete": true,
+          "result": {
+            "success": true,
+            "complete": true,
+            "state": "SUCCEEDED",
+            "reason": "CARTESIAN_POSITION_CONFIRMED",
+            "measured_error_m": 0.00021844327510550115,
+            "verification": {
+              "p": [
+                0.3124105302162381,
+                0.037546166287930983,
+                0.19475127208383256
+              ],
+              "q": [
+                0.01203605816547525,
+                -0.012909894554163777,
+                0.000873836388688525,
+                0.05378376645728525
+              ],
+              "first_frame": 440,
+              "last_frame": 444,
+              "first_s": 13.2,
+              "last_s": 13.32,
+              "spread_m": 5.2627754262550505e-05,
+              "max_goal_error_m": 0.000225458079192781
+            }
+          },
+          "submitted_ns": 21411219089098,
+          "cancel_received_ns": null,
+          "stop_wall_ns": null,
+          "ended_ns": 21412113518033,
+          "simulation_truth_error_m": 0.00020536367438587648,
+          "simulation_truth_position_m": [
+            0.3124043338625435,
+            0.03755764398305492,
+            0.19476979430586727
+          ],
+          "final_motor_positions_m": [
+            0.01203605816547525,
+            -0.012909894554163777,
+            0.000873836388688525,
+            0.05378376645728525
+          ],
+          "step_count": 12,
+          "io_threads": [
+            "cartesian-sim-owner"
+          ]
+        },
+        "observation": {
+          "position_m": [
+            0.3124182837340469,
+            0.037546166287930983,
+            0.19475127208383256
+          ],
+          "frame_id": 444,
+          "capture_s": 13.32,
+          "tracking_ok": true,
+          "map_epoch": "sim_map_1",
+          "motor_positions_m": [
+            0.01203605816547525,
+            -0.012909894554163777,
+            0.000873836388688525,
+            0.05378376645728525
+          ],
+          "time_domain": "synthetic_monotonic_seconds"
+        },
+        "simulation_speed": 4.0,
+        "strategy": "alternating",
+        "state_sequence": 38,
+        "published_ros_stamp_ns": 1793322226998018740
+      },
+      "running_status_count": 34,
+      "passed": true,
+      "server_returncode": 0,
+      "exit_audit": {
+        "pid": 20,
+        "worker_alive": false,
+        "simulation_stopped": true,
+        "io_threads": [
+          "cartesian-sim-owner"
+        ],
+        "last_state": {
+          "schema_version": 1,
+          "execution_domain": "simulation-only",
+          "reference": {
+            "parent_frame": "sim_base",
+            "child_frame": "camera_optical",
+            "map_epoch": "sim_map_1"
+          },
+          "needs_reset": false,
+          "job": {
+            "job_id": 2,
+            "request_id": "after_reset",
+            "state": "SUCCEEDED",
+            "success": true,
+            "complete": true,
+            "result": {
+              "success": true,
+              "complete": true,
+              "state": "SUCCEEDED",
+              "reason": "CARTESIAN_POSITION_CONFIRMED",
+              "measured_error_m": 0.00021844327510550115,
+              "verification": {
+                "p": [
+                  0.3124105302162381,
+                  0.037546166287930983,
+                  0.19475127208383256
+                ],
+                "q": [
+                  0.01203605816547525,
+                  -0.012909894554163777,
+                  0.000873836388688525,
+                  0.05378376645728525
+                ],
+                "first_frame": 440,
+                "last_frame": 444,
+                "first_s": 13.2,
+                "last_s": 13.32,
+                "spread_m": 5.2627754262550505e-05,
+                "max_goal_error_m": 0.000225458079192781
+              }
+            },
+            "submitted_ns": 21411219089098,
+            "cancel_received_ns": null,
+            "stop_wall_ns": null,
+            "ended_ns": 21412113518033,
+            "simulation_truth_error_m": 0.00020536367438587648,
+            "simulation_truth_position_m": [
+              0.3124043338625435,
+              0.03755764398305492,
+              0.19476979430586727
+            ],
+            "final_motor_positions_m": [
+              0.01203605816547525,
+              -0.012909894554163777,
+              0.000873836388688525,
+              0.05378376645728525
+            ],
+            "step_count": 12,
+            "io_threads": [
+              "cartesian-sim-owner"
+            ]
+          },
+          "observation": {
+            "position_m": [
+              0.3124182837340469,
+              0.037546166287930983,
+              0.19475127208383256
+            ],
+            "frame_id": 444,
+            "capture_s": 13.32,
+            "tracking_ok": true,
+            "map_epoch": "sim_map_1",
+            "motor_positions_m": [
+              0.01203605816547525,
+              -0.012909894554163777,
+              0.000873836388688525,
+              0.05378376645728525
+            ],
+            "time_domain": "synthetic_monotonic_seconds"
+          },
+          "simulation_speed": 4.0,
+          "strategy": "alternating"
+        },
+        "hardware_modules_loaded": []
+      }
+    },
+    {
+      "case": "coordinated",
+      "controller_pid": 44,
+      "client_pid": 1,
+      "acceptance": {
+        "request_id": "coordinated_goal",
+        "accepted": true,
+        "success": true,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_ACCEPTED",
+        "execution_domain": "simulation-only",
+        "job_id": 1
+      },
+      "final": {
+        "schema_version": 1,
+        "execution_domain": "simulation-only",
+        "reference": {
+          "parent_frame": "sim_base",
+          "child_frame": "camera_optical",
+          "map_epoch": "sim_map_0"
+        },
+        "needs_reset": false,
+        "job": {
+          "job_id": 1,
+          "request_id": "coordinated_goal",
+          "state": "SUCCEEDED",
+          "success": true,
+          "complete": true,
+          "result": {
+            "success": true,
+            "complete": true,
+            "state": "SUCCEEDED",
+            "reason": "CARTESIAN_POSITION_CONFIRMED",
+            "measured_error_m": 0.0002063447435610036,
+            "verification": {
+              "p": [
+                0.31237819986989185,
+                0.03758222372511987,
+                0.19478509172296343
+              ],
+              "q": [
+                0.011988391873300468,
+                -0.0128803175330061,
+                0.0008919256597056331,
+                0.05381211764502223
+              ],
+              "first_frame": 397,
+              "last_frame": 401,
+              "first_s": 11.91,
+              "last_s": 12.03,
+              "spread_m": 3.841998609946246e-05,
+              "max_goal_error_m": 0.0002233206936720531
+            }
+          },
+          "submitted_ns": 21412657976043,
+          "cancel_received_ns": null,
+          "stop_wall_ns": null,
+          "ended_ns": 21413205629823,
+          "simulation_truth_error_m": 0.0002003291895800628,
+          "simulation_truth_position_m": [
+            0.3123701705873816,
+            0.03756724153787739,
+            0.19478611805165036
+          ],
+          "final_motor_positions_m": [
+            0.011988391873300468,
+            -0.0128803175330061,
+            0.0008919256597056331,
+            0.05381211764502223
+          ],
+          "step_count": 7,
+          "io_threads": [
+            "cartesian-sim-owner"
+          ]
+        },
+        "observation": {
+          "position_m": [
+            0.31238267761037314,
+            0.03756614317510709,
+            0.19477004413756724
+          ],
+          "frame_id": 401,
+          "capture_s": 12.03,
+          "tracking_ok": true,
+          "map_epoch": "sim_map_0",
+          "motor_positions_m": [
+            0.011988391873300468,
+            -0.0128803175330061,
+            0.0008919256597056331,
+            0.05381211764502223
+          ],
+          "time_domain": "synthetic_monotonic_seconds"
+        },
+        "simulation_speed": 4.0,
+        "strategy": "coordinated",
+        "state_sequence": 13,
+        "published_ros_stamp_ns": 1793322228087937745
+      },
+      "independent_truth_error_m": 0.00020032918958007984,
+      "running_status_count": 10,
+      "passed": true,
+      "server_returncode": 0,
+      "exit_audit": {
+        "pid": 44,
+        "worker_alive": false,
+        "simulation_stopped": true,
+        "io_threads": [
+          "cartesian-sim-owner"
+        ],
+        "last_state": {
+          "schema_version": 1,
+          "execution_domain": "simulation-only",
+          "reference": {
+            "parent_frame": "sim_base",
+            "child_frame": "camera_optical",
+            "map_epoch": "sim_map_0"
+          },
+          "needs_reset": false,
+          "job": {
+            "job_id": 1,
+            "request_id": "coordinated_goal",
+            "state": "SUCCEEDED",
+            "success": true,
+            "complete": true,
+            "result": {
+              "success": true,
+              "complete": true,
+              "state": "SUCCEEDED",
+              "reason": "CARTESIAN_POSITION_CONFIRMED",
+              "measured_error_m": 0.0002063447435610036,
+              "verification": {
+                "p": [
+                  0.31237819986989185,
+                  0.03758222372511987,
+                  0.19478509172296343
+                ],
+                "q": [
+                  0.011988391873300468,
+                  -0.0128803175330061,
+                  0.0008919256597056331,
+                  0.05381211764502223
+                ],
+                "first_frame": 397,
+                "last_frame": 401,
+                "first_s": 11.91,
+                "last_s": 12.03,
+                "spread_m": 3.841998609946246e-05,
+                "max_goal_error_m": 0.0002233206936720531
+              }
+            },
+            "submitted_ns": 21412657976043,
+            "cancel_received_ns": null,
+            "stop_wall_ns": null,
+            "ended_ns": 21413205629823,
+            "simulation_truth_error_m": 0.0002003291895800628,
+            "simulation_truth_position_m": [
+              0.3123701705873816,
+              0.03756724153787739,
+              0.19478611805165036
+            ],
+            "final_motor_positions_m": [
+              0.011988391873300468,
+              -0.0128803175330061,
+              0.0008919256597056331,
+              0.05381211764502223
+            ],
+            "step_count": 7,
+            "io_threads": [
+              "cartesian-sim-owner"
+            ]
+          },
+          "observation": {
+            "position_m": [
+              0.31238267761037314,
+              0.03756614317510709,
+              0.19477004413756724
+            ],
+            "frame_id": 401,
+            "capture_s": 12.03,
+            "tracking_ok": true,
+            "map_epoch": "sim_map_0",
+            "motor_positions_m": [
+              0.011988391873300468,
+              -0.0128803175330061,
+              0.0008919256597056331,
+              0.05381211764502223
+            ],
+            "time_domain": "synthetic_monotonic_seconds"
+          },
+          "simulation_speed": 4.0,
+          "strategy": "coordinated"
+        },
+        "hardware_modules_loaded": []
+      }
+    },
+    {
+      "case": "cancel",
+      "controller_pid": 67,
+      "client_pid": 1,
+      "acceptance": {
+        "request_id": "cancel_goal",
+        "accepted": true,
+        "success": true,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_ACCEPTED",
+        "execution_domain": "simulation-only",
+        "job_id": 1
+      },
+      "cancel": {
+        "success": true,
+        "body": {
+          "request_id": "cancel_goal",
+          "accepted": true,
+          "success": true,
+          "complete": false,
+          "reason": "ROS_CARTESIAN_CANCEL_ACCEPTED",
+          "execution_domain": "simulation-only",
+          "job_id": 1
+        },
+        "sent_ns": 21413848414951,
+        "received_ns": 21413848862038
+      },
+      "final": {
+        "schema_version": 1,
+        "execution_domain": "simulation-only",
+        "reference": {
+          "parent_frame": "sim_base",
+          "child_frame": "camera_optical",
+          "map_epoch": "sim_map_0"
+        },
+        "needs_reset": true,
+        "job": {
+          "job_id": 1,
+          "request_id": "cancel_goal",
+          "state": "CANCELLED",
+          "success": false,
+          "complete": false,
+          "result": {
+            "success": false,
+            "complete": false,
+            "state": "CANCELLED",
+            "reason": "ROS_CARTESIAN_CANCELLED",
+            "stop_receipts": [
+              {
+                "actuator_index": 0,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 1,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 2,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 3,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              }
+            ]
+          },
+          "submitted_ns": 21413748520377,
+          "cancel_received_ns": 21413848616175,
+          "stop_wall_ns": 21413848898371,
+          "ended_ns": 21413848910671,
+          "simulation_truth_error_m": 0.02119750120367966,
+          "simulation_truth_position_m": [
+            0.30055,
+            0.049600000000000005,
+            0.18225
+          ],
+          "final_motor_positions_m": [
+            0.0,
+            0.0,
+            0.0,
+            0.0425
+          ],
+          "step_count": 1,
+          "io_threads": [
+            "cartesian-sim-owner"
+          ]
+        },
+        "observation": {
+          "position_m": [
+            0.3005590199986591,
+            0.04959637961528347,
+            0.18224070735851883
+          ],
+          "frame_id": 345,
+          "capture_s": 10.35,
+          "tracking_ok": true,
+          "map_epoch": "sim_map_0",
+          "motor_positions_m": [
+            0.0,
+            0.0,
+            0.0,
+            0.0425
+          ],
+          "time_domain": "synthetic_monotonic_seconds"
+        },
+        "simulation_speed": 4.0,
+        "strategy": "alternating",
+        "state_sequence": 5,
+        "published_ros_stamp_ns": 1793322228778539248
+      },
+      "retry_without_reset": {
+        "request_id": "retry",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_RESET_REQUIRED",
+        "execution_domain": "simulation-only"
+      },
+      "cancel_request_to_sim_stop_ms": 0.48342,
+      "running_status_count": 2,
+      "passed": true,
+      "server_returncode": 0,
+      "exit_audit": {
+        "pid": 67,
+        "worker_alive": false,
+        "simulation_stopped": true,
+        "io_threads": [
+          "cartesian-sim-owner"
+        ],
+        "last_state": {
+          "schema_version": 1,
+          "execution_domain": "simulation-only",
+          "reference": {
+            "parent_frame": "sim_base",
+            "child_frame": "camera_optical",
+            "map_epoch": "sim_map_0"
+          },
+          "needs_reset": true,
+          "job": {
+            "job_id": 1,
+            "request_id": "cancel_goal",
+            "state": "CANCELLED",
+            "success": false,
+            "complete": false,
+            "result": {
+              "success": false,
+              "complete": false,
+              "state": "CANCELLED",
+              "reason": "ROS_CARTESIAN_CANCELLED",
+              "stop_receipts": [
+                {
+                  "actuator_index": 0,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 1,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 2,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 3,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                }
+              ]
+            },
+            "submitted_ns": 21413748520377,
+            "cancel_received_ns": 21413848616175,
+            "stop_wall_ns": 21413848898371,
+            "ended_ns": 21413848910671,
+            "simulation_truth_error_m": 0.02119750120367966,
+            "simulation_truth_position_m": [
+              0.30055,
+              0.049600000000000005,
+              0.18225
+            ],
+            "final_motor_positions_m": [
+              0.0,
+              0.0,
+              0.0,
+              0.0425
+            ],
+            "step_count": 1,
+            "io_threads": [
+              "cartesian-sim-owner"
+            ]
+          },
+          "observation": {
+            "position_m": [
+              0.3005590199986591,
+              0.04959637961528347,
+              0.18224070735851883
+            ],
+            "frame_id": 345,
+            "capture_s": 10.35,
+            "tracking_ok": true,
+            "map_epoch": "sim_map_0",
+            "motor_positions_m": [
+              0.0,
+              0.0,
+              0.0,
+              0.0425
+            ],
+            "time_domain": "synthetic_monotonic_seconds"
+          },
+          "simulation_speed": 4.0,
+          "strategy": "alternating"
+        },
+        "hardware_modules_loaded": []
+      }
+    },
+    {
+      "case": "tracking_lost",
+      "controller_pid": 90,
+      "client_pid": 1,
+      "acceptance": {
+        "request_id": "tracking_lost_goal",
+        "accepted": true,
+        "success": true,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_ACCEPTED",
+        "execution_domain": "simulation-only",
+        "job_id": 1
+      },
+      "final": {
+        "schema_version": 1,
+        "execution_domain": "simulation-only",
+        "reference": {
+          "parent_frame": "sim_base",
+          "child_frame": "camera_optical",
+          "map_epoch": "sim_map_0"
+        },
+        "needs_reset": true,
+        "job": {
+          "job_id": 1,
+          "request_id": "tracking_lost_goal",
+          "state": "FAULT",
+          "success": false,
+          "complete": false,
+          "result": {
+            "success": false,
+            "complete": false,
+            "state": "FAULT",
+            "reason": "CARTESIAN_TRACKING_LOST",
+            "stop_receipts": [
+              {
+                "actuator_index": 0,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 1,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 2,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 3,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              }
+            ]
+          },
+          "submitted_ns": 21414436937417,
+          "cancel_received_ns": null,
+          "stop_wall_ns": 21414564219835,
+          "ended_ns": 21414564229009,
+          "simulation_truth_error_m": 0.02029249749840691,
+          "simulation_truth_position_m": [
+            0.30110637185973194,
+            0.048713634498439226,
+            0.1824063267616917
+          ],
+          "final_motor_positions_m": [
+            0.0008049936457702428,
+            -0.0010500000000000002,
+            0.00024500635422975727,
+            0.0425
+          ],
+          "step_count": 2,
+          "io_threads": [
+            "cartesian-sim-owner"
+          ]
+        },
+        "observation": {
+          "position_m": [
+            0.3011178441242039,
+            0.048703031386683734,
+            0.18243033550406632
+          ],
+          "frame_id": 349,
+          "capture_s": 10.47,
+          "tracking_ok": false,
+          "map_epoch": "sim_map_0",
+          "motor_positions_m": [
+            0.0008049936457702428,
+            -0.0010500000000000002,
+            0.00024500635422975727,
+            0.0425
+          ],
+          "time_domain": "synthetic_monotonic_seconds"
+        },
+        "simulation_speed": 4.0,
+        "strategy": "alternating",
+        "state_sequence": 5,
+        "published_ros_stamp_ns": 1793322229466846375
+      },
+      "retry_without_reset": {
+        "request_id": "retry",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_RESET_REQUIRED",
+        "execution_domain": "simulation-only"
+      },
+      "running_status_count": 2,
+      "passed": true,
+      "server_returncode": 0,
+      "exit_audit": {
+        "pid": 90,
+        "worker_alive": false,
+        "simulation_stopped": true,
+        "io_threads": [
+          "cartesian-sim-owner"
+        ],
+        "last_state": {
+          "schema_version": 1,
+          "execution_domain": "simulation-only",
+          "reference": {
+            "parent_frame": "sim_base",
+            "child_frame": "camera_optical",
+            "map_epoch": "sim_map_0"
+          },
+          "needs_reset": true,
+          "job": {
+            "job_id": 1,
+            "request_id": "tracking_lost_goal",
+            "state": "FAULT",
+            "success": false,
+            "complete": false,
+            "result": {
+              "success": false,
+              "complete": false,
+              "state": "FAULT",
+              "reason": "CARTESIAN_TRACKING_LOST",
+              "stop_receipts": [
+                {
+                  "actuator_index": 0,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 1,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 2,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 3,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                }
+              ]
+            },
+            "submitted_ns": 21414436937417,
+            "cancel_received_ns": null,
+            "stop_wall_ns": 21414564219835,
+            "ended_ns": 21414564229009,
+            "simulation_truth_error_m": 0.02029249749840691,
+            "simulation_truth_position_m": [
+              0.30110637185973194,
+              0.048713634498439226,
+              0.1824063267616917
+            ],
+            "final_motor_positions_m": [
+              0.0008049936457702428,
+              -0.0010500000000000002,
+              0.00024500635422975727,
+              0.0425
+            ],
+            "step_count": 2,
+            "io_threads": [
+              "cartesian-sim-owner"
+            ]
+          },
+          "observation": {
+            "position_m": [
+              0.3011178441242039,
+              0.048703031386683734,
+              0.18243033550406632
+            ],
+            "frame_id": 349,
+            "capture_s": 10.47,
+            "tracking_ok": false,
+            "map_epoch": "sim_map_0",
+            "motor_positions_m": [
+              0.0008049936457702428,
+              -0.0010500000000000002,
+              0.00024500635422975727,
+              0.0425
+            ],
+            "time_domain": "synthetic_monotonic_seconds"
+          },
+          "simulation_speed": 4.0,
+          "strategy": "alternating"
+        },
+        "hardware_modules_loaded": []
+      }
+    },
+    {
+      "case": "frozen_pose",
+      "controller_pid": 113,
+      "client_pid": 1,
+      "acceptance": {
+        "request_id": "frozen_pose_goal",
+        "accepted": true,
+        "success": true,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_ACCEPTED",
+        "execution_domain": "simulation-only",
+        "job_id": 1
+      },
+      "final": {
+        "schema_version": 1,
+        "execution_domain": "simulation-only",
+        "reference": {
+          "parent_frame": "sim_base",
+          "child_frame": "camera_optical",
+          "map_epoch": "sim_map_0"
+        },
+        "needs_reset": true,
+        "job": {
+          "job_id": 1,
+          "request_id": "frozen_pose_goal",
+          "state": "FAULT",
+          "success": false,
+          "complete": false,
+          "result": {
+            "success": false,
+            "complete": false,
+            "state": "FAULT",
+            "reason": "CARTESIAN_POSE_STALE_OR_FUTURE",
+            "stop_receipts": [
+              {
+                "actuator_index": 0,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 1,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 2,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 3,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              }
+            ]
+          },
+          "submitted_ns": 21415126073075,
+          "cancel_received_ns": null,
+          "stop_wall_ns": 21415284884374,
+          "ended_ns": 21415284893707,
+          "simulation_truth_error_m": 0.01905952915512356,
+          "simulation_truth_position_m": [
+            0.3018769005368796,
+            0.047486409957453575,
+            0.1826318484803106
+          ],
+          "final_motor_positions_m": [
+            0.001916651537548197,
+            -0.0025,
+            0.000583348462451803,
+            0.0425
+          ],
+          "step_count": 2,
+          "io_threads": [
+            "cartesian-sim-owner"
+          ]
+        },
+        "observation": {
+          "position_m": [
+            0.30055372118551293,
+            0.04960125982519058,
+            0.18226875687477867
+          ],
+          "frame_id": 348,
+          "capture_s": 10.44,
+          "tracking_ok": true,
+          "map_epoch": "sim_map_0",
+          "motor_positions_m": [
+            0.001916651537548197,
+            -0.0025,
+            0.000583348462451803,
+            0.0425
+          ],
+          "time_domain": "synthetic_monotonic_seconds"
+        },
+        "simulation_speed": 4.0,
+        "strategy": "alternating",
+        "state_sequence": 6,
+        "published_ros_stamp_ns": 1793322230205954425
+      },
+      "retry_without_reset": {
+        "request_id": "retry",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_RESET_REQUIRED",
+        "execution_domain": "simulation-only"
+      },
+      "running_status_count": 3,
+      "passed": true,
+      "server_returncode": 0,
+      "exit_audit": {
+        "pid": 113,
+        "worker_alive": false,
+        "simulation_stopped": true,
+        "io_threads": [
+          "cartesian-sim-owner"
+        ],
+        "last_state": {
+          "schema_version": 1,
+          "execution_domain": "simulation-only",
+          "reference": {
+            "parent_frame": "sim_base",
+            "child_frame": "camera_optical",
+            "map_epoch": "sim_map_0"
+          },
+          "needs_reset": true,
+          "job": {
+            "job_id": 1,
+            "request_id": "frozen_pose_goal",
+            "state": "FAULT",
+            "success": false,
+            "complete": false,
+            "result": {
+              "success": false,
+              "complete": false,
+              "state": "FAULT",
+              "reason": "CARTESIAN_POSE_STALE_OR_FUTURE",
+              "stop_receipts": [
+                {
+                  "actuator_index": 0,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 1,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 2,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 3,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                }
+              ]
+            },
+            "submitted_ns": 21415126073075,
+            "cancel_received_ns": null,
+            "stop_wall_ns": 21415284884374,
+            "ended_ns": 21415284893707,
+            "simulation_truth_error_m": 0.01905952915512356,
+            "simulation_truth_position_m": [
+              0.3018769005368796,
+              0.047486409957453575,
+              0.1826318484803106
+            ],
+            "final_motor_positions_m": [
+              0.001916651537548197,
+              -0.0025,
+              0.000583348462451803,
+              0.0425
+            ],
+            "step_count": 2,
+            "io_threads": [
+              "cartesian-sim-owner"
+            ]
+          },
+          "observation": {
+            "position_m": [
+              0.30055372118551293,
+              0.04960125982519058,
+              0.18226875687477867
+            ],
+            "frame_id": 348,
+            "capture_s": 10.44,
+            "tracking_ok": true,
+            "map_epoch": "sim_map_0",
+            "motor_positions_m": [
+              0.001916651537548197,
+              -0.0025,
+              0.000583348462451803,
+              0.0425
+            ],
+            "time_domain": "synthetic_monotonic_seconds"
+          },
+          "simulation_speed": 4.0,
+          "strategy": "alternating"
+        },
+        "hardware_modules_loaded": []
+      }
+    },
+    {
+      "case": "map_reset",
+      "controller_pid": 136,
+      "client_pid": 1,
+      "acceptance": {
+        "request_id": "map_reset_goal",
+        "accepted": true,
+        "success": true,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_ACCEPTED",
+        "execution_domain": "simulation-only",
+        "job_id": 1
+      },
+      "final": {
+        "schema_version": 1,
+        "execution_domain": "simulation-only",
+        "reference": {
+          "parent_frame": "sim_base",
+          "child_frame": "camera_optical",
+          "map_epoch": "sim_map_0"
+        },
+        "needs_reset": true,
+        "job": {
+          "job_id": 1,
+          "request_id": "map_reset_goal",
+          "state": "FAULT",
+          "success": false,
+          "complete": false,
+          "result": {
+            "success": false,
+            "complete": false,
+            "state": "FAULT",
+            "reason": "CARTESIAN_REFERENCE_CHANGED",
+            "stop_receipts": [
+              {
+                "actuator_index": 0,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 1,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 2,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 3,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              }
+            ]
+          },
+          "submitted_ns": 21415866938733,
+          "cancel_received_ns": null,
+          "stop_wall_ns": 21415993913838,
+          "ended_ns": 21415993923145,
+          "simulation_truth_error_m": 0.02029249749840691,
+          "simulation_truth_position_m": [
+            0.30110637185973194,
+            0.048713634498439226,
+            0.1824063267616917
+          ],
+          "final_motor_positions_m": [
+            0.0008049936457702428,
+            -0.0010500000000000002,
+            0.00024500635422975727,
+            0.0425
+          ],
+          "step_count": 2,
+          "io_threads": [
+            "cartesian-sim-owner"
+          ]
+        },
+        "observation": {
+          "position_m": [
+            0.3011178441242039,
+            0.048703031386683734,
+            0.18243033550406632
+          ],
+          "frame_id": 349,
+          "capture_s": 10.47,
+          "tracking_ok": true,
+          "map_epoch": "sim_map_0_reset",
+          "motor_positions_m": [
+            0.0008049936457702428,
+            -0.0010500000000000002,
+            0.00024500635422975727,
+            0.0425
+          ],
+          "time_domain": "synthetic_monotonic_seconds"
+        },
+        "simulation_speed": 4.0,
+        "strategy": "alternating",
+        "state_sequence": 5,
+        "published_ros_stamp_ns": 1793322230896752845
+      },
+      "retry_without_reset": {
+        "request_id": "retry",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_RESET_REQUIRED",
+        "execution_domain": "simulation-only"
+      },
+      "running_status_count": 2,
+      "passed": true,
+      "server_returncode": 0,
+      "exit_audit": {
+        "pid": 136,
+        "worker_alive": false,
+        "simulation_stopped": true,
+        "io_threads": [
+          "cartesian-sim-owner"
+        ],
+        "last_state": {
+          "schema_version": 1,
+          "execution_domain": "simulation-only",
+          "reference": {
+            "parent_frame": "sim_base",
+            "child_frame": "camera_optical",
+            "map_epoch": "sim_map_0"
+          },
+          "needs_reset": true,
+          "job": {
+            "job_id": 1,
+            "request_id": "map_reset_goal",
+            "state": "FAULT",
+            "success": false,
+            "complete": false,
+            "result": {
+              "success": false,
+              "complete": false,
+              "state": "FAULT",
+              "reason": "CARTESIAN_REFERENCE_CHANGED",
+              "stop_receipts": [
+                {
+                  "actuator_index": 0,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 1,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 2,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 3,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                }
+              ]
+            },
+            "submitted_ns": 21415866938733,
+            "cancel_received_ns": null,
+            "stop_wall_ns": 21415993913838,
+            "ended_ns": 21415993923145,
+            "simulation_truth_error_m": 0.02029249749840691,
+            "simulation_truth_position_m": [
+              0.30110637185973194,
+              0.048713634498439226,
+              0.1824063267616917
+            ],
+            "final_motor_positions_m": [
+              0.0008049936457702428,
+              -0.0010500000000000002,
+              0.00024500635422975727,
+              0.0425
+            ],
+            "step_count": 2,
+            "io_threads": [
+              "cartesian-sim-owner"
+            ]
+          },
+          "observation": {
+            "position_m": [
+              0.3011178441242039,
+              0.048703031386683734,
+              0.18243033550406632
+            ],
+            "frame_id": 349,
+            "capture_s": 10.47,
+            "tracking_ok": true,
+            "map_epoch": "sim_map_0_reset",
+            "motor_positions_m": [
+              0.0008049936457702428,
+              -0.0010500000000000002,
+              0.00024500635422975727,
+              0.0425
+            ],
+            "time_domain": "synthetic_monotonic_seconds"
+          },
+          "simulation_speed": 4.0,
+          "strategy": "alternating"
+        },
+        "hardware_modules_loaded": []
+      }
+    },
+    {
+      "case": "unreachable",
+      "controller_pid": 159,
+      "client_pid": 1,
+      "acceptance": {
+        "request_id": "unreachable_goal",
+        "accepted": true,
+        "success": true,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_ACCEPTED",
+        "execution_domain": "simulation-only",
+        "job_id": 1
+      },
+      "final": {
+        "schema_version": 1,
+        "execution_domain": "simulation-only",
+        "reference": {
+          "parent_frame": "sim_base",
+          "child_frame": "camera_optical",
+          "map_epoch": "sim_map_0"
+        },
+        "needs_reset": true,
+        "job": {
+          "job_id": 1,
+          "request_id": "unreachable_goal",
+          "state": "FAULT",
+          "success": false,
+          "complete": false,
+          "result": {
+            "success": false,
+            "complete": false,
+            "state": "FAULT",
+            "reason": "CARTESIAN_NO_FEASIBLE_DESCENT_STEP",
+            "stop_receipts": [
+              {
+                "actuator_index": 0,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 1,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 2,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              },
+              {
+                "actuator_index": 3,
+                "reply_valid": true,
+                "simulated": true,
+                "meaning": "simulation stop acknowledgment, not physical braking"
+              }
+            ]
+          },
+          "submitted_ns": 21416557788625,
+          "cancel_received_ns": null,
+          "stop_wall_ns": 21418742408796,
+          "ended_ns": 21418742419179,
+          "simulation_truth_error_m": 1.0357374663687584,
+          "simulation_truth_position_m": [
+            0.33525669155781007,
+            0.08037325055400578,
+            0.2178461560893249
+          ],
+          "final_motor_positions_m": [
+            0.019243444888010476,
+            0.020756555111989514,
+            -0.04,
+            0.08
+          ],
+          "step_count": 32,
+          "io_threads": [
+            "cartesian-sim-owner"
+          ]
+        },
+        "observation": {
+          "position_m": [
+            0.335259321289981,
+            0.08036453847170942,
+            0.21787016887786895
+          ],
+          "frame_id": 604,
+          "capture_s": 18.12,
+          "tracking_ok": true,
+          "map_epoch": "sim_map_0",
+          "motor_positions_m": [
+            0.019243444888010476,
+            0.020756555111989514,
+            -0.04,
+            0.08
+          ],
+          "time_domain": "synthetic_monotonic_seconds"
+        },
+        "simulation_speed": 4.0,
+        "strategy": "alternating",
+        "state_sequence": 46,
+        "published_ros_stamp_ns": 1793322233637673656
+      },
+      "retry_without_reset": {
+        "request_id": "retry",
+        "accepted": false,
+        "success": false,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_RESET_REQUIRED",
+        "execution_domain": "simulation-only"
+      },
+      "running_status_count": 43,
+      "passed": true,
+      "server_returncode": 0,
+      "exit_audit": {
+        "pid": 159,
+        "worker_alive": false,
+        "simulation_stopped": true,
+        "io_threads": [
+          "cartesian-sim-owner"
+        ],
+        "last_state": {
+          "schema_version": 1,
+          "execution_domain": "simulation-only",
+          "reference": {
+            "parent_frame": "sim_base",
+            "child_frame": "camera_optical",
+            "map_epoch": "sim_map_0"
+          },
+          "needs_reset": true,
+          "job": {
+            "job_id": 1,
+            "request_id": "unreachable_goal",
+            "state": "FAULT",
+            "success": false,
+            "complete": false,
+            "result": {
+              "success": false,
+              "complete": false,
+              "state": "FAULT",
+              "reason": "CARTESIAN_NO_FEASIBLE_DESCENT_STEP",
+              "stop_receipts": [
+                {
+                  "actuator_index": 0,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 1,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 2,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 3,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                }
+              ]
+            },
+            "submitted_ns": 21416557788625,
+            "cancel_received_ns": null,
+            "stop_wall_ns": 21418742408796,
+            "ended_ns": 21418742419179,
+            "simulation_truth_error_m": 1.0357374663687584,
+            "simulation_truth_position_m": [
+              0.33525669155781007,
+              0.08037325055400578,
+              0.2178461560893249
+            ],
+            "final_motor_positions_m": [
+              0.019243444888010476,
+              0.020756555111989514,
+              -0.04,
+              0.08
+            ],
+            "step_count": 32,
+            "io_threads": [
+              "cartesian-sim-owner"
+            ]
+          },
+          "observation": {
+            "position_m": [
+              0.335259321289981,
+              0.08036453847170942,
+              0.21787016887786895
+            ],
+            "frame_id": 604,
+            "capture_s": 18.12,
+            "tracking_ok": true,
+            "map_epoch": "sim_map_0",
+            "motor_positions_m": [
+              0.019243444888010476,
+              0.020756555111989514,
+              -0.04,
+              0.08
+            ],
+            "time_domain": "synthetic_monotonic_seconds"
+          },
+          "simulation_speed": 4.0,
+          "strategy": "alternating"
+        },
+        "hardware_modules_loaded": []
+      }
+    },
+    {
+      "case": "shutdown",
+      "controller_pid": 182,
+      "client_pid": 1,
+      "acceptance": {
+        "request_id": "shutdown_goal",
+        "accepted": true,
+        "success": true,
+        "complete": false,
+        "reason": "ROS_CARTESIAN_ACCEPTED",
+        "execution_domain": "simulation-only",
+        "job_id": 1
+      },
+      "shutdown_sent_ns": 21419395386920,
+      "running_status_count": 2,
+      "passed": true,
+      "server_returncode": 0,
+      "exit_audit": {
+        "pid": 182,
+        "worker_alive": false,
+        "simulation_stopped": true,
+        "io_threads": [
+          "cartesian-sim-owner"
+        ],
+        "last_state": {
+          "schema_version": 1,
+          "execution_domain": "simulation-only",
+          "reference": {
+            "parent_frame": "sim_base",
+            "child_frame": "camera_optical",
+            "map_epoch": "sim_map_0"
+          },
+          "needs_reset": true,
+          "job": {
+            "job_id": 1,
+            "request_id": "shutdown_goal",
+            "state": "CANCELLED",
+            "success": false,
+            "complete": false,
+            "result": {
+              "success": false,
+              "complete": false,
+              "state": "CANCELLED",
+              "reason": "ROS_CARTESIAN_CANCELLED",
+              "stop_receipts": [
+                {
+                  "actuator_index": 0,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 1,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 2,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                },
+                {
+                  "actuator_index": 3,
+                  "reply_valid": true,
+                  "simulated": true,
+                  "meaning": "simulation stop acknowledgment, not physical braking"
+                }
+              ]
+            },
+            "submitted_ns": 21419295582041,
+            "cancel_received_ns": null,
+            "stop_wall_ns": 21419395641341,
+            "ended_ns": 21419395652614,
+            "simulation_truth_error_m": 0.02119750120367966,
+            "simulation_truth_position_m": [
+              0.30055,
+              0.049600000000000005,
+              0.18225
+            ],
+            "final_motor_positions_m": [
+              0.0,
+              0.0,
+              0.0,
+              0.0425
+            ],
+            "step_count": 1,
+            "io_threads": [
+              "cartesian-sim-owner"
+            ]
+          },
+          "observation": {
+            "position_m": [
+              0.3005590199986591,
+              0.04959637961528347,
+              0.18224070735851883
+            ],
+            "frame_id": 345,
+            "capture_s": 10.35,
+            "tracking_ok": true,
+            "map_epoch": "sim_map_0",
+            "motor_positions_m": [
+              0.0,
+              0.0,
+              0.0,
+              0.0425
+            ],
+            "time_domain": "synthetic_monotonic_seconds"
+          },
+          "simulation_speed": 4.0,
+          "strategy": "alternating"
+        },
+        "hardware_modules_loaded": []
+      }
+    }
+  ],
+  "passed": true,
+  "count": 8,
+  "source_sha256": {
+    "atarm_controller/cartesian_jobs.py": "4403df5df8a9c1d2e132ca73017bd4cf94d429fd6626bfdb20e0bf11bb904f4f",
+    "atarm_controller/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "atarm_controller/cartesian_simulation.py": "d60c04c6fa6d0db5148d9119990cb9f0a4c8627187f20dbfb86198f8c2af2f4f",
+    "atarm_controller/cartesian_control.py": "7214ca27f37587aac4973fa647a9b07c8cafde91c6cc92d8c5cc00f927518e07",
+    "atarm_controller/camera_feedback.py": "528cf3ea07f812cc26206179c3a8305a40a7e81700dc3bea1edaf7352651c10d",
+    "atarm_controller/cartesian_sim_node.py": "41c2e09871fea2f865a4a154c613b946802e1600c0582acb86a2e5164f5c5caf",
+    "atarm_controller/cartesian_math.py": "cbd252f118d889e25ffd371817ed10b4aa777f408d47cbaa211452022656895c",
+    "tests/ros_cartesian_matrix.py": "faf2b1a2c299bb896b047f70e3d0615634f7728df78d442593c9193c7205ff38"
+  }
+}

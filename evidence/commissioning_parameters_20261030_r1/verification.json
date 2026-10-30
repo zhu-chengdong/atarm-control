@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-30",
+  "passed": true,
+  "newly_filled_fields": [
+    "site.ports.active.data_bits",
+    "site.ports.active.parity",
+    "site.ports.active.stop_bits",
+    "site.ports.active.flow_control",
+    "site.ports.deploy.data_bits",
+    "site.ports.deploy.parity",
+    "site.ports.deploy.stop_bits",
+    "site.ports.deploy.flow_control",
+    "site.ros.pose_topic",
+    "site.ros.source_status_topic",
+    "site.stop.policy",
+    "session.channels[0].gear_ratio",
+    "session.channels[1].gear_ratio",
+    "session.channels[2].gear_ratio",
+    "session.channels[3].gear_ratio"
+  ],
+  "parameter_groups": 26,
+  "source_anchors": 33,
+  "native_load_forbidden_and_not_attempted": true,
+  "ros_not_imported": true,
+  "ready_for_run": false,
+  "toggled_flags_still_rejected": true,
+  "history_reference_rejected_as_site": true,
+  "old_files_unchanged": 1668,
+  "changed_old_files": [],
+  "remote_or_hardware_connection": false
+}

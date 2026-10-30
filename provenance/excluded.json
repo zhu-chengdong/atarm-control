@@ -1,0 +1,10 @@
+[
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/ATARM_Usage_Guide.md",
+    "reason": "Legacy guide contains authentication details; retained only in local source archive."
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/ATARM_Usage_Guide.md",
+    "reason": "Legacy guide contains authentication details; retained locally."
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "case": "shutdown",
+  "passed": true,
+  "premature": {
+    "request_id": "before_confirm",
+    "accepted": false,
+    "success": false,
+    "complete": false,
+    "reason": "REFERENCE_NOT_CONFIRMED"
+  },
+  "confirm": {
+    "success": true,
+    "body": {
+      "request_id": null,
+      "accepted": true,
+      "success": true,
+      "complete": false,
+      "reason": "REFERENCE_CHECK_ACCEPTED"
+    },
+    "sent_ns": 54235035422855,
+    "received_ns": 54235035850231
+  },
+  "accepted": {
+    "request_id": "main",
+    "accepted": true,
+    "success": true,
+    "complete": false,
+    "reason": "ACCEPTED",
+    "job_id": 1
+  },
+  "server_returncode": 0,
+  "source_returncode": 0,
+  "source_pid": 744,
+  "physical_end_q": [
+    0.0,
+    0.0,
+    0.0,
+    0.04
+  ],
+  "controller_pid": 745,
+  "client_pid": 38,
+  "states_count": 4,
+  "io_threads": [
+    "cartesian-fd-owner"
+  ],
+  "native_transactions": 136
+}

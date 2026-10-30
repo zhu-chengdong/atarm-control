@@ -1,0 +1,30 @@
+[
+  {
+    "document": "docs/reports/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "target": "../../03_Experiments/fieldkit/legacy_mark/outputs/相机采集同步分析工具包_2026-10-28/camera_fieldkit/现场操作清单.md"
+  },
+  {
+    "document": "docs/reports/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "target": "../../01_Source/development/atarm_controller_cartesian_ros_sim_20261030_v2/atarm_controller/cartesian_control.py"
+  },
+  {
+    "document": "docs/reports/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "target": "../../01_Source/current/legacy_mark/work/atarm_controller_ros_integration_20261028/atarm_controller/arm_controller_node.py"
+  },
+  {
+    "document": "docs/reports/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "target": "../../FIELDKIT_STATUS.md"
+  },
+  {
+    "document": "docs/reports/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "target": "../../04_Test_Results/fieldkit_deployment_20261029T230800Z-5cbdc01d38e9/REPORT.md"
+  },
+  {
+    "document": "docs/reports/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "target": "../../03_Experiments/fieldkit/legacy_mark/outputs/相机采集同步分析工具包_2026-10-28/camera_fieldkit/现场操作清单.md"
+  },
+  {
+    "document": "docs/reports/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "target": "../../../Underwater_SLAM/04_Environment/SSD_Migration_20261029/CURRENT_SSD.md"
+  }
+]

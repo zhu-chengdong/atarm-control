@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source_files_verified": 191,
+  "source_code_and_parameters_identical": true,
+  "local_checks": 54,
+  "simulation_strategies": [
+    "alternating",
+    "coordinated"
+  ],
+  "local_markdown_links_valid": true,
+  "hardware_connected": false
+}

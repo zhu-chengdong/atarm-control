@@ -1,0 +1,7 @@
+# Coordinated pause budget, 2026-10-27
+
+Explicitly pass both window_progress_config=WindowProgressConfig(...) and pause_budget_config=PauseBudgetConfig(pause_s=0.08,sampling_slack_s=0.02). The same pause allowance sizes the source-time progress window and floors motor/camera progress timeouts with time to accumulate measurable motion. Existing larger limits remain. Without this explicit policy, historical configurations retain their behavior.
+
+For this simulation, deployment/retraction motor timeout is 112.5 ms and the window is 200 ms with an 80 ms pause allowance. Rates and motor-to-camera gains come from requested settings and fixed calibration, not observed stalls or online Jacobian updates. Overall action/cycle time, correction count, travel and pose tolerances remain independent and unchanged.
+
+374 behavior checks pass, including 27 new checks, plus one pre-existing explicit motor-only protocol limitation diagnostic. Twelve coordinated normal full cycles complete; fourteen coordinated fault profiles stop, including intermittent micro-progress stopped by the camera window. Two legacy 80 ms early-stop controls remain separately identified. Sixty-four raw stop receipts are verified. All original and fourteen preceding copies are hash-preserved. No hardware, ROS middleware, installation, compilation or remote execution is used. See outputs/统一停顿预算与故障拦停验证_2026-10-27/实现与验证报告.md.

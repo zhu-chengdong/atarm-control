@@ -1,0 +1,5 @@
+# Confirmation-pause characterization, 2026-10-27
+
+Test-only copy; every production module and native file is identical to the previous early-progress copy. A genuine false-stop boundary is reproduced when a slower but valid recovery suffers an additional 80 ms pause inside the 200 ms confirmation period. Fast recoveries pass. Slow recoveries without this extra pause pass; original-400-ms paired controls complete all 27 trajectories. Twelve optimized trajectories stop despite actual resumption, and this behavior is not fixed in this copy.
+
+All four genuine intermittent-creep pairs stop. Three optimized runs stop early; noisy bending falls back to the original two-window guard and stops in 1.135 s, missing the under-1-s and 100-ms-improvement targets. 31 of 32 focused checks pass; the performance failure is retained. 62 native simulated cycles yield 42 completions, 12 false stops and 8 genuine-creep stops. 64 separate source-time replays isolate the missing additional pause allowance. No hardware, ROS, compilation, installation or remote host was used. See outputs/恢复确认期再次暂停80毫秒验证_2026-10-27/验证报告.md.

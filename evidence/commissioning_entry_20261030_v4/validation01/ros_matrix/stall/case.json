@@ -1,0 +1,155 @@
+{
+  "case": "stall",
+  "passed": true,
+  "premature": {
+    "request_id": "before_confirm",
+    "accepted": false,
+    "success": false,
+    "complete": false,
+    "reason": "REFERENCE_NOT_CONFIRMED"
+  },
+  "confirm": {
+    "success": true,
+    "body": {
+      "request_id": null,
+      "accepted": true,
+      "success": true,
+      "complete": false,
+      "reason": "REFERENCE_CHECK_ACCEPTED"
+    },
+    "sent_ns": 54224567346719,
+    "received_ns": 54224567655984
+  },
+  "accepted": {
+    "request_id": "main",
+    "accepted": true,
+    "success": true,
+    "complete": false,
+    "reason": "ACCEPTED",
+    "job_id": 1
+  },
+  "final": {
+    "execution_domain": "fd-actuator",
+    "calibration_id": "synthetic-pty-v3-001",
+    "ready": false,
+    "fault": "CARTESIAN_SETTLE_TIMEOUT",
+    "reference": {
+      "parent_frame": "control_base",
+      "child_frame": "tcp",
+      "map_epoch": "validation_map_0"
+    },
+    "job": {
+      "request_id": "main",
+      "job_id": 1,
+      "success": false,
+      "complete": false,
+      "state": "FAULT",
+      "reason": "CARTESIAN_SETTLE_TIMEOUT",
+      "stop_receipts": [
+        {
+          "actuator_index": 3,
+          "bus": "deploy",
+          "motor_id": 2,
+          "reply_valid": true,
+          "status": "OK",
+          "transport_frame_id": 127,
+          "tx_ns": 54225784460988,
+          "rx_ns": 54225784714930
+        },
+        {
+          "actuator_index": 0,
+          "bus": "active",
+          "motor_id": 1,
+          "reply_valid": true,
+          "status": "OK",
+          "transport_frame_id": 379,
+          "tx_ns": 54225784742607,
+          "rx_ns": 54225785013664
+        },
+        {
+          "actuator_index": 1,
+          "bus": "active",
+          "motor_id": 0,
+          "reply_valid": true,
+          "status": "OK",
+          "transport_frame_id": 380,
+          "tx_ns": 54225785043953,
+          "rx_ns": 54225785314405
+        },
+        {
+          "actuator_index": 2,
+          "bus": "active",
+          "motor_id": 2,
+          "reply_valid": true,
+          "status": "OK",
+          "transport_frame_id": 381,
+          "tx_ns": 54225785344353,
+          "rx_ns": 54225785544808
+        }
+      ]
+    },
+    "observation": {
+      "position_m": [
+        0.3,
+        0.05,
+        0.18
+      ],
+      "pose_frame_id": 71,
+      "capture_s": 54225.77197384834,
+      "motor_positions_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.04
+      ],
+      "motor_frame_ids": [
+        376,
+        377,
+        378,
+        126
+      ],
+      "motor_received_s": [
+        54225.773313064,
+        54225.773611092,
+        54225.773910059,
+        54225.774201582
+      ],
+      "time_domain": "host_monotonic_seconds"
+    },
+    "vision": {
+      "accepted": 73,
+      "pose_callbacks": 73,
+      "status_callbacks": 73,
+      "duplicates": 0,
+      "fault": null,
+      "latest_source_frame": 73,
+      "latest_capture_s": 54225.81195259094,
+      "startup_stale_drops": 0
+    },
+    "state_sequence": 29,
+    "published_ros_stamp_ns": 1793355040697217782
+  },
+  "retry": {
+    "request_id": "retry",
+    "accepted": false,
+    "success": false,
+    "complete": false,
+    "reason": "EXPLICIT_RESTART_REQUIRED"
+  },
+  "server_returncode": 0,
+  "source_returncode": 0,
+  "source_pid": 580,
+  "physical_end_q": [
+    0.0,
+    0.0,
+    0.0,
+    0.04
+  ],
+  "controller_pid": 581,
+  "client_pid": 38,
+  "states_count": 28,
+  "io_threads": [
+    "cartesian-fd-owner"
+  ],
+  "native_transactions": 512
+}

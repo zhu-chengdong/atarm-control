@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "site_id": null,
+  "session_file": "session.template.json",
+  "hardware_enabled": false,
+  "native_library": {
+    "path": "/native/physical/liba1_serial_adapter.so",
+    "sha256": "ffdec69854c8b4f2ef7cb2d3bcf638cc1dc16ed540d61d2f0b3e82c5929a23d8"
+  },
+  "ports": {
+    "active": {
+      "by_id_path": null,
+      "usb_serial": null,
+      "usb_vid": null,
+      "usb_pid": null,
+      "baud_rate": null,
+      "data_bits": null,
+      "parity": null,
+      "stop_bits": null,
+      "flow_control": null,
+      "adapter_direction_control": null,
+      "reply_timeout_s": null
+    },
+    "deploy": {
+      "by_id_path": null,
+      "usb_serial": null,
+      "usb_vid": null,
+      "usb_pid": null,
+      "baud_rate": null,
+      "data_bits": null,
+      "parity": null,
+      "stop_bits": null,
+      "flow_control": null,
+      "adapter_direction_control": null,
+      "reply_timeout_s": null
+    }
+  },
+  "ros": {
+    "domain_id": null,
+    "rmw_implementation": null,
+    "namespace": "/atarm_commissioning",
+    "pose_topic": null,
+    "source_status_topic": null
+  },
+  "electrical": {
+    "nominal_voltage_v": null,
+    "minimum_voltage_v": null,
+    "maximum_voltage_v": null,
+    "continuous_current_a": null,
+    "peak_current_a": null,
+    "peak_duration_s": null,
+    "monitoring": "external_manual",
+    "measurement_and_stop_procedure": null
+  },
+  "stop": {
+    "policy": null,
+    "external_stop_procedure": null,
+    "auto_home": false,
+    "auto_deploy": false
+  },
+  "confirmations": {
+    "power_and_basic_motion": false,
+    "support_and_stop": false,
+    "mapping_and_reference": false,
+    "vision_and_clock": false,
+    "jacobian_and_workspace": false,
+    "sole_controller_owner": false,
+    "user_name": null,
+    "mark_name": null,
+    "date": null,
+    "evidence_paths": [
+      null
+    ]
+  }
+}

@@ -1,0 +1,746 @@
+{
+  "parameters_valid": false,
+  "ready_for_run": false,
+  "issues": [
+    {
+      "path": "site.site_id",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.by_id_path",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.usb_serial",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.usb_vid",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.usb_pid",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.baud_rate",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.data_bits",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.parity",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.stop_bits",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.flow_control",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.adapter_direction_control",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.active.reply_timeout_s",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.by_id_path",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.usb_serial",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.usb_vid",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.usb_pid",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.baud_rate",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.data_bits",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.parity",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.stop_bits",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.flow_control",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.adapter_direction_control",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ports.deploy.reply_timeout_s",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ros.domain_id",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ros.rmw_implementation",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ros.pose_topic",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.ros.source_status_topic",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.electrical.nominal_voltage_v",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.electrical.minimum_voltage_v",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.electrical.maximum_voltage_v",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.electrical.continuous_current_a",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.electrical.peak_current_a",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.electrical.peak_duration_s",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.electrical.measurement_and_stop_procedure",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.stop.policy",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.stop.external_stop_procedure",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.confirmations.user_name",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.confirmations.mark_name",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.confirmations.date",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "site.confirmations.evidence_paths[0]",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.calibration_id",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.initial_jacobian",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.cable_mix",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.reference_lengths_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.min_lengths_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.max_lengths_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.position_tolerance_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.camera_noise_bound_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.max_speed_m_s",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.pose_step_margin_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.motor_tolerance_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.max_motor_step_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.min_step_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.max_total_travel_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.max_model_radius_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.min_singular_value",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.max_condition",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.min_progress_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.controller.min_learning_step_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].motor_id",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].direction",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].radius_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].gear_ratio",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].encoder_reference_rad",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].length_reference_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].kp",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].kd",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].max_feedback_torque_nm",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[0].max_temperature_c",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].motor_id",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].direction",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].radius_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].gear_ratio",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].encoder_reference_rad",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].length_reference_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].kp",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].kd",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].max_feedback_torque_nm",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[1].max_temperature_c",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].motor_id",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].direction",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].radius_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].gear_ratio",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].encoder_reference_rad",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].length_reference_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].kp",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].kd",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].max_feedback_torque_nm",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[2].max_temperature_c",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].motor_id",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].direction",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].radius_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].gear_ratio",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].encoder_reference_rad",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].length_reference_m",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].kp",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].kd",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].max_feedback_torque_nm",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.channels[3].max_temperature_c",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.speed_m_s",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.source_parent",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.camera_child",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.target_parent",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.control_child",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.map_epoch",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.base_from_source_translation",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.base_from_source_quaternion",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.camera_from_control_translation",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.vision.camera_from_control_quaternion",
+      "reason": "required field is not confirmed"
+    },
+    {
+      "path": "session.calibration_id",
+      "reason": "synthetic/absent calibration is not a site calibration"
+    },
+    {
+      "path": "session.controller/vision",
+      "reason": "'NoneType' object is not iterable"
+    },
+    {
+      "path": "session.channels[0].motor_id",
+      "reason": "valid non-broadcast A1 ID required"
+    },
+    {
+      "path": "session.channels[0].direction",
+      "reason": "requires verified +1 or -1"
+    },
+    {
+      "path": "session.channels[0].radius_m",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[0].gear_ratio",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[0].kp",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[0].kd",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[0].max_feedback_torque_nm",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[0].max_temperature_c",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[0].encoder_reference_rad",
+      "reason": "finite reference required"
+    },
+    {
+      "path": "session.channels[0].length_reference_m",
+      "reason": "finite reference required"
+    },
+    {
+      "path": "session.channels[1].motor_id",
+      "reason": "valid non-broadcast A1 ID required"
+    },
+    {
+      "path": "session.channels[1].direction",
+      "reason": "requires verified +1 or -1"
+    },
+    {
+      "path": "session.channels[1].radius_m",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[1].gear_ratio",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[1].kp",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[1].kd",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[1].max_feedback_torque_nm",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[1].max_temperature_c",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[1].encoder_reference_rad",
+      "reason": "finite reference required"
+    },
+    {
+      "path": "session.channels[1].length_reference_m",
+      "reason": "finite reference required"
+    },
+    {
+      "path": "session.channels[2].motor_id",
+      "reason": "valid non-broadcast A1 ID required"
+    },
+    {
+      "path": "session.channels[2].direction",
+      "reason": "requires verified +1 or -1"
+    },
+    {
+      "path": "session.channels[2].radius_m",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[2].gear_ratio",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[2].kp",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[2].kd",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[2].max_feedback_torque_nm",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[2].max_temperature_c",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[2].encoder_reference_rad",
+      "reason": "finite reference required"
+    },
+    {
+      "path": "session.channels[2].length_reference_m",
+      "reason": "finite reference required"
+    },
+    {
+      "path": "session.channels[3].motor_id",
+      "reason": "valid non-broadcast A1 ID required"
+    },
+    {
+      "path": "session.channels[3].direction",
+      "reason": "requires verified +1 or -1"
+    },
+    {
+      "path": "session.channels[3].radius_m",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[3].gear_ratio",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[3].kp",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[3].kd",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[3].max_feedback_torque_nm",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[3].max_temperature_c",
+      "reason": "positive measured/confirmed value required"
+    },
+    {
+      "path": "session.channels[3].encoder_reference_rad",
+      "reason": "finite reference required"
+    },
+    {
+      "path": "session.channels[3].length_reference_m",
+      "reason": "finite reference required"
+    },
+    {
+      "path": "session.channels",
+      "reason": "duplicate ID on same bus"
+    },
+    {
+      "path": "session.speed_m_s",
+      "reason": "positive confirmed cable speed required"
+    },
+    {
+      "path": "site.ports.active.by_id_path",
+      "reason": "one stable /dev/serial/by-id entry required"
+    },
+    {
+      "path": "site.ports.active.usb_vid",
+      "reason": "four hexadecimal digits required"
+    },
+    {
+      "path": "site.ports.active.usb_pid",
+      "reason": "four hexadecimal digits required"
+    },
+    {
+      "path": "site.ports.active.baud_rate",
+      "reason": "explicit supported positive baud required"
+    },
+    {
+      "path": "site.ports.active",
+      "reason": "this launcher implements 8N1 without hardware/software flow control only"
+    },
+    {
+      "path": "site.ports.active.adapter_direction_control",
+      "reason": "adapter must handle half duplex automatically; other control is not implemented"
+    },
+    {
+      "path": "site.ports.active.reply_timeout_s",
+      "reason": "finite timeout in (0,1] required"
+    },
+    {
+      "path": "site.ports.deploy.by_id_path",
+      "reason": "one stable /dev/serial/by-id entry required"
+    },
+    {
+      "path": "site.ports.deploy.usb_vid",
+      "reason": "four hexadecimal digits required"
+    },
+    {
+      "path": "site.ports.deploy.usb_pid",
+      "reason": "four hexadecimal digits required"
+    },
+    {
+      "path": "site.ports.deploy.baud_rate",
+      "reason": "explicit supported positive baud required"
+    },
+    {
+      "path": "site.ports.deploy",
+      "reason": "this launcher implements 8N1 without hardware/software flow control only"
+    },
+    {
+      "path": "site.ports.deploy.adapter_direction_control",
+      "reason": "adapter must handle half duplex automatically; other control is not implemented"
+    },
+    {
+      "path": "site.ports.deploy.reply_timeout_s",
+      "reason": "finite timeout in (0,1] required"
+    },
+    {
+      "path": "site.ports",
+      "reason": "ports must be distinct"
+    },
+    {
+      "path": "site.ros.domain_id",
+      "reason": "integer ROS domain in [0,232] required"
+    },
+    {
+      "path": "site.ros.rmw_implementation",
+      "reason": "explicit RMW implementation required"
+    },
+    {
+      "path": "site.ros.pose_topic",
+      "reason": "absolute ROS name required"
+    },
+    {
+      "path": "site.ros.source_status_topic",
+      "reason": "absolute ROS name required"
+    },
+    {
+      "path": "site.stop.external_stop_procedure",
+      "reason": "explicit external stop/support procedure required"
+    },
+    {
+      "path": "site.stop.policy",
+      "reason": "supported stop requires independent mechanical support"
+    },
+    {
+      "path": "site.electrical.nominal_voltage_v",
+      "reason": "confirmed hardware rating/test bound required"
+    },
+    {
+      "path": "site.electrical.minimum_voltage_v",
+      "reason": "confirmed hardware rating/test bound required"
+    },
+    {
+      "path": "site.electrical.maximum_voltage_v",
+      "reason": "confirmed hardware rating/test bound required"
+    },
+    {
+      "path": "site.electrical.continuous_current_a",
+      "reason": "confirmed hardware rating/test bound required"
+    },
+    {
+      "path": "site.electrical.peak_current_a",
+      "reason": "confirmed hardware rating/test bound required"
+    },
+    {
+      "path": "site.electrical.peak_duration_s",
+      "reason": "confirmed peak duration required"
+    },
+    {
+      "path": "site.electrical.measurement_and_stop_procedure",
+      "reason": "external monitoring procedure required"
+    }
+  ],
+  "inhibits": [
+    "hardware_enabled is not true",
+    "confirmation missing: power_and_basic_motion",
+    "confirmation missing: support_and_stop",
+    "confirmation missing: mapping_and_reference",
+    "confirmation missing: vision_and_clock",
+    "confirmation missing: jacobian_and_workspace",
+    "confirmation missing: sole_controller_owner"
+  ],
+  "site_sha256": "f0a213853abba6058656fddabf581dd5d3ec41a1b65b0be32aca794b1af56b87",
+  "session_sha256": "eaf532f1908cb4d4117123e0228651214a53d534f19a9a1a6754fb88590ebba0",
+  "binary_hash_valid": true,
+  "native_library_loaded": false,
+  "serial_devices_opened": false,
+  "device_identity_checked": false,
+  "physical_execution_verified": false
+}

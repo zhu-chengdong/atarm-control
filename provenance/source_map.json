@@ -1,0 +1,1530 @@
+[
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/.gitignore",
+    "path": ".gitignore",
+    "source_sha256": "bf5c617dad054e7a9c79272aa8c38f4e7108c41f5d1d7dc5144d9e4a7469ff0c",
+    "published_sha256": "0cf086738d5492cbf899cbacbf633d5e142fe2715a66fcf66291bbe621bf456c",
+    "modified_in_copy": true,
+    "bytes": 15
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/__init__.py",
+    "path": "atarm_controller/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modified_in_copy": false,
+    "bytes": 0
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/actuator_io.py",
+    "path": "atarm_controller/actuator_io.py",
+    "source_sha256": "d2857a1d2364aadfb6f5cd5af556f572baa4e7e8aa115fcb4bbee3f0a5279fd4",
+    "published_sha256": "d2857a1d2364aadfb6f5cd5af556f572baa4e7e8aa115fcb4bbee3f0a5279fd4",
+    "modified_in_copy": false,
+    "bytes": 8890
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/arm_controller_lib.py",
+    "path": "atarm_controller/arm_controller_lib.py",
+    "source_sha256": "60141e8ef8d49ce0e4cc40e7cdb052c97edeabbe88afc1c5828b4c67f3aea569",
+    "published_sha256": "60141e8ef8d49ce0e4cc40e7cdb052c97edeabbe88afc1c5828b4c67f3aea569",
+    "modified_in_copy": false,
+    "bytes": 58228
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/arm_controller_node.py",
+    "path": "atarm_controller/arm_controller_node.py",
+    "source_sha256": "03cfe858e563a38dc36e2c0ce8f24e8f7a72aa5515e22faecc89a2f393665eda",
+    "published_sha256": "03cfe858e563a38dc36e2c0ce8f24e8f7a72aa5515e22faecc89a2f393665eda",
+    "modified_in_copy": false,
+    "bytes": 17709
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/camera_cycle.py",
+    "path": "atarm_controller/camera_cycle.py",
+    "source_sha256": "a37cf6c089a12f99d61070ade0eccc64d01c309d7bd9d3d8605d566550f69c28",
+    "published_sha256": "a37cf6c089a12f99d61070ade0eccc64d01c309d7bd9d3d8605d566550f69c28",
+    "modified_in_copy": false,
+    "bytes": 12767
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/camera_feedback.py",
+    "path": "atarm_controller/camera_feedback.py",
+    "source_sha256": "528cf3ea07f812cc26206179c3a8305a40a7e81700dc3bea1edaf7352651c10d",
+    "published_sha256": "528cf3ea07f812cc26206179c3a8305a40a7e81700dc3bea1edaf7352651c10d",
+    "modified_in_copy": false,
+    "bytes": 7193
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/camera_recovery.py",
+    "path": "atarm_controller/camera_recovery.py",
+    "source_sha256": "fe70e0d0480ed0bbc50f853bff71bda92b15d120345308a12b550087cf69919a",
+    "published_sha256": "fe70e0d0480ed0bbc50f853bff71bda92b15d120345308a12b550087cf69919a",
+    "modified_in_copy": false,
+    "bytes": 10951
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_control.py",
+    "path": "atarm_controller/cartesian_control.py",
+    "source_sha256": "431b724b5f85f46f1e1e07962695bcd491f79268aa7e70134d855199513f1cf5",
+    "published_sha256": "431b724b5f85f46f1e1e07962695bcd491f79268aa7e70134d855199513f1cf5",
+    "modified_in_copy": false,
+    "bytes": 21359
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_fd_node.py",
+    "path": "atarm_controller/cartesian_fd_node.py",
+    "source_sha256": "514dac3f23a343c90375fe76d07121ae6267752cbb36497d0d572e4c0c11c4eb",
+    "published_sha256": "514dac3f23a343c90375fe76d07121ae6267752cbb36497d0d572e4c0c11c4eb",
+    "modified_in_copy": false,
+    "bytes": 4244
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_fd_runtime.py",
+    "path": "atarm_controller/cartesian_fd_runtime.py",
+    "source_sha256": "a1b795bd5ff0cef72a872fe2e33a826a9e72db87f2e0354540d353d64d84fdb2",
+    "published_sha256": "a1b795bd5ff0cef72a872fe2e33a826a9e72db87f2e0354540d353d64d84fdb2",
+    "modified_in_copy": false,
+    "bytes": 9742
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_jobs.py",
+    "path": "atarm_controller/cartesian_jobs.py",
+    "source_sha256": "4403df5df8a9c1d2e132ca73017bd4cf94d429fd6626bfdb20e0bf11bb904f4f",
+    "published_sha256": "4403df5df8a9c1d2e132ca73017bd4cf94d429fd6626bfdb20e0bf11bb904f4f",
+    "modified_in_copy": false,
+    "bytes": 10340
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_math.py",
+    "path": "atarm_controller/cartesian_math.py",
+    "source_sha256": "cbd252f118d889e25ffd371817ed10b4aa777f408d47cbaa211452022656895c",
+    "published_sha256": "cbd252f118d889e25ffd371817ed10b4aa777f408d47cbaa211452022656895c",
+    "modified_in_copy": false,
+    "bytes": 2294
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_sim_node.py",
+    "path": "atarm_controller/cartesian_sim_node.py",
+    "source_sha256": "41c2e09871fea2f865a4a154c613b946802e1600c0582acb86a2e5164f5c5caf",
+    "published_sha256": "41c2e09871fea2f865a4a154c613b946802e1600c0582acb86a2e5164f5c5caf",
+    "modified_in_copy": false,
+    "bytes": 3797
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_simulation.py",
+    "path": "atarm_controller/cartesian_simulation.py",
+    "source_sha256": "d60c04c6fa6d0db5148d9119990cb9f0a4c8627187f20dbfb86198f8c2af2f4f",
+    "published_sha256": "d60c04c6fa6d0db5148d9119990cb9f0a4c8627187f20dbfb86198f8c2af2f4f",
+    "modified_in_copy": false,
+    "bytes": 5437
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/commissioning_config.py",
+    "path": "atarm_controller/commissioning_config.py",
+    "source_sha256": "57ea76df1f8668e7897ac9fb1ec0be982bec21cce45db37dca28ccb65a183531",
+    "published_sha256": "57ea76df1f8668e7897ac9fb1ec0be982bec21cce45db37dca28ccb65a183531",
+    "modified_in_copy": false,
+    "bytes": 11822
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/commissioning_launcher.py",
+    "path": "atarm_controller/commissioning_launcher.py",
+    "source_sha256": "f321660e05817ebcfdaec3eb8072dbb83a3762991d5db7f8a2913197a827d2c5",
+    "published_sha256": "f321660e05817ebcfdaec3eb8072dbb83a3762991d5db7f8a2913197a827d2c5",
+    "modified_in_copy": false,
+    "bytes": 3261
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/coupled_bend.py",
+    "path": "atarm_controller/coupled_bend.py",
+    "source_sha256": "ff49cbf9fa7d0eb18431f49a6898d6482e3c9050614eeb9153e240b04a562993",
+    "published_sha256": "ff49cbf9fa7d0eb18431f49a6898d6482e3c9050614eeb9153e240b04a562993",
+    "modified_in_copy": false,
+    "bytes": 22147
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/end_effector_controller.py",
+    "path": "atarm_controller/end_effector_controller.py",
+    "source_sha256": "9ba60fc560351e5dc381f3c3d017e00a10414b15b6091e3e97720e18ec5a0e26",
+    "published_sha256": "9ba60fc560351e5dc381f3c3d017e00a10414b15b6091e3e97720e18ec5a0e26",
+    "modified_in_copy": false,
+    "bytes": 19282
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/external_vision.py",
+    "path": "atarm_controller/external_vision.py",
+    "source_sha256": "da0236f730c9c90a17f3c01cb2d7fe12cb886994d85d987628bda6358b90cbff",
+    "published_sha256": "da0236f730c9c90a17f3c01cb2d7fe12cb886994d85d987628bda6358b90cbff",
+    "modified_in_copy": false,
+    "bytes": 3818
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/motion_checks.py",
+    "path": "atarm_controller/motion_checks.py",
+    "source_sha256": "83bb7fc5309cf291e1817a639debcb36e3ebb18346906a71a7bc9a8391fbdd5d",
+    "published_sha256": "83bb7fc5309cf291e1817a639debcb36e3ebb18346906a71a7bc9a8391fbdd5d",
+    "modified_in_copy": false,
+    "bytes": 4091
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/online_jacobian.py",
+    "path": "atarm_controller/online_jacobian.py",
+    "source_sha256": "78239e70510daa0daeaeef06ccc8c585e1f2339f05422acb1ad73765a418f262",
+    "published_sha256": "78239e70510daa0daeaeef06ccc8c585e1f2339f05422acb1ad73765a418f262",
+    "modified_in_copy": false,
+    "bytes": 7083
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/physical_uart.py",
+    "path": "atarm_controller/physical_uart.py",
+    "source_sha256": "08bf7765746fc21bbb43df17d9746edd7aca572e6c0db2c9d607dfbf083dbb36",
+    "published_sha256": "08bf7765746fc21bbb43df17d9746edd7aca572e6c0db2c9d607dfbf083dbb36",
+    "modified_in_copy": false,
+    "bytes": 5660
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/progress_window.py",
+    "path": "atarm_controller/progress_window.py",
+    "source_sha256": "3e01f9ce37a9c849cbe29e7c830ff7771243d5673537f5c5304844e461d3a193",
+    "published_sha256": "3e01f9ce37a9c849cbe29e7c830ff7771243d5673537f5c5304844e461d3a193",
+    "modified_in_copy": false,
+    "bytes": 9907
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/recovery_probe.py",
+    "path": "atarm_controller/recovery_probe.py",
+    "source_sha256": "04f55a5244ef08bc0490c0d212dea17f33e8ea9a05c46e2f897b253e00d919d9",
+    "published_sha256": "04f55a5244ef08bc0490c0d212dea17f33e8ea9a05c46e2f897b253e00d919d9",
+    "modified_in_copy": false,
+    "bytes": 11005
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/ros_control_config.py",
+    "path": "atarm_controller/ros_control_config.py",
+    "source_sha256": "bf44b571ea070a07f6347fa99d7b65890b5db9f2059cdaaa436fc7549c6fe63e",
+    "published_sha256": "bf44b571ea070a07f6347fa99d7b65890b5db9f2059cdaaa436fc7549c6fe63e",
+    "modified_in_copy": false,
+    "bytes": 2103
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/ros_motion_worker.py",
+    "path": "atarm_controller/ros_motion_worker.py",
+    "source_sha256": "303ac94efffb3a80b5945882dcbd3d7754b265aa13c753630a9d1c8514e46440",
+    "published_sha256": "303ac94efffb3a80b5945882dcbd3d7754b265aa13c753630a9d1c8514e46440",
+    "modified_in_copy": false,
+    "bytes": 7234
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/ros_pose_bridge.py",
+    "path": "atarm_controller/ros_pose_bridge.py",
+    "source_sha256": "e9e062d9a9a1fa8adc78cf7fc4b1d27c3401a1e2489085cb2859c7a5bd7fcbfb",
+    "published_sha256": "e9e062d9a9a1fa8adc78cf7fc4b1d27c3401a1e2489085cb2859c7a5bd7fcbfb",
+    "modified_in_copy": false,
+    "bytes": 5604
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/serial_adapter.py",
+    "path": "atarm_controller/serial_adapter.py",
+    "source_sha256": "b101ea0b7ce9dbdc1435472bd59b6d0e6646619cf66df69c0169867395147842",
+    "published_sha256": "b101ea0b7ce9dbdc1435472bd59b6d0e6646619cf66df69c0169867395147842",
+    "modified_in_copy": false,
+    "bytes": 6158
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/visual_servo.py",
+    "path": "atarm_controller/visual_servo.py",
+    "source_sha256": "b9dde56b9f25f0dbbf79dd3925211afa2324a65c5fc913d268227a67311dfea9",
+    "published_sha256": "b9dde56b9f25f0dbbf79dd3925211afa2324a65c5fc913d268227a67311dfea9",
+    "modified_in_copy": false,
+    "bytes": 9956
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/CAMERA_FEEDBACK_NOTES.md",
+    "path": "CAMERA_FEEDBACK_NOTES.md",
+    "source_sha256": "473e2fc267f4e2482777883274c2a6529ac30e06405722a25aef3b1354852acf",
+    "published_sha256": "473e2fc267f4e2482777883274c2a6529ac30e06405722a25aef3b1354852acf",
+    "modified_in_copy": false,
+    "bytes": 1696
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/CARTESIAN_OFFLINE_README.md",
+    "path": "CARTESIAN_OFFLINE_README.md",
+    "source_sha256": "f2090895237d73927d52774b52b617cccbe8b9bd6d2c2c9844e4735c4ce6fa9e",
+    "published_sha256": "84d1e7521117ac36deb6ae1cac7f07eae989cb3d0c8c16aa884c7b47a424b9d7",
+    "modified_in_copy": true,
+    "bytes": 1007
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/COMMISSIONING_README.md",
+    "path": "COMMISSIONING_README.md",
+    "source_sha256": "c1d2ce0746175edb14daf93d1d8aafc49f82fe1cad33ff1013f940348971fa90",
+    "published_sha256": "ff02272a103f2230f44bf9204bd15b2cce5f058573430ebfb29d8caf3cba2b9a",
+    "modified_in_copy": true,
+    "bytes": 1059
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/COMMISSIONING_SOURCE_PROVENANCE.json",
+    "path": "COMMISSIONING_SOURCE_PROVENANCE.json",
+    "source_sha256": "e60b77bdd698b13aed3cd8475489a00bdc2552103698ea19436292343edd881b",
+    "published_sha256": "e60b77bdd698b13aed3cd8475489a00bdc2552103698ea19436292343edd881b",
+    "modified_in_copy": false,
+    "bytes": 4972
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/COMPLETE_CYCLE_NOTES.md",
+    "path": "COMPLETE_CYCLE_NOTES.md",
+    "source_sha256": "73bee884b18e0a961873da7b14e366d87214185b9e1335b2aa48306ee9faeee2",
+    "published_sha256": "73bee884b18e0a961873da7b14e366d87214185b9e1335b2aa48306ee9faeee2",
+    "modified_in_copy": false,
+    "bytes": 3236
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/commissioning/session.template.json",
+    "path": "config/commissioning/session.template.json",
+    "source_sha256": "eaf532f1908cb4d4117123e0228651214a53d534f19a9a1a6754fb88590ebba0",
+    "published_sha256": "eaf532f1908cb4d4117123e0228651214a53d534f19a9a1a6754fb88590ebba0",
+    "modified_in_copy": false,
+    "bytes": 2791
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/commissioning/site.template.json",
+    "path": "config/commissioning/site.template.json",
+    "source_sha256": "f0a213853abba6058656fddabf581dd5d3ec41a1b65b0be32aca794b1af56b87",
+    "published_sha256": "f0a213853abba6058656fddabf581dd5d3ec41a1b65b0be32aca794b1af56b87",
+    "modified_in_copy": false,
+    "bytes": 1924
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/commissioning/source_audit_20261030_r1/historical_defaults.reference.json",
+    "path": "config/commissioning/source_audit_20261030_r1/historical_defaults.reference.json",
+    "source_sha256": "b20c48338006ebb4e2fb90d8d7646cf729148f450fe3b849c42123d2ff42bdfb",
+    "published_sha256": "b20c48338006ebb4e2fb90d8d7646cf729148f450fe3b849c42123d2ff42bdfb",
+    "modified_in_copy": false,
+    "bytes": 15977
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/commissioning/source_audit_20261030_r1/parameter_evidence.json",
+    "path": "config/commissioning/source_audit_20261030_r1/parameter_evidence.json",
+    "source_sha256": "0de6687b2c973e8b8720adacd90e5db26f9cb05042dbda42942be3221d5d848d",
+    "published_sha256": "0de6687b2c973e8b8720adacd90e5db26f9cb05042dbda42942be3221d5d848d",
+    "modified_in_copy": false,
+    "bytes": 50748
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/commissioning/source_audit_20261030_r1/README.md",
+    "path": "config/commissioning/source_audit_20261030_r1/README.md",
+    "source_sha256": "08d2cb17eb5bc862aba899611ef25ad230070f205c040142972a9c8990b81d13",
+    "published_sha256": "973d95de0f22172888b1f94bbe6c82ea631c6711de1f32f8abb569ace4939b88",
+    "modified_in_copy": true,
+    "bytes": 1413
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/commissioning/source_audit_20261030_r1/session.template.json",
+    "path": "config/commissioning/source_audit_20261030_r1/session.template.json",
+    "source_sha256": "f770c634be6656e9c3e79d315095ca5e40f538ef35c877c8e353f384973a3eba",
+    "published_sha256": "f770c634be6656e9c3e79d315095ca5e40f538ef35c877c8e353f384973a3eba",
+    "modified_in_copy": false,
+    "bytes": 2787
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/commissioning/source_audit_20261030_r1/site.template.json",
+    "path": "config/commissioning/source_audit_20261030_r1/site.template.json",
+    "source_sha256": "0dc324615d71d36c8a9f95f8f43739d65168057ba3e607e6fd6b8be9f79b3fa6",
+    "published_sha256": "0dc324615d71d36c8a9f95f8f43739d65168057ba3e607e6fd6b8be9f79b3fa6",
+    "modified_in_copy": false,
+    "bytes": 1990
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/offline_fd_validation.json",
+    "path": "config/offline_fd_validation.json",
+    "source_sha256": "61670b83f6f04fb9167cd386753178a93751bb99d8603ead11da31887ab06df8",
+    "published_sha256": "61670b83f6f04fb9167cd386753178a93751bb99d8603ead11da31887ab06df8",
+    "modified_in_copy": false,
+    "bytes": 3534
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/ros_simulation_only.json",
+    "path": "config/ros_simulation_only.json",
+    "source_sha256": "1e6eec2ad7fd4f7e5da012b24fa81be2faa27dcc15a0058c71b33506489afb84",
+    "published_sha256": "1e6eec2ad7fd4f7e5da012b24fa81be2faa27dcc15a0058c71b33506489afb84",
+    "modified_in_copy": false,
+    "bytes": 7158
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/CONFIRM_BUDGET_NOTES.md",
+    "path": "CONFIRM_BUDGET_NOTES.md",
+    "source_sha256": "7e802cd353851086bb618977f7be94f3e941abf9b04ea3c7fbb7378c962be92c",
+    "published_sha256": "7e802cd353851086bb618977f7be94f3e941abf9b04ea3c7fbb7378c962be92c",
+    "modified_in_copy": false,
+    "bytes": 1015
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/CONFIRM_PAUSE_NOTES.md",
+    "path": "CONFIRM_PAUSE_NOTES.md",
+    "source_sha256": "eab06c5aac8c31c227a9e8927ced5a4935abc8dfc3dd85d5ab53b90b979f07b6",
+    "published_sha256": "eab06c5aac8c31c227a9e8927ced5a4935abc8dfc3dd85d5ab53b90b979f07b6",
+    "modified_in_copy": false,
+    "bytes": 1155
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/COUPLED_BEND_NOTES.md",
+    "path": "COUPLED_BEND_NOTES.md",
+    "source_sha256": "e48e18deb50d70810140bcfe726a338f4011ba16b30e9d0384a71f7024985bb7",
+    "published_sha256": "e48e18deb50d70810140bcfe726a338f4011ba16b30e9d0384a71f7024985bb7",
+    "modified_in_copy": false,
+    "bytes": 3154
+  },
+  {
+    "source": "02_Documents/cartesian_fd_20261030_v3/执行器与视觉接入验证报告.md",
+    "path": "docs/reports/cartesian_fd_20261030_v3/执行器与视觉接入验证报告.md",
+    "source_sha256": "279be88b14ed6c9103314303b702c01794c1e17402509809f76ae3557a2e09f9",
+    "published_sha256": "279be88b14ed6c9103314303b702c01794c1e17402509809f76ae3557a2e09f9",
+    "modified_in_copy": false,
+    "bytes": 12681
+  },
+  {
+    "source": "02_Documents/cartesian_ros_sim_20261030_v2/ROS接入与验证报告.md",
+    "path": "docs/reports/cartesian_ros_sim_20261030_v2/ROS接入与验证报告.md",
+    "source_sha256": "21ecde315547bd9b32ad08cd47fa9037c7a1e288773e4a9a7e89df2b88479ae6",
+    "published_sha256": "21ecde315547bd9b32ad08cd47fa9037c7a1e288773e4a9a7e89df2b88479ae6",
+    "modified_in_copy": false,
+    "bytes": 5765
+  },
+  {
+    "source": "02_Documents/cartesian_sim_20261030_v1/实现与验证报告.md",
+    "path": "docs/reports/cartesian_sim_20261030_v1/实现与验证报告.md",
+    "source_sha256": "89ac0c2aadce7ca3bd5ea6fed687c26ccb8e5a073c07b35cc6a2d459b540279b",
+    "published_sha256": "89ac0c2aadce7ca3bd5ea6fed687c26ccb8e5a073c07b35cc6a2d459b540279b",
+    "modified_in_copy": false,
+    "bytes": 7023
+  },
+  {
+    "source": "02_Documents/commissioning_entry_20261030_v4/启动与切换说明.md",
+    "path": "docs/reports/commissioning_entry_20261030_v4/启动与切换说明.md",
+    "source_sha256": "0a217e47be9ea118f476b83087a369e9304e328b4d8d2d4592a747406c1f44bb",
+    "published_sha256": "5dadbf27cb768dbce62eb1fbb49c9d5eead80526c18e7eba9c6947858a9c531d",
+    "modified_in_copy": true,
+    "bytes": 9505
+  },
+  {
+    "source": "02_Documents/commissioning_entry_20261030_v4/现场参数确认表.md",
+    "path": "docs/reports/commissioning_entry_20261030_v4/现场参数确认表.md",
+    "source_sha256": "a0b3de65dbb2c4949ddcc74e0ed403c2be307fb4043349b8831e31b7f414fd7b",
+    "published_sha256": "a0b3de65dbb2c4949ddcc74e0ed403c2be307fb4043349b8831e31b7f414fd7b",
+    "modified_in_copy": false,
+    "bytes": 10098
+  },
+  {
+    "source": "02_Documents/commissioning_entry_20261030_v4/离线验证记录.md",
+    "path": "docs/reports/commissioning_entry_20261030_v4/离线验证记录.md",
+    "source_sha256": "c8ea64ab8a5a472a72a95c656324ab87d88f98efcc65fc9c5ab5e276b4a84a62",
+    "published_sha256": "c8ea64ab8a5a472a72a95c656324ab87d88f98efcc65fc9c5ab5e276b4a84a62",
+    "modified_in_copy": false,
+    "bytes": 4022
+  },
+  {
+    "source": "02_Documents/commissioning_parameters_20261030_r1/剩余现场确认事项.md",
+    "path": "docs/reports/commissioning_parameters_20261030_r1/剩余现场确认事项.md",
+    "source_sha256": "fabbb6ee0cd3d7272c6c69c34d2ae2044a35e66f667e7f1944b897912fc1a529",
+    "published_sha256": "fabbb6ee0cd3d7272c6c69c34d2ae2044a35e66f667e7f1944b897912fc1a529",
+    "modified_in_copy": false,
+    "bytes": 4157
+  },
+  {
+    "source": "02_Documents/commissioning_parameters_20261030_r1/参数核查与回填报告.md",
+    "path": "docs/reports/commissioning_parameters_20261030_r1/参数核查与回填报告.md",
+    "source_sha256": "ce8c59cfeb2491529041670f2506fd927243523b7772cd86f371b89e80f099ef",
+    "published_sha256": "dca2ef5378d2e03674e0b9a418efddbbf7583759acbd46f2a381f3d4958af43c",
+    "modified_in_copy": true,
+    "bytes": 8413
+  },
+  {
+    "source": "02_Documents/commissioning_parameters_sync_20261030_r1/同步与预检回执.md",
+    "path": "docs/reports/commissioning_parameters_sync_20261030_r1/同步与预检回执.md",
+    "source_sha256": "6f4b2c328f3ce967654506f412a382665d66a11665fa0910f7b79aba3f8a831a",
+    "published_sha256": "6f4b2c328f3ce967654506f412a382665d66a11665fa0910f7b79aba3f8a831a",
+    "modified_in_copy": false,
+    "bytes": 4062
+  },
+  {
+    "source": "02_Documents/hardware_commissioning_20261030_v1/README.md",
+    "path": "docs/reports/hardware_commissioning_20261030_v1/README.md",
+    "source_sha256": "e66122e86ca01c7053ba56b448accf6113badcbe0c7edf143d5896508f8f23c5",
+    "published_sha256": "e66122e86ca01c7053ba56b448accf6113badcbe0c7edf143d5896508f8f23c5",
+    "modified_in_copy": false,
+    "bytes": 1019
+  },
+  {
+    "source": "02_Documents/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "path": "docs/reports/hardware_commissioning_20261030_v1/实机测试流程.md",
+    "source_sha256": "e254ee9111ef23536ac1b208b26c9596b0bdd11cbcee482fef16a8c2224dc2ab",
+    "published_sha256": "6cfdc431698a7997045bbc15b1966f60303eb0e84e99e8c0fb5e1ce38b4e6b74",
+    "modified_in_copy": true,
+    "bytes": 28245
+  },
+  {
+    "source": "02_Documents/hardware_commissioning_20261030_v1/现场记录与检查表.md",
+    "path": "docs/reports/hardware_commissioning_20261030_v1/现场记录与检查表.md",
+    "source_sha256": "ad7b907ca8fdab2f00aec1af0336e8f450f18bb362d06ede16b89aff94d6ae33",
+    "published_sha256": "ad7b907ca8fdab2f00aec1af0336e8f450f18bb362d06ede16b89aff94d6ae33",
+    "modified_in_copy": false,
+    "bytes": 6675
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/EARLY_PROGRESS_NOTES.md",
+    "path": "EARLY_PROGRESS_NOTES.md",
+    "source_sha256": "d14e70813d391bbde02bad9d52f49a2e566203fa09f66d9b8a9a320e9809a51b",
+    "published_sha256": "d14e70813d391bbde02bad9d52f49a2e566203fa09f66d9b8a9a320e9809a51b",
+    "modified_in_copy": false,
+    "bytes": 1399
+  },
+  {
+    "source": "04_Test_Results/cartesian_ros_sim_20261030_v2/ros05/results.json",
+    "path": "evidence/cartesian_ros_sim_20261030_v2/ros05/results.json",
+    "source_sha256": "8f1d3c9b3080c5a4019d31960f55c24a0ddeabad5297140e56c815d77c00eb48",
+    "published_sha256": "8f1d3c9b3080c5a4019d31960f55c24a0ddeabad5297140e56c815d77c00eb48",
+    "modified_in_copy": false,
+    "bytes": 55479
+  },
+  {
+    "source": "04_Test_Results/cartesian_sim_20261030_v1/case_summary.csv",
+    "path": "evidence/cartesian_sim_20261030_v1/case_summary.csv",
+    "source_sha256": "a6cbf1fdcc3f7fdb9dc638bf49753efaee4692535f5a80d5fee581899f46b394",
+    "published_sha256": "a6cbf1fdcc3f7fdb9dc638bf49753efaee4692535f5a80d5fee581899f46b394",
+    "modified_in_copy": false,
+    "bytes": 2719
+  },
+  {
+    "source": "04_Test_Results/cartesian_sim_20261030_v1/execution_scope.json",
+    "path": "evidence/cartesian_sim_20261030_v1/execution_scope.json",
+    "source_sha256": "11b2d64f7a32dc5986b3cc11278663f10bb6517222545c30fe8f5085c697de1d",
+    "published_sha256": "11b2d64f7a32dc5986b3cc11278663f10bb6517222545c30fe8f5085c697de1d",
+    "modified_in_copy": false,
+    "bytes": 719
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/build01/offline/build_receipt.json",
+    "path": "evidence/commissioning_entry_20261030_v4/build01/offline/build_receipt.json",
+    "source_sha256": "19aac31b494fe280792942a0394dbedb4f0b063fc354166082662cc5b0b2c02f",
+    "published_sha256": "19aac31b494fe280792942a0394dbedb4f0b063fc354166082662cc5b0b2c02f",
+    "modified_in_copy": false,
+    "bytes": 633
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/build01/physical/build_receipt.json",
+    "path": "evidence/commissioning_entry_20261030_v4/build01/physical/build_receipt.json",
+    "source_sha256": "5607d8ceca2050571177b36c3a92724ea91ea82d9d8fbd76534ff682622e2f8c",
+    "published_sha256": "5607d8ceca2050571177b36c3a92724ea91ea82d9d8fbd76534ff682622e2f8c",
+    "modified_in_copy": false,
+    "bytes": 635
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/entry_check01/result.json",
+    "path": "evidence/commissioning_entry_20261030_v4/entry_check01/result.json",
+    "source_sha256": "cfd1f5eaae0969b12f0c6e1b227d9cac30ac83043317bb264142dfa4ebd8c6db",
+    "published_sha256": "cfd1f5eaae0969b12f0c6e1b227d9cac30ac83043317bb264142dfa4ebd8c6db",
+    "modified_in_copy": false,
+    "bytes": 1553
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/entry_check01/stderr.log",
+    "path": "evidence/commissioning_entry_20261030_v4/entry_check01/stderr.log",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modified_in_copy": false,
+    "bytes": 0
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/entry_check01/stdout.json",
+    "path": "evidence/commissioning_entry_20261030_v4/entry_check01/stdout.json",
+    "source_sha256": "30457778e69095813edb30efdc6bbf3bae5a45fce240c21e3427108a367f9ffc",
+    "published_sha256": "30457778e69095813edb30efdc6bbf3bae5a45fce240c21e3427108a367f9ffc",
+    "modified_in_copy": false,
+    "bytes": 21536
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/linux_checks.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/linux_checks.json",
+    "source_sha256": "7fd0363284b0b8e7d1af0871e3920ac477c8ee0609aadee86b7fea05b92800ec",
+    "published_sha256": "7fd0363284b0b8e7d1af0871e3920ac477c8ee0609aadee86b7fea05b92800ec",
+    "modified_in_copy": false,
+    "bytes": 137
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/results.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/results.json",
+    "source_sha256": "76728a164e97b274a65efd12d5d420e8abf808c8ce214b17cf55e9a8acc97e86",
+    "published_sha256": "76728a164e97b274a65efd12d5d420e8abf808c8ce214b17cf55e9a8acc97e86",
+    "modified_in_copy": false,
+    "bytes": 452
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/bad_crc/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/bad_crc/case.json",
+    "source_sha256": "fb0fb397e805a632752edc3e5251c192b7f984d7a84bd1434ad70641b6a53947",
+    "published_sha256": "fb0fb397e805a632752edc3e5251c192b7f984d7a84bd1434ad70641b6a53947",
+    "modified_in_copy": false,
+    "bytes": 3432
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/cancel/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/cancel/case.json",
+    "source_sha256": "96a70b3bf655a6f8ba735c0bbc65d2a4dc36edc6026054d8ea0743a1daff312a",
+    "published_sha256": "96a70b3bf655a6f8ba735c0bbc65d2a4dc36edc6026054d8ea0743a1daff312a",
+    "modified_in_copy": false,
+    "bytes": 3785
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/complete/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/complete/case.json",
+    "source_sha256": "736973c8d846880140c8fc947bd36a1e8518bd183e3e4c5140268135712bca2d",
+    "published_sha256": "736973c8d846880140c8fc947bd36a1e8518bd183e3e4c5140268135712bca2d",
+    "modified_in_copy": false,
+    "bytes": 3608
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/coordinated/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/coordinated/case.json",
+    "source_sha256": "135703bb018a25ceb8301481d9bc9faef7d18c684bdb8b5c1544b90f37653b51",
+    "published_sha256": "135703bb018a25ceb8301481d9bc9faef7d18c684bdb8b5c1544b90f37653b51",
+    "modified_in_copy": false,
+    "bytes": 3001
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/delayed_pose/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/delayed_pose/case.json",
+    "source_sha256": "2e69386f708ae3b464053d54db4ced5f56572123455d527fa628298d645c2809",
+    "published_sha256": "2e69386f708ae3b464053d54db4ced5f56572123455d527fa628298d645c2809",
+    "modified_in_copy": false,
+    "bytes": 3529
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/false_encoder/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/false_encoder/case.json",
+    "source_sha256": "86baf3c85061413f8f05dedad25a7f7fe54061636f62f11cc427785be8d1b737",
+    "published_sha256": "86baf3c85061413f8f05dedad25a7f7fe54061636f62f11cc427785be8d1b737",
+    "modified_in_copy": false,
+    "bytes": 3519
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/frozen_pose/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/frozen_pose/case.json",
+    "source_sha256": "918b1e390b115fc9362e157c8b4a80d270592bf64d73d30c0ecda35de2b5e70a",
+    "published_sha256": "918b1e390b115fc9362e157c8b4a80d270592bf64d73d30c0ecda35de2b5e70a",
+    "modified_in_copy": false,
+    "bytes": 3491
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/hold_fault/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/hold_fault/case.json",
+    "source_sha256": "e5c9457bd8f8f74b7c4ec9a585cdc8eacb2857023273a67e2e38b9940ed1706c",
+    "published_sha256": "e5c9457bd8f8f74b7c4ec9a585cdc8eacb2857023273a67e2e38b9940ed1706c",
+    "modified_in_copy": false,
+    "bytes": 5512
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/map_reset/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/map_reset/case.json",
+    "source_sha256": "bb57117a1fc079719e8bb72ee50f66660662eb9cbbe22a823b3bc1d54c048be2",
+    "published_sha256": "bb57117a1fc079719e8bb72ee50f66660662eb9cbbe22a823b3bc1d54c048be2",
+    "modified_in_copy": false,
+    "bytes": 3522
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/motor_error/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/motor_error/case.json",
+    "source_sha256": "ebed8a907ee7ec3c9d46b439048986e089e4b455ae22ccd12e6796f6a8f355c3",
+    "published_sha256": "ebed8a907ee7ec3c9d46b439048986e089e4b455ae22ccd12e6796f6a8f355c3",
+    "modified_in_copy": false,
+    "bytes": 3450
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/nonmetric/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/nonmetric/case.json",
+    "source_sha256": "0d63727c2c1caeeec3b514a652769093d512be03b52c5ccd3a1f06e81a47562d",
+    "published_sha256": "0d63727c2c1caeeec3b514a652769093d512be03b52c5ccd3a1f06e81a47562d",
+    "modified_in_copy": false,
+    "bytes": 3532
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/reference_mismatch/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/reference_mismatch/case.json",
+    "source_sha256": "0df7adeb233dc82ba31d93de4c8f177e7926e739c8122100abc394e161dc3625",
+    "published_sha256": "0df7adeb233dc82ba31d93de4c8f177e7926e739c8122100abc394e161dc3625",
+    "modified_in_copy": false,
+    "bytes": 2123
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/results.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/results.json",
+    "source_sha256": "de317d77435f65fe091a5365fc65efec68488f82d89616d0ea59d0edf2b2f70b",
+    "published_sha256": "de317d77435f65fe091a5365fc65efec68488f82d89616d0ea59d0edf2b2f70b",
+    "modified_in_copy": false,
+    "bytes": 3484
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/shutdown/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/shutdown/case.json",
+    "source_sha256": "142c39881715caee223aad8135ecebd87ae6c4d1d3301436ace3a77bdd8026f3",
+    "published_sha256": "142c39881715caee223aad8135ecebd87ae6c4d1d3301436ace3a77bdd8026f3",
+    "modified_in_copy": false,
+    "bytes": 912
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/stall/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/stall/case.json",
+    "source_sha256": "2907e326dfc3f715518f55ec5df84afc782b68a0ba85219f691c926e9394db2c",
+    "published_sha256": "2907e326dfc3f715518f55ec5df84afc782b68a0ba85219f691c926e9394db2c",
+    "modified_in_copy": false,
+    "bytes": 3498
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/timeout/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/timeout/case.json",
+    "source_sha256": "89bead862d88a3125704c5885c7a94126251f14a2dae77a4956ea00b828730c7",
+    "published_sha256": "89bead862d88a3125704c5885c7a94126251f14a2dae77a4956ea00b828730c7",
+    "modified_in_copy": false,
+    "bytes": 3432
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/tracking_lost/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/tracking_lost/case.json",
+    "source_sha256": "66c9593e3b8c5790a0b8da722cc385f0e614cd128d91a1b31aee69285d100913",
+    "published_sha256": "66c9593e3b8c5790a0b8da722cc385f0e614cd128d91a1b31aee69285d100913",
+    "modified_in_copy": false,
+    "bytes": 3511
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/wrong_frame/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/wrong_frame/case.json",
+    "source_sha256": "065ee4995a98562c7cd9fe29c06f9d2848cc4fd5c374a8a5938501ac4b7330bd",
+    "published_sha256": "065ee4995a98562c7cd9fe29c06f9d2848cc4fd5c374a8a5938501ac4b7330bd",
+    "modified_in_copy": false,
+    "bytes": 3534
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/ros_matrix/wrong_id/case.json",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/ros_matrix/wrong_id/case.json",
+    "source_sha256": "c3e558add9edb63fb7a66281e6683d72bd5dea58b23ace5f4883d51d7dcba2f9",
+    "published_sha256": "c3e558add9edb63fb7a66281e6683d72bd5dea58b23ace5f4883d51d7dcba2f9",
+    "modified_in_copy": false,
+    "bytes": 3437
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/test_cartesian_jobs.log",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/test_cartesian_jobs.log",
+    "source_sha256": "bce49f9c1e29794d4e96de8499b6882f310c8ce66ad2a9ec591101d19b666002",
+    "published_sha256": "bce49f9c1e29794d4e96de8499b6882f310c8ce66ad2a9ec591101d19b666002",
+    "modified_in_copy": false,
+    "bytes": 104
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/test_cartesian_offline.log",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/test_cartesian_offline.log",
+    "source_sha256": "c0c67c8006844b4fc1199f1e89ecdca60870e15542e554bf6c21db885fedf4b6",
+    "published_sha256": "c0c67c8006844b4fc1199f1e89ecdca60870e15542e554bf6c21db885fedf4b6",
+    "modified_in_copy": false,
+    "bytes": 121
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/test_commissioning.log",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/test_commissioning.log",
+    "source_sha256": "50ac56abe36c203693158480556f14f08b766ac8cfca32c4fcda6dcfd239b3c9",
+    "published_sha256": "50ac56abe36c203693158480556f14f08b766ac8cfca32c4fcda6dcfd239b3c9",
+    "modified_in_copy": false,
+    "bytes": 432
+  },
+  {
+    "source": "04_Test_Results/commissioning_entry_20261030_v4/validation01/test_fd_interfaces.log",
+    "path": "evidence/commissioning_entry_20261030_v4/validation01/test_fd_interfaces.log",
+    "source_sha256": "9b6baa0ba2826d866d055fcd6feb94141a98cb0404b710cc749a0ce29e7de351",
+    "published_sha256": "9b6baa0ba2826d866d055fcd6feb94141a98cb0404b710cc749a0ce29e7de351",
+    "modified_in_copy": false,
+    "bytes": 111
+  },
+  {
+    "source": "04_Test_Results/commissioning_parameters_20261030_r1/verification.json",
+    "path": "evidence/commissioning_parameters_20261030_r1/verification.json",
+    "source_sha256": "b5a1132e3d418dd3e9bc029262b2a4c6461f16ca25ef94762bbbb34f80220e6b",
+    "published_sha256": "b5a1132e3d418dd3e9bc029262b2a4c6461f16ca25ef94762bbbb34f80220e6b",
+    "modified_in_copy": false,
+    "bytes": 967
+  },
+  {
+    "source": "04_Test_Results/commissioning_parameters_sync_20261030_r1/check_receipt.json",
+    "path": "evidence/commissioning_parameters_sync_20261030_r1/check_receipt.json",
+    "source_sha256": "4ddc02db238a6584eb1dd5be86ef7ed636951279bfe1800a1717e987d1323691",
+    "published_sha256": "4ddc02db238a6584eb1dd5be86ef7ed636951279bfe1800a1717e987d1323691",
+    "modified_in_copy": false,
+    "bytes": 10025
+  },
+  {
+    "source": "04_Test_Results/commissioning_parameters_sync_20261030_r1/checks/as_shipped/stdout.json",
+    "path": "evidence/commissioning_parameters_sync_20261030_r1/checks/as_shipped/stdout.json",
+    "source_sha256": "c80d91ca20da03448c4a9cd3fcb82da51c7d973fdb0a5611a32090e88189cfa1",
+    "published_sha256": "c80d91ca20da03448c4a9cd3fcb82da51c7d973fdb0a5611a32090e88189cfa1",
+    "modified_in_copy": false,
+    "bytes": 18837
+  },
+  {
+    "source": "04_Test_Results/commissioning_parameters_sync_20261030_r1/checks/confirmation_flags_only/stdout.json",
+    "path": "evidence/commissioning_parameters_sync_20261030_r1/checks/confirmation_flags_only/stdout.json",
+    "source_sha256": "848876dcd4553dd99117ecd1376a675a1aec3cb08dc84c3bc8f1bd76d72ce206",
+    "published_sha256": "848876dcd4553dd99117ecd1376a675a1aec3cb08dc84c3bc8f1bd76d72ce206",
+    "modified_in_copy": false,
+    "bytes": 18501
+  },
+  {
+    "source": "04_Test_Results/commissioning_parameters_sync_20261030_r1/checks/history_is_not_site/stdout.json",
+    "path": "evidence/commissioning_parameters_sync_20261030_r1/checks/history_is_not_site/stdout.json",
+    "source_sha256": "4d12dda662d45f7cde042dbbadd3b97caad589368fd2aaa9a06ba8af39fc264c",
+    "published_sha256": "4d12dda662d45f7cde042dbbadd3b97caad589368fd2aaa9a06ba8af39fc264c",
+    "modified_in_copy": false,
+    "bytes": 91
+  },
+  {
+    "source": "04_Test_Results/commissioning_parameters_sync_20261030_r1/upload_manifest.json",
+    "path": "evidence/commissioning_parameters_sync_20261030_r1/upload_manifest.json",
+    "source_sha256": "276be418a83cba90961f14b8a4559720e7607540d88df49e2451a939b0e8d81c",
+    "published_sha256": "276be418a83cba90961f14b8a4559720e7607540d88df49e2451a939b0e8d81c",
+    "modified_in_copy": false,
+    "bytes": 2081
+  },
+  {
+    "source": "04_Test_Results/commissioning_parameters_sync_20261030_r1/verification.json",
+    "path": "evidence/commissioning_parameters_sync_20261030_r1/verification.json",
+    "source_sha256": "9cbc197a4339b997a3a2bd5040e45d8c61bba134056f2b09a6be4730b933b6a7",
+    "published_sha256": "9cbc197a4339b997a3a2bd5040e45d8c61bba134056f2b09a6be4730b933b6a7",
+    "modified_in_copy": false,
+    "bytes": 404
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/FD_CARTESIAN_README.md",
+    "path": "FD_CARTESIAN_README.md",
+    "source_sha256": "a75456ef678b9dd2215cb1f2d6761096b2fa94b4c9c6e69f4d8c85fc1ab4b964",
+    "published_sha256": "2f1ddc7be42d7df6e2e0355d908453bde989cdfa8e03d01b2c53c69fce7bb94c",
+    "modified_in_copy": true,
+    "bytes": 1047
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/FD_SOURCE_PROVENANCE.json",
+    "path": "FD_SOURCE_PROVENANCE.json",
+    "source_sha256": "40caffc3a64607e05e53e37921d7a0a7063ca87d7e0196a02928dbdec7f90c5a",
+    "published_sha256": "40caffc3a64607e05e53e37921d7a0a7063ca87d7e0196a02928dbdec7f90c5a",
+    "modified_in_copy": false,
+    "bytes": 3188
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/INTERMITTENT_NOTES.md",
+    "path": "INTERMITTENT_NOTES.md",
+    "source_sha256": "a88a2d261ff49b41b7a8416b731c2b28a89a6dbcceeb928dddc07e78373323cf",
+    "published_sha256": "a88a2d261ff49b41b7a8416b731c2b28a89a6dbcceeb928dddc07e78373323cf",
+    "modified_in_copy": false,
+    "bytes": 2430
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/LATE_JAM_NOTES.md",
+    "path": "LATE_JAM_NOTES.md",
+    "source_sha256": "096ecc0f57623733942330a7efa50a0a9867cce1920a5fef68cbcc8256130c01",
+    "published_sha256": "096ecc0f57623733942330a7efa50a0a9867cce1920a5fef68cbcc8256130c01",
+    "modified_in_copy": false,
+    "bytes": 2092
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/launch/arm_controller.launch.py",
+    "path": "launch/arm_controller.launch.py",
+    "source_sha256": "6d3e56101484f13308011b8c4f32340699192b61385c12767b37d67c02d633ca",
+    "published_sha256": "6d3e56101484f13308011b8c4f32340699192b61385c12767b37d67c02d633ca",
+    "modified_in_copy": false,
+    "bytes": 7221
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/launch/end_effector_controller.launch.py",
+    "path": "launch/end_effector_controller.launch.py",
+    "source_sha256": "6b447226a405478573b496b426de099b2a3ad5b1dc7280e8a47425ca9a206ecd",
+    "published_sha256": "6b447226a405478573b496b426de099b2a3ad5b1dc7280e8a47425ca9a206ecd",
+    "modified_in_copy": false,
+    "bytes": 4351
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/a1_serial.cpp",
+    "path": "native/a1_serial.cpp",
+    "source_sha256": "4d4a76d4b122371ff66df2607eae1b13419eae942662f5bec73d5e78376bfab1",
+    "published_sha256": "4d4a76d4b122371ff66df2607eae1b13419eae942662f5bec73d5e78376bfab1",
+    "modified_in_copy": false,
+    "bytes": 9286
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/a1_serial.h",
+    "path": "native/a1_serial.h",
+    "source_sha256": "5dc1c73cb82e6f524e00457ac3e0724bca8b20fcb10ac3083acf376bc82cf531",
+    "published_sha256": "5dc1c73cb82e6f524e00457ac3e0724bca8b20fcb10ac3083acf376bc82cf531",
+    "modified_in_copy": false,
+    "bytes": 869
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/CMakeLists.txt",
+    "path": "native/CMakeLists.txt",
+    "source_sha256": "0f6c74fc706fb941ec031b7272ddbe4509439b56b17f5604a8819c353e52fed9",
+    "published_sha256": "0f6c74fc706fb941ec031b7272ddbe4509439b56b17f5604a8819c353e52fed9",
+    "modified_in_copy": false,
+    "bytes": 1022
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/sdk_codec_probe.cpp",
+    "path": "native/sdk_codec_probe.cpp",
+    "source_sha256": "0223c52c3ed20d19ff13555041a1c91050a7d901e28dfe20b318fb23e93e0ff4",
+    "published_sha256": "0223c52c3ed20d19ff13555041a1c91050a7d901e28dfe20b318fb23e93e0ff4",
+    "modified_in_copy": false,
+    "bytes": 1615
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/vendor/include/crc/crc32.h",
+    "path": "native/vendor/include/crc/crc32.h",
+    "source_sha256": "a6a9bfd65948430087be8bd5b09ee972c74bf41ee278dc7e20171d46eb24d30c",
+    "published_sha256": "a6a9bfd65948430087be8bd5b09ee972c74bf41ee278dc7e20171d46eb24d30c",
+    "modified_in_copy": false,
+    "bytes": 747
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/vendor/include/IOPort/IOPort.h",
+    "path": "native/vendor/include/IOPort/IOPort.h",
+    "source_sha256": "95a6de8c76af5ebc5498eda4ab6164172a08efd390fad5b5660d6a050e771c4d",
+    "published_sha256": "95a6de8c76af5ebc5498eda4ab6164172a08efd390fad5b5660d6a050e771c4d",
+    "modified_in_copy": false,
+    "bytes": 1100
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/vendor/include/serialPort/SerialPort.h",
+    "path": "native/vendor/include/serialPort/SerialPort.h",
+    "source_sha256": "be00112679d84de4e5f4e969c62b2a362ec51af441396355589fcfde973b4551",
+    "published_sha256": "be00112679d84de4e5f4e969c62b2a362ec51af441396355589fcfde973b4551",
+    "modified_in_copy": false,
+    "bytes": 2601
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/vendor/include/unitreeMotor/include/motor_msg_A1B1.h",
+    "path": "native/vendor/include/unitreeMotor/include/motor_msg_A1B1.h",
+    "source_sha256": "eaba7f1e3a8fa91022487ebb7f709ad463c753e208eda4819f0e337695a38b01",
+    "published_sha256": "eaba7f1e3a8fa91022487ebb7f709ad463c753e208eda4819f0e337695a38b01",
+    "modified_in_copy": false,
+    "bytes": 6134
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/vendor/include/unitreeMotor/include/motor_msg_GO-M8010-6.h",
+    "path": "native/vendor/include/unitreeMotor/include/motor_msg_GO-M8010-6.h",
+    "source_sha256": "99a124c861db085d9120642b51fd5f0ee6014c513cd67f723d560b67904fed0b",
+    "published_sha256": "99a124c861db085d9120642b51fd5f0ee6014c513cd67f723d560b67904fed0b",
+    "modified_in_copy": false,
+    "bytes": 2506
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/vendor/include/unitreeMotor/unitreeMotor.h",
+    "path": "native/vendor/include/unitreeMotor/unitreeMotor.h",
+    "source_sha256": "9dc4c92405133de5d3d79e66799d048f50088daea58a7bd25ae3e9e599d56bef",
+    "published_sha256": "9dc4c92405133de5d3d79e66799d048f50088daea58a7bd25ae3e9e599d56bef",
+    "modified_in_copy": false,
+    "bytes": 1975
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/vendor/lib/libUnitreeMotorSDK_Linux64.so",
+    "path": "native/vendor/lib/libUnitreeMotorSDK_Linux64.so",
+    "source_sha256": "d51bc5f10cd757458ff4c34fa3bf6ecb0bb28c6c331de335aaaa527c68850c68",
+    "published_sha256": "d51bc5f10cd757458ff4c34fa3bf6ecb0bb28c6c331de335aaaa527c68850c68",
+    "modified_in_copy": false,
+    "bytes": 48552
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/native/vendor/LICENSE",
+    "path": "native/vendor/LICENSE",
+    "source_sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d",
+    "published_sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d",
+    "modified_in_copy": false,
+    "bytes": 1558
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/ONLINE_JACOBIAN_NOTES.md",
+    "path": "ONLINE_JACOBIAN_NOTES.md",
+    "source_sha256": "7fd002350600d40c4af25709b4c4eb574bbb10779c91ef81520db466603da00b",
+    "published_sha256": "7fd002350600d40c4af25709b4c4eb574bbb10779c91ef81520db466603da00b",
+    "modified_in_copy": false,
+    "bytes": 2221
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/package.xml",
+    "path": "package.xml",
+    "source_sha256": "56fabd445f26fd905218017593db29645af9248a9de60100a3776d7f32c3789e",
+    "published_sha256": "56fabd445f26fd905218017593db29645af9248a9de60100a3776d7f32c3789e",
+    "modified_in_copy": false,
+    "bytes": 948
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/PAUSE_BUDGET_NOTES.md",
+    "path": "PAUSE_BUDGET_NOTES.md",
+    "source_sha256": "33d823cb3f8a4fad695eac06fd9e8b3cd24860677347991b23332de2cc35b465",
+    "published_sha256": "33d823cb3f8a4fad695eac06fd9e8b3cd24860677347991b23332de2cc35b465",
+    "modified_in_copy": false,
+    "bytes": 1448
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/PROGRESS_WINDOW_NOTES.md",
+    "path": "PROGRESS_WINDOW_NOTES.md",
+    "source_sha256": "95358bc26465e5cca9dba8fd589ae8659235182510a9ebcedd84459e5f6e5be9",
+    "published_sha256": "95358bc26465e5cca9dba8fd589ae8659235182510a9ebcedd84459e5f6e5be9",
+    "modified_in_copy": false,
+    "bytes": 1262
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/RECOVERY_NOTES.md",
+    "path": "RECOVERY_NOTES.md",
+    "source_sha256": "000a39c60aa83d9e5008acb8eb8377b2c3f68832fb2d75250d88e7ea9c08297e",
+    "published_sha256": "000a39c60aa83d9e5008acb8eb8377b2c3f68832fb2d75250d88e7ea9c08297e",
+    "modified_in_copy": false,
+    "bytes": 4014
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/RECOVERY_PROBE_NOTES.md",
+    "path": "RECOVERY_PROBE_NOTES.md",
+    "source_sha256": "0caef532ef8e4935f01274d41d898785ea24bde4ba9e5a4348959aebb010a05b",
+    "published_sha256": "0caef532ef8e4935f01274d41d898785ea24bde4ba9e5a4348959aebb010a05b",
+    "modified_in_copy": false,
+    "bytes": 3225
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/.gitignore",
+    "path": "reference/original_468fcfd39fa6/.gitignore",
+    "source_sha256": "bf5c617dad054e7a9c79272aa8c38f4e7108c41f5d1d7dc5144d9e4a7469ff0c",
+    "published_sha256": "bf5c617dad054e7a9c79272aa8c38f4e7108c41f5d1d7dc5144d9e4a7469ff0c",
+    "modified_in_copy": false,
+    "bytes": 15
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/__init__.py",
+    "path": "reference/original_468fcfd39fa6/atarm_controller/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modified_in_copy": false,
+    "bytes": 0
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+    "path": "reference/original_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+    "source_sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+    "published_sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+    "modified_in_copy": false,
+    "bytes": 26362
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_node.py",
+    "path": "reference/original_468fcfd39fa6/atarm_controller/arm_controller_node.py",
+    "source_sha256": "204e2f7122b6894cfd72e24b23cc1d48d76ebfd478a77ab453bb47305f8a971a",
+    "published_sha256": "204e2f7122b6894cfd72e24b23cc1d48d76ebfd478a77ab453bb47305f8a971a",
+    "modified_in_copy": false,
+    "bytes": 11075
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/end_effector_controller.py",
+    "path": "reference/original_468fcfd39fa6/atarm_controller/end_effector_controller.py",
+    "source_sha256": "9ba60fc560351e5dc381f3c3d017e00a10414b15b6091e3e97720e18ec5a0e26",
+    "published_sha256": "9ba60fc560351e5dc381f3c3d017e00a10414b15b6091e3e97720e18ec5a0e26",
+    "modified_in_copy": false,
+    "bytes": 19282
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/launch/arm_controller.launch.py",
+    "path": "reference/original_468fcfd39fa6/launch/arm_controller.launch.py",
+    "source_sha256": "d4809e3aaddace9129f05bee5180604503e13c257a70cb075b02845f467003be",
+    "published_sha256": "d4809e3aaddace9129f05bee5180604503e13c257a70cb075b02845f467003be",
+    "modified_in_copy": false,
+    "bytes": 7173
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/launch/end_effector_controller.launch.py",
+    "path": "reference/original_468fcfd39fa6/launch/end_effector_controller.launch.py",
+    "source_sha256": "6b447226a405478573b496b426de099b2a3ad5b1dc7280e8a47425ca9a206ecd",
+    "published_sha256": "6b447226a405478573b496b426de099b2a3ad5b1dc7280e8a47425ca9a206ecd",
+    "modified_in_copy": false,
+    "bytes": 4351
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/package.xml",
+    "path": "reference/original_468fcfd39fa6/package.xml",
+    "source_sha256": "1dabfd91a5fa0365893181a3d00a05206c52473b94a8a14ad9182f8fd93a13ac",
+    "published_sha256": "1dabfd91a5fa0365893181a3d00a05206c52473b94a8a14ad9182f8fd93a13ac",
+    "modified_in_copy": false,
+    "bytes": 880
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/resource/atarm_controller",
+    "path": "reference/original_468fcfd39fa6/resource/atarm_controller",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modified_in_copy": false,
+    "bytes": 0
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/setup.cfg",
+    "path": "reference/original_468fcfd39fa6/setup.cfg",
+    "source_sha256": "b2d5b3fca33e67b16cd527232120d41483422e24422e311cc3ce196a00fffa96",
+    "published_sha256": "b2d5b3fca33e67b16cd527232120d41483422e24422e311cc3ce196a00fffa96",
+    "modified_in_copy": false,
+    "bytes": 101
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/setup.py",
+    "path": "reference/original_468fcfd39fa6/setup.py",
+    "source_sha256": "bdd7a1e2c46a0dcc509780436c22d24b9c3d38aa7fd4145544d0792b575e947a",
+    "published_sha256": "bdd7a1e2c46a0dcc509780436c22d24b9c3d38aa7fd4145544d0792b575e947a",
+    "modified_in_copy": false,
+    "bytes": 1038
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/test/test_copyright.py",
+    "path": "reference/original_468fcfd39fa6/test/test_copyright.py",
+    "source_sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+    "published_sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+    "modified_in_copy": false,
+    "bytes": 962
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/test/test_flake8.py",
+    "path": "reference/original_468fcfd39fa6/test/test_flake8.py",
+    "source_sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+    "published_sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+    "modified_in_copy": false,
+    "bytes": 884
+  },
+  {
+    "source": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/test/test_pep257.py",
+    "path": "reference/original_468fcfd39fa6/test/test_pep257.py",
+    "source_sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+    "published_sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+    "modified_in_copy": false,
+    "bytes": 803
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/REPAIR_NOTES.md",
+    "path": "REPAIR_NOTES.md",
+    "source_sha256": "14ce920f78c4238d2f55a308310f5130cb06d158b6e9097c7d4b4a1eefdc13c3",
+    "published_sha256": "14ce920f78c4238d2f55a308310f5130cb06d158b6e9097c7d4b4a1eefdc13c3",
+    "modified_in_copy": false,
+    "bytes": 3116
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/REPEATED_PAUSE_NOTES.md",
+    "path": "REPEATED_PAUSE_NOTES.md",
+    "source_sha256": "bf5058426a206e35648e381f492e2fc8fe6eddae3260e7768a87a9b1dd770568",
+    "published_sha256": "bf5058426a206e35648e381f492e2fc8fe6eddae3260e7768a87a9b1dd770568",
+    "modified_in_copy": false,
+    "bytes": 1324
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/resource/atarm_controller",
+    "path": "resource/atarm_controller",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "modified_in_copy": false,
+    "bytes": 0
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/ROS_CARTESIAN_README.md",
+    "path": "ROS_CARTESIAN_README.md",
+    "source_sha256": "c3fdf60e291d34c68d698729b1ae2fac949d52bb2743d43111f9f3c67f309be6",
+    "published_sha256": "13bcd5c595dac38db235d7a6a92eaec42d62bed2c73cc10152bca8567a3f6902",
+    "modified_in_copy": true,
+    "bytes": 690
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/ROS_RUNTIME_NOTES.md",
+    "path": "ROS_RUNTIME_NOTES.md",
+    "source_sha256": "d2c935ede477d87898447ec4c86dd2ba700359e615e346fbc8d5f94e78e1c554",
+    "published_sha256": "d2c935ede477d87898447ec4c86dd2ba700359e615e346fbc8d5f94e78e1c554",
+    "modified_in_copy": false,
+    "bytes": 6091
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/ROS_SOURCE_PROVENANCE.json",
+    "path": "ROS_SOURCE_PROVENANCE.json",
+    "source_sha256": "42646cda47b141bd8b1e125ad34437a75d950f3f52c6b515aa937872d9de3001",
+    "published_sha256": "42646cda47b141bd8b1e125ad34437a75d950f3f52c6b515aa937872d9de3001",
+    "modified_in_copy": false,
+    "bytes": 10500
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/setup.cfg",
+    "path": "setup.cfg",
+    "source_sha256": "b2d5b3fca33e67b16cd527232120d41483422e24422e311cc3ce196a00fffa96",
+    "published_sha256": "b2d5b3fca33e67b16cd527232120d41483422e24422e311cc3ce196a00fffa96",
+    "modified_in_copy": false,
+    "bytes": 101
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/setup.py",
+    "path": "setup.py",
+    "source_sha256": "2e5b35ae7294238d37acd50456ae2162833e698022c540eec28b5219a4c05457",
+    "published_sha256": "2e5b35ae7294238d37acd50456ae2162833e698022c540eec28b5219a4c05457",
+    "modified_in_copy": false,
+    "bytes": 1469
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/SOURCE_PROVENANCE.json",
+    "path": "SOURCE_PROVENANCE.json",
+    "source_sha256": "aa6712c12945f7db8f14a92cad4b894695d6263896da39e3d50d20f8bcd6d7c0",
+    "published_sha256": "aa6712c12945f7db8f14a92cad4b894695d6263896da39e3d50d20f8bcd6d7c0",
+    "modified_in_copy": false,
+    "bytes": 9615
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/test/test_copyright.py",
+    "path": "test/test_copyright.py",
+    "source_sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+    "published_sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+    "modified_in_copy": false,
+    "bytes": 962
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/test/test_flake8.py",
+    "path": "test/test_flake8.py",
+    "source_sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+    "published_sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+    "modified_in_copy": false,
+    "bytes": 884
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/test/test_pep257.py",
+    "path": "test/test_pep257.py",
+    "source_sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+    "published_sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+    "modified_in_copy": false,
+    "bytes": 803
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/adaptive_cases.py",
+    "path": "tests/adaptive_cases.py",
+    "source_sha256": "9f5d8e621a950bcba457d5e7e17a1a0c442f7ed8469d8c72640daf9e3944d815",
+    "published_sha256": "9f5d8e621a950bcba457d5e7e17a1a0c442f7ed8469d8c72640daf9e3944d815",
+    "modified_in_copy": false,
+    "bytes": 11512
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/bend_cases.py",
+    "path": "tests/bend_cases.py",
+    "source_sha256": "efcd522cac8b22d0c1bbfe5c2ddfe228a1d12c227666fd861873146bb475af6b",
+    "published_sha256": "efcd522cac8b22d0c1bbfe5c2ddfe228a1d12c227666fd861873146bb475af6b",
+    "modified_in_copy": false,
+    "bytes": 14394
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/bend_model_cases.py",
+    "path": "tests/bend_model_cases.py",
+    "source_sha256": "e742c66d37351e5a6921f37c4e00fd18b68f72e7b5f44c3507a80f74d528bca6",
+    "published_sha256": "e742c66d37351e5a6921f37c4e00fd18b68f72e7b5f44c3507a80f74d528bca6",
+    "modified_in_copy": false,
+    "bytes": 3257
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/budget_cases.py",
+    "path": "tests/budget_cases.py",
+    "source_sha256": "89a5d3bdc2ea67168b2cef6d09a0c44d1be9563f1c8b454ea54c6b109114af34",
+    "published_sha256": "89a5d3bdc2ea67168b2cef6d09a0c44d1be9563f1c8b454ea54c6b109114af34",
+    "modified_in_copy": false,
+    "bytes": 5821
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/camera_cases.py",
+    "path": "tests/camera_cases.py",
+    "source_sha256": "1ab0e0ef3da28257a01c9cdf689a5acf537481525065ada79915b5990e5c47e8",
+    "published_sha256": "1ab0e0ef3da28257a01c9cdf689a5acf537481525065ada79915b5990e5c47e8",
+    "modified_in_copy": false,
+    "bytes": 8336
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/commissioning_linux_checks.py",
+    "path": "tests/commissioning_linux_checks.py",
+    "source_sha256": "1542dea5786ea8e15f3ea68acfbcf1b94197babbf32b5f92005f819aa99fdc3e",
+    "published_sha256": "1542dea5786ea8e15f3ea68acfbcf1b94197babbf32b5f92005f819aa99fdc3e",
+    "modified_in_copy": false,
+    "bytes": 4608
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/confirm_pause_cases.py",
+    "path": "tests/confirm_pause_cases.py",
+    "source_sha256": "a5df8050739adb748940e29ecc31260b494acea3fa3717b0f6c5ff1de85920b4",
+    "published_sha256": "a5df8050739adb748940e29ecc31260b494acea3fa3717b0f6c5ff1de85920b4",
+    "modified_in_copy": false,
+    "bytes": 11959
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/cycle_cases.py",
+    "path": "tests/cycle_cases.py",
+    "source_sha256": "78d2d07059f9193cf5628864224e1c27bd0d2f1c2f0e9e43bcbd138b2bac6d35",
+    "published_sha256": "78d2d07059f9193cf5628864224e1c27bd0d2f1c2f0e9e43bcbd138b2bac6d35",
+    "modified_in_copy": false,
+    "bytes": 14709
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/early_progress_cases.py",
+    "path": "tests/early_progress_cases.py",
+    "source_sha256": "e1f1738e04906b4887c561e37dd45386ae5071e001d568611aba8890465fb040",
+    "published_sha256": "e1f1738e04906b4887c561e37dd45386ae5071e001d568611aba8890465fb040",
+    "modified_in_copy": false,
+    "bytes": 7316
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/intermittent_cases.py",
+    "path": "tests/intermittent_cases.py",
+    "source_sha256": "71ce80e8dc5d1de676dbccd5a7cdb97bedcdf754b1fa5bec5a6f2dd3a94f970f",
+    "published_sha256": "71ce80e8dc5d1de676dbccd5a7cdb97bedcdf754b1fa5bec5a6f2dd3a94f970f",
+    "modified_in_copy": false,
+    "bytes": 12229
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/late_jam_cases.py",
+    "path": "tests/late_jam_cases.py",
+    "source_sha256": "fa10e00336139665e0ee90b5297842d7e075f99c6765442535d0194c51f53c72",
+    "published_sha256": "fa10e00336139665e0ee90b5297842d7e075f99c6765442535d0194c51f53c72",
+    "modified_in_copy": false,
+    "bytes": 9621
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/original_node_snapshot.py",
+    "path": "tests/original_node_snapshot.py",
+    "source_sha256": "1ef649d12ecf457dc6751cee792246ebb5be673a01e6264a2144026eaa391fa7",
+    "published_sha256": "1ef649d12ecf457dc6751cee792246ebb5be673a01e6264a2144026eaa391fa7",
+    "modified_in_copy": false,
+    "bytes": 17442
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/pause_budget_cases.py",
+    "path": "tests/pause_budget_cases.py",
+    "source_sha256": "c3ce02c58c297e23eb08ab8f92d8f5545ddaed045c1612ac97255deb7af247da",
+    "published_sha256": "c3ce02c58c297e23eb08ab8f92d8f5545ddaed045c1612ac97255deb7af247da",
+    "modified_in_copy": false,
+    "bytes": 5150
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/probe_cases.py",
+    "path": "tests/probe_cases.py",
+    "source_sha256": "8f0aceb26535c25390e148ce612968e87ffe3a019584c73ff7e6ebc81f3bea6d",
+    "published_sha256": "8f0aceb26535c25390e148ce612968e87ffe3a019584c73ff7e6ebc81f3bea6d",
+    "modified_in_copy": false,
+    "bytes": 10296
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/pty_cartesian_world.py",
+    "path": "tests/pty_cartesian_world.py",
+    "source_sha256": "92e7da09e5f48d3c66b611427d8b902b19d521026610404dcd3c5cf4fec7068c",
+    "published_sha256": "92e7da09e5f48d3c66b611427d8b902b19d521026610404dcd3c5cf4fec7068c",
+    "modified_in_copy": false,
+    "bytes": 4997
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/recovery_cases.py",
+    "path": "tests/recovery_cases.py",
+    "source_sha256": "e2364fa745ac8356f90b76e56c761ed75440c7a8f253b3ea4b8c4d2fc7c58cb5",
+    "published_sha256": "e2364fa745ac8356f90b76e56c761ed75440c7a8f253b3ea4b8c4d2fc7c58cb5",
+    "modified_in_copy": false,
+    "bytes": 13415
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/repeated_pause_cases.py",
+    "path": "tests/repeated_pause_cases.py",
+    "source_sha256": "e75ea8ab701a18901e18f4d0d51ca17a89b4497b4a76ff6de4b2ad09a87a9fb6",
+    "published_sha256": "e75ea8ab701a18901e18f4d0d51ca17a89b4497b4a76ff6de4b2ad09a87a9fb6",
+    "modified_in_copy": false,
+    "bytes": 10701
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/ros_bridge_worker_checks.py",
+    "path": "tests/ros_bridge_worker_checks.py",
+    "source_sha256": "5c98fcd4218a6e5ec9607be7b0a945a31b8ff98de4b33740706e97b51ea0db9b",
+    "published_sha256": "5c98fcd4218a6e5ec9607be7b0a945a31b8ff98de4b33740706e97b51ea0db9b",
+    "modified_in_copy": false,
+    "bytes": 5819
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/ros_cartesian_matrix.py",
+    "path": "tests/ros_cartesian_matrix.py",
+    "source_sha256": "faf2b1a2c299bb896b047f70e3d0615634f7728df78d442593c9193c7205ff38",
+    "published_sha256": "faf2b1a2c299bb896b047f70e3d0615634f7728df78d442593c9193c7205ff38",
+    "modified_in_copy": false,
+    "bytes": 10322
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/ros_complete_smoke.py",
+    "path": "tests/ros_complete_smoke.py",
+    "source_sha256": "313405c922e82aaf82729007d8b419580d9972ac57dfc1cd41e302754942b574",
+    "published_sha256": "313405c922e82aaf82729007d8b419580d9972ac57dfc1cd41e302754942b574",
+    "modified_in_copy": false,
+    "bytes": 134
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/ros_fd_matrix.py",
+    "path": "tests/ros_fd_matrix.py",
+    "source_sha256": "67f3624a06a057034fe7598c8b747e6f6a49ed954d92ad59b2cb634cb8ae3059",
+    "published_sha256": "67f3624a06a057034fe7598c8b747e6f6a49ed954d92ad59b2cb634cb8ae3059",
+    "modified_in_copy": false,
+    "bytes": 10920
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/ros_integration.py",
+    "path": "tests/ros_integration.py",
+    "source_sha256": "3f37aa3438cc8852a600567f17c86db74e0265da8908f6a5e63627d238c8cc6c",
+    "published_sha256": "3f37aa3438cc8852a600567f17c86db74e0265da8908f6a5e63627d238c8cc6c",
+    "modified_in_copy": false,
+    "bytes": 16246
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/ros_legacy_red.py",
+    "path": "tests/ros_legacy_red.py",
+    "source_sha256": "05fe713f47883aab8d217f56092fdd0ce92f5bf131aba942c8c62466b04d0c6e",
+    "published_sha256": "05fe713f47883aab8d217f56092fdd0ce92f5bf131aba942c8c62466b04d0c6e",
+    "modified_in_copy": false,
+    "bytes": 150
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/ros_original_executor_red.py",
+    "path": "tests/ros_original_executor_red.py",
+    "source_sha256": "a7b29c1e458711d4a4bfc750e58e61d351625695cb76e83bf7b82ddec116bf5c",
+    "published_sha256": "a7b29c1e458711d4a4bfc750e58e61d351625695cb76e83bf7b82ddec116bf5c",
+    "modified_in_copy": false,
+    "bytes": 3644
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/ros_smoke.py",
+    "path": "tests/ros_smoke.py",
+    "source_sha256": "2a838ff3b6739597668e09618d30e7349d414af577d3ae87b2333762979b2d43",
+    "published_sha256": "2a838ff3b6739597668e09618d30e7349d414af577d3ae87b2333762979b2d43",
+    "modified_in_copy": false,
+    "bytes": 865
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/servo_cases.py",
+    "path": "tests/servo_cases.py",
+    "source_sha256": "c64f63f4fc1a28f1f1fdb0008fdabb8678953b88c3ba54cd28428e106f3809e2",
+    "published_sha256": "c64f63f4fc1a28f1f1fdb0008fdabb8678953b88c3ba54cd28428e106f3809e2",
+    "modified_in_copy": false,
+    "bytes": 9704
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/test_cartesian_jobs.py",
+    "path": "tests/test_cartesian_jobs.py",
+    "source_sha256": "964fd04d4e4e8423890523156e91cea645b5b37ce35ed95716fad6b212346e33",
+    "published_sha256": "964fd04d4e4e8423890523156e91cea645b5b37ce35ed95716fad6b212346e33",
+    "modified_in_copy": false,
+    "bytes": 4573
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/test_cartesian_offline.py",
+    "path": "tests/test_cartesian_offline.py",
+    "source_sha256": "b0e198f00a936d81c08bc3645200cf3dc8d11d4dca2366e90cc7ecb36106412c",
+    "published_sha256": "b0e198f00a936d81c08bc3645200cf3dc8d11d4dca2366e90cc7ecb36106412c",
+    "modified_in_copy": false,
+    "bytes": 10608
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/test_commissioning.py",
+    "path": "tests/test_commissioning.py",
+    "source_sha256": "f941de6c85e73cb7b2931a048cfa890c722d50c7d455fd794e1f5581dc9cd93d",
+    "published_sha256": "f941de6c85e73cb7b2931a048cfa890c722d50c7d455fd794e1f5581dc9cd93d",
+    "modified_in_copy": false,
+    "bytes": 8698
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/test_fd_interfaces.py",
+    "path": "tests/test_fd_interfaces.py",
+    "source_sha256": "2b1c59bb5eb7c62aae6836ffb317341dc76508dc24be304e1a2b85e6f7a5a979",
+    "published_sha256": "2b1c59bb5eb7c62aae6836ffb317341dc76508dc24be304e1a2b85e6f7a5a979",
+    "modified_in_copy": false,
+    "bytes": 8995
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/test_simulated_serial.py",
+    "path": "tests/test_simulated_serial.py",
+    "source_sha256": "ad36e402b6befdfe62e5481bfe5861fc4fa039d69561d66de0f4826314e5df70",
+    "published_sha256": "ad36e402b6befdfe62e5481bfe5861fc4fa039d69561d66de0f4826314e5df70",
+    "modified_in_copy": false,
+    "bytes": 30852
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/transient_cases.py",
+    "path": "tests/transient_cases.py",
+    "source_sha256": "98d47734240edc3cd88ccc6ff11548bfcb556e97af2b66d3efe58503e496d84f",
+    "published_sha256": "98d47734240edc3cd88ccc6ff11548bfcb556e97af2b66d3efe58503e496d84f",
+    "modified_in_copy": false,
+    "bytes": 11208
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/v4_validation.py",
+    "path": "tests/v4_validation.py",
+    "source_sha256": "e8754d261239ee197fb3c39e382ef728fa00afbc8066ff49bd0d80b60fe151b8",
+    "published_sha256": "e8754d261239ee197fb3c39e382ef728fa00afbc8066ff49bd0d80b60fe151b8",
+    "modified_in_copy": false,
+    "bytes": 1634
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/wide400_cases.py",
+    "path": "tests/wide400_cases.py",
+    "source_sha256": "de559c5b19865b0ac0d4c758c1562b9a9e3e1846ad1a8ef713bd3d62cbc8fe68",
+    "published_sha256": "de559c5b19865b0ac0d4c758c1562b9a9e3e1846ad1a8ef713bd3d62cbc8fe68",
+    "modified_in_copy": false,
+    "bytes": 4578
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tests/window_cases.py",
+    "path": "tests/window_cases.py",
+    "source_sha256": "e278811e8257f23de5a40696b26869696fe3b586860997b2a4ae2a79943b70d6",
+    "published_sha256": "e278811e8257f23de5a40696b26869696fe3b586860997b2a4ae2a79943b70d6",
+    "modified_in_copy": false,
+    "bytes": 8176
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tools/build_commissioning_native.py",
+    "path": "tools/build_commissioning_native.py",
+    "source_sha256": "b2250521ac7035e3bee7a7fcfff79e2bdf2bb65e1875f9d6734f684a137ff13b",
+    "published_sha256": "b2250521ac7035e3bee7a7fcfff79e2bdf2bb65e1875f9d6734f684a137ff13b",
+    "modified_in_copy": false,
+    "bytes": 1858
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tools/commissioning_container.py",
+    "path": "tools/commissioning_container.py",
+    "source_sha256": "b66ccc6dc0f1bafaf7adc09766df7dd187ddfba6566972fe6894f735c721434e",
+    "published_sha256": "b66ccc6dc0f1bafaf7adc09766df7dd187ddfba6566972fe6894f735c721434e",
+    "modified_in_copy": false,
+    "bytes": 4500
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/tools/run_cartesian_sim.py",
+    "path": "tools/run_cartesian_sim.py",
+    "source_sha256": "e823f5f22e4780b52d209dfd70a9e46b161ca8aa2b07fd9b4dca65031be97d39",
+    "published_sha256": "e823f5f22e4780b52d209dfd70a9e46b161ca8aa2b07fd9b4dca65031be97d39",
+    "modified_in_copy": false,
+    "bytes": 2546
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/TRANSIENT_MOTION_NOTES.md",
+    "path": "TRANSIENT_MOTION_NOTES.md",
+    "source_sha256": "3f0f1ca2917bc42f636e91200f1b8b61fa4abeb949e421a928649904a7b36d1f",
+    "published_sha256": "3f0f1ca2917bc42f636e91200f1b8b61fa4abeb949e421a928649904a7b36d1f",
+    "modified_in_copy": false,
+    "bytes": 1226
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/VISUAL_SERVO_NOTES.md",
+    "path": "VISUAL_SERVO_NOTES.md",
+    "source_sha256": "96418f50571dd45cdec73ece78151c17abb8670800faa7f64e6057347348a98c",
+    "published_sha256": "96418f50571dd45cdec73ece78151c17abb8670800faa7f64e6057347348a98c",
+    "modified_in_copy": false,
+    "bytes": 2696
+  },
+  {
+    "source": "01_Source/development/atarm_controller_commissioning_20261030_v4/WINDOW400_NOTES.md",
+    "path": "WINDOW400_NOTES.md",
+    "source_sha256": "222b3a7dfc3435a12924a81220edc265954a68f260426abc93393c2cf669586b",
+    "published_sha256": "222b3a7dfc3435a12924a81220edc265954a68f260426abc93393c2cf669586b",
+    "modified_in_copy": false,
+    "bytes": 1230
+  }
+]

@@ -1,0 +1,127 @@
+{
+  "case": "coordinated",
+  "passed": true,
+  "premature": {
+    "request_id": "before_confirm",
+    "accepted": false,
+    "success": false,
+    "complete": false,
+    "reason": "REFERENCE_NOT_CONFIRMED"
+  },
+  "confirm": {
+    "success": true,
+    "body": {
+      "request_id": null,
+      "accepted": true,
+      "success": true,
+      "complete": false,
+      "reason": "REFERENCE_CHECK_ACCEPTED"
+    },
+    "sent_ns": 54210080676252,
+    "received_ns": 54210081084708
+  },
+  "accepted": {
+    "request_id": "main",
+    "accepted": true,
+    "success": true,
+    "complete": false,
+    "reason": "ACCEPTED",
+    "job_id": 1
+  },
+  "final": {
+    "execution_domain": "fd-actuator",
+    "calibration_id": "synthetic-pty-v3-001",
+    "ready": true,
+    "fault": null,
+    "reference": {
+      "parent_frame": "control_base",
+      "child_frame": "tcp",
+      "map_epoch": "validation_map_0"
+    },
+    "job": {
+      "request_id": "main",
+      "job_id": 1,
+      "success": true,
+      "complete": true,
+      "state": "SUCCEEDED",
+      "reason": "CARTESIAN_POSITION_CONFIRMED",
+      "measured_error_m": 0.00020334604387007996,
+      "verification": {
+        "p": [
+          0.31236498820636427,
+          0.03756205385836993,
+          0.1947817124748739
+        ],
+        "q": [
+          0.011984800611223492,
+          -0.012884372983660016,
+          0.0008984765836170741,
+          0.05380695479256766
+        ],
+        "first_frame": 107,
+        "last_frame": 112,
+        "first_s": 54211.99947309494,
+        "last_s": 54212.09950590134,
+        "spread_m": 0.0,
+        "max_goal_error_m": 0.00020334604387007996
+      }
+    },
+    "observation": {
+      "position_m": [
+        0.31236498820636427,
+        0.03756205385836993,
+        0.1947817124748739
+      ],
+      "pose_frame_id": 113,
+      "capture_s": 54212.11954307556,
+      "motor_positions_m": [
+        0.011984800611223492,
+        -0.012884372983660016,
+        0.0008984765836170741,
+        0.05380695479256766
+      ],
+      "motor_frame_ids": [
+        616,
+        617,
+        618,
+        206
+      ],
+      "motor_received_s": [
+        54212.124110397,
+        54212.124410665,
+        54212.124697412,
+        54212.124959506
+      ],
+      "time_domain": "host_monotonic_seconds"
+    },
+    "vision": {
+      "accepted": 112,
+      "pose_callbacks": 112,
+      "status_callbacks": 112,
+      "duplicates": 0,
+      "fault": null,
+      "latest_source_frame": 113,
+      "latest_capture_s": 54212.11954307556,
+      "startup_stale_drops": 2
+    },
+    "state_sequence": 45,
+    "published_ros_stamp_ns": 1793355027010380510
+  },
+  "true_error_m": 0.0002033460438700647,
+  "server_returncode": 0,
+  "source_returncode": 0,
+  "source_pid": 88,
+  "physical_end_q": [
+    0.01198480078125,
+    -0.012884373046875,
+    0.0008984765625,
+    0.053806955078125
+  ],
+  "controller_pid": 89,
+  "client_pid": 38,
+  "states_count": 44,
+  "io_threads": [
+    "cartesian-fd-owner"
+  ],
+  "native_transactions": 828
+}

@@ -1,0 +1,1221 @@
+[
+  {
+    "version": "atarm_controller_cartesian_sim_20261030_v1",
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "bf5c617dad054e7a9c79272aa8c38f4e7108c41f5d1d7dc5144d9e4a7469ff0c"
+      },
+      {
+        "path": "atarm_controller/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "atarm_controller/arm_controller_lib.py",
+        "sha256": "60141e8ef8d49ce0e4cc40e7cdb052c97edeabbe88afc1c5828b4c67f3aea569"
+      },
+      {
+        "path": "atarm_controller/arm_controller_node.py",
+        "sha256": "03cfe858e563a38dc36e2c0ce8f24e8f7a72aa5515e22faecc89a2f393665eda"
+      },
+      {
+        "path": "atarm_controller/camera_cycle.py",
+        "sha256": "a37cf6c089a12f99d61070ade0eccc64d01c309d7bd9d3d8605d566550f69c28"
+      },
+      {
+        "path": "atarm_controller/camera_feedback.py",
+        "sha256": "528cf3ea07f812cc26206179c3a8305a40a7e81700dc3bea1edaf7352651c10d"
+      },
+      {
+        "path": "atarm_controller/camera_recovery.py",
+        "sha256": "fe70e0d0480ed0bbc50f853bff71bda92b15d120345308a12b550087cf69919a"
+      },
+      {
+        "path": "atarm_controller/cartesian_control.py",
+        "sha256": "7214ca27f37587aac4973fa647a9b07c8cafde91c6cc92d8c5cc00f927518e07"
+      },
+      {
+        "path": "atarm_controller/cartesian_math.py",
+        "sha256": "cbd252f118d889e25ffd371817ed10b4aa777f408d47cbaa211452022656895c"
+      },
+      {
+        "path": "atarm_controller/cartesian_simulation.py",
+        "sha256": "d60c04c6fa6d0db5148d9119990cb9f0a4c8627187f20dbfb86198f8c2af2f4f"
+      },
+      {
+        "path": "atarm_controller/coupled_bend.py",
+        "sha256": "ff49cbf9fa7d0eb18431f49a6898d6482e3c9050614eeb9153e240b04a562993"
+      },
+      {
+        "path": "atarm_controller/end_effector_controller.py",
+        "sha256": "9ba60fc560351e5dc381f3c3d017e00a10414b15b6091e3e97720e18ec5a0e26"
+      },
+      {
+        "path": "atarm_controller/motion_checks.py",
+        "sha256": "83bb7fc5309cf291e1817a639debcb36e3ebb18346906a71a7bc9a8391fbdd5d"
+      },
+      {
+        "path": "atarm_controller/online_jacobian.py",
+        "sha256": "78239e70510daa0daeaeef06ccc8c585e1f2339f05422acb1ad73765a418f262"
+      },
+      {
+        "path": "atarm_controller/progress_window.py",
+        "sha256": "3e01f9ce37a9c849cbe29e7c830ff7771243d5673537f5c5304844e461d3a193"
+      },
+      {
+        "path": "atarm_controller/recovery_probe.py",
+        "sha256": "04f55a5244ef08bc0490c0d212dea17f33e8ea9a05c46e2f897b253e00d919d9"
+      },
+      {
+        "path": "atarm_controller/ros_control_config.py",
+        "sha256": "bf44b571ea070a07f6347fa99d7b65890b5db9f2059cdaaa436fc7549c6fe63e"
+      },
+      {
+        "path": "atarm_controller/ros_motion_worker.py",
+        "sha256": "303ac94efffb3a80b5945882dcbd3d7754b265aa13c753630a9d1c8514e46440"
+      },
+      {
+        "path": "atarm_controller/ros_pose_bridge.py",
+        "sha256": "e9e062d9a9a1fa8adc78cf7fc4b1d27c3401a1e2489085cb2859c7a5bd7fcbfb"
+      },
+      {
+        "path": "atarm_controller/serial_adapter.py",
+        "sha256": "72ad38ae1a13f8b14f2cc9bf7e21c4781607c59011e928990b4370c1da84076f"
+      },
+      {
+        "path": "atarm_controller/visual_servo.py",
+        "sha256": "b9dde56b9f25f0dbbf79dd3925211afa2324a65c5fc913d268227a67311dfea9"
+      },
+      {
+        "path": "ATARM_Usage_Guide.md",
+        "sha256": "1900e83dccd728021722e3671e6887da76eedef3336a819a3f3e476d51062bc8"
+      },
+      {
+        "path": "CAMERA_FEEDBACK_NOTES.md",
+        "sha256": "473e2fc267f4e2482777883274c2a6529ac30e06405722a25aef3b1354852acf"
+      },
+      {
+        "path": "CARTESIAN_OFFLINE_README.md",
+        "sha256": "f2090895237d73927d52774b52b617cccbe8b9bd6d2c2c9844e4735c4ce6fa9e"
+      },
+      {
+        "path": "COMPLETE_CYCLE_NOTES.md",
+        "sha256": "73bee884b18e0a961873da7b14e366d87214185b9e1335b2aa48306ee9faeee2"
+      },
+      {
+        "path": "config/ros_simulation_only.json",
+        "sha256": "1e6eec2ad7fd4f7e5da012b24fa81be2faa27dcc15a0058c71b33506489afb84"
+      },
+      {
+        "path": "CONFIRM_BUDGET_NOTES.md",
+        "sha256": "7e802cd353851086bb618977f7be94f3e941abf9b04ea3c7fbb7378c962be92c"
+      },
+      {
+        "path": "CONFIRM_PAUSE_NOTES.md",
+        "sha256": "eab06c5aac8c31c227a9e8927ced5a4935abc8dfc3dd85d5ab53b90b979f07b6"
+      },
+      {
+        "path": "COUPLED_BEND_NOTES.md",
+        "sha256": "e48e18deb50d70810140bcfe726a338f4011ba16b30e9d0384a71f7024985bb7"
+      },
+      {
+        "path": "EARLY_PROGRESS_NOTES.md",
+        "sha256": "d14e70813d391bbde02bad9d52f49a2e566203fa09f66d9b8a9a320e9809a51b"
+      },
+      {
+        "path": "INTERMITTENT_NOTES.md",
+        "sha256": "a88a2d261ff49b41b7a8416b731c2b28a89a6dbcceeb928dddc07e78373323cf"
+      },
+      {
+        "path": "LATE_JAM_NOTES.md",
+        "sha256": "096ecc0f57623733942330a7efa50a0a9867cce1920a5fef68cbcc8256130c01"
+      },
+      {
+        "path": "launch/arm_controller.launch.py",
+        "sha256": "6d3e56101484f13308011b8c4f32340699192b61385c12767b37d67c02d633ca"
+      },
+      {
+        "path": "launch/end_effector_controller.launch.py",
+        "sha256": "6b447226a405478573b496b426de099b2a3ad5b1dc7280e8a47425ca9a206ecd"
+      },
+      {
+        "path": "native/a1_serial.cpp",
+        "sha256": "43031787e666d75eb107a1193fc90bebbdd339ccc97551eaa118bfc7940c69d9"
+      },
+      {
+        "path": "native/a1_serial.h",
+        "sha256": "b96ea81ea502e48bff611ded86d1e3703924d486c9a4d4dc6e291dd7a148c7dc"
+      },
+      {
+        "path": "native/CMakeLists.txt",
+        "sha256": "0f6c74fc706fb941ec031b7272ddbe4509439b56b17f5604a8819c353e52fed9"
+      },
+      {
+        "path": "native/sdk_codec_probe.cpp",
+        "sha256": "0223c52c3ed20d19ff13555041a1c91050a7d901e28dfe20b318fb23e93e0ff4"
+      },
+      {
+        "path": "native/vendor/include/crc/crc32.h",
+        "sha256": "a6a9bfd65948430087be8bd5b09ee972c74bf41ee278dc7e20171d46eb24d30c"
+      },
+      {
+        "path": "native/vendor/include/IOPort/IOPort.h",
+        "sha256": "95a6de8c76af5ebc5498eda4ab6164172a08efd390fad5b5660d6a050e771c4d"
+      },
+      {
+        "path": "native/vendor/include/serialPort/SerialPort.h",
+        "sha256": "be00112679d84de4e5f4e969c62b2a362ec51af441396355589fcfde973b4551"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/include/motor_msg_A1B1.h",
+        "sha256": "eaba7f1e3a8fa91022487ebb7f709ad463c753e208eda4819f0e337695a38b01"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/include/motor_msg_GO-M8010-6.h",
+        "sha256": "99a124c861db085d9120642b51fd5f0ee6014c513cd67f723d560b67904fed0b"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/unitreeMotor.h",
+        "sha256": "9dc4c92405133de5d3d79e66799d048f50088daea58a7bd25ae3e9e599d56bef"
+      },
+      {
+        "path": "native/vendor/lib/libUnitreeMotorSDK_Linux64.so",
+        "sha256": "d51bc5f10cd757458ff4c34fa3bf6ecb0bb28c6c331de335aaaa527c68850c68"
+      },
+      {
+        "path": "native/vendor/LICENSE",
+        "sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d"
+      },
+      {
+        "path": "ONLINE_JACOBIAN_NOTES.md",
+        "sha256": "7fd002350600d40c4af25709b4c4eb574bbb10779c91ef81520db466603da00b"
+      },
+      {
+        "path": "package.xml",
+        "sha256": "56fabd445f26fd905218017593db29645af9248a9de60100a3776d7f32c3789e"
+      },
+      {
+        "path": "PAUSE_BUDGET_NOTES.md",
+        "sha256": "33d823cb3f8a4fad695eac06fd9e8b3cd24860677347991b23332de2cc35b465"
+      },
+      {
+        "path": "PROGRESS_WINDOW_NOTES.md",
+        "sha256": "95358bc26465e5cca9dba8fd589ae8659235182510a9ebcedd84459e5f6e5be9"
+      },
+      {
+        "path": "RECOVERY_NOTES.md",
+        "sha256": "000a39c60aa83d9e5008acb8eb8377b2c3f68832fb2d75250d88e7ea9c08297e"
+      },
+      {
+        "path": "RECOVERY_PROBE_NOTES.md",
+        "sha256": "0caef532ef8e4935f01274d41d898785ea24bde4ba9e5a4348959aebb010a05b"
+      },
+      {
+        "path": "REPAIR_NOTES.md",
+        "sha256": "14ce920f78c4238d2f55a308310f5130cb06d158b6e9097c7d4b4a1eefdc13c3"
+      },
+      {
+        "path": "REPEATED_PAUSE_NOTES.md",
+        "sha256": "bf5058426a206e35648e381f492e2fc8fe6eddae3260e7768a87a9b1dd770568"
+      },
+      {
+        "path": "resource/atarm_controller",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "ROS_RUNTIME_NOTES.md",
+        "sha256": "d2c935ede477d87898447ec4c86dd2ba700359e615e346fbc8d5f94e78e1c554"
+      },
+      {
+        "path": "setup.cfg",
+        "sha256": "b2d5b3fca33e67b16cd527232120d41483422e24422e311cc3ce196a00fffa96"
+      },
+      {
+        "path": "setup.py",
+        "sha256": "23c4b6d9d442ed1e6c1ecd7d4158d8ee4a515a22cda73e0f5a35cfedd4d5ce72"
+      },
+      {
+        "path": "SOURCE_PROVENANCE.json",
+        "sha256": "aa6712c12945f7db8f14a92cad4b894695d6263896da39e3d50d20f8bcd6d7c0"
+      },
+      {
+        "path": "test/test_copyright.py",
+        "sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757"
+      },
+      {
+        "path": "test/test_flake8.py",
+        "sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2"
+      },
+      {
+        "path": "test/test_pep257.py",
+        "sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda"
+      },
+      {
+        "path": "tests/adaptive_cases.py",
+        "sha256": "9f5d8e621a950bcba457d5e7e17a1a0c442f7ed8469d8c72640daf9e3944d815"
+      },
+      {
+        "path": "tests/bend_cases.py",
+        "sha256": "efcd522cac8b22d0c1bbfe5c2ddfe228a1d12c227666fd861873146bb475af6b"
+      },
+      {
+        "path": "tests/bend_model_cases.py",
+        "sha256": "e742c66d37351e5a6921f37c4e00fd18b68f72e7b5f44c3507a80f74d528bca6"
+      },
+      {
+        "path": "tests/budget_cases.py",
+        "sha256": "89a5d3bdc2ea67168b2cef6d09a0c44d1be9563f1c8b454ea54c6b109114af34"
+      },
+      {
+        "path": "tests/camera_cases.py",
+        "sha256": "1ab0e0ef3da28257a01c9cdf689a5acf537481525065ada79915b5990e5c47e8"
+      },
+      {
+        "path": "tests/confirm_pause_cases.py",
+        "sha256": "a5df8050739adb748940e29ecc31260b494acea3fa3717b0f6c5ff1de85920b4"
+      },
+      {
+        "path": "tests/cycle_cases.py",
+        "sha256": "78d2d07059f9193cf5628864224e1c27bd0d2f1c2f0e9e43bcbd138b2bac6d35"
+      },
+      {
+        "path": "tests/early_progress_cases.py",
+        "sha256": "e1f1738e04906b4887c561e37dd45386ae5071e001d568611aba8890465fb040"
+      },
+      {
+        "path": "tests/intermittent_cases.py",
+        "sha256": "71ce80e8dc5d1de676dbccd5a7cdb97bedcdf754b1fa5bec5a6f2dd3a94f970f"
+      },
+      {
+        "path": "tests/late_jam_cases.py",
+        "sha256": "fa10e00336139665e0ee90b5297842d7e075f99c6765442535d0194c51f53c72"
+      },
+      {
+        "path": "tests/original_node_snapshot.py",
+        "sha256": "1ef649d12ecf457dc6751cee792246ebb5be673a01e6264a2144026eaa391fa7"
+      },
+      {
+        "path": "tests/pause_budget_cases.py",
+        "sha256": "c3ce02c58c297e23eb08ab8f92d8f5545ddaed045c1612ac97255deb7af247da"
+      },
+      {
+        "path": "tests/probe_cases.py",
+        "sha256": "8f0aceb26535c25390e148ce612968e87ffe3a019584c73ff7e6ebc81f3bea6d"
+      },
+      {
+        "path": "tests/recovery_cases.py",
+        "sha256": "e2364fa745ac8356f90b76e56c761ed75440c7a8f253b3ea4b8c4d2fc7c58cb5"
+      },
+      {
+        "path": "tests/repeated_pause_cases.py",
+        "sha256": "e75ea8ab701a18901e18f4d0d51ca17a89b4497b4a76ff6de4b2ad09a87a9fb6"
+      },
+      {
+        "path": "tests/ros_bridge_worker_checks.py",
+        "sha256": "5c98fcd4218a6e5ec9607be7b0a945a31b8ff98de4b33740706e97b51ea0db9b"
+      },
+      {
+        "path": "tests/ros_complete_smoke.py",
+        "sha256": "313405c922e82aaf82729007d8b419580d9972ac57dfc1cd41e302754942b574"
+      },
+      {
+        "path": "tests/ros_integration.py",
+        "sha256": "3f37aa3438cc8852a600567f17c86db74e0265da8908f6a5e63627d238c8cc6c"
+      },
+      {
+        "path": "tests/ros_legacy_red.py",
+        "sha256": "05fe713f47883aab8d217f56092fdd0ce92f5bf131aba942c8c62466b04d0c6e"
+      },
+      {
+        "path": "tests/ros_original_executor_red.py",
+        "sha256": "a7b29c1e458711d4a4bfc750e58e61d351625695cb76e83bf7b82ddec116bf5c"
+      },
+      {
+        "path": "tests/ros_smoke.py",
+        "sha256": "2a838ff3b6739597668e09618d30e7349d414af577d3ae87b2333762979b2d43"
+      },
+      {
+        "path": "tests/servo_cases.py",
+        "sha256": "c64f63f4fc1a28f1f1fdb0008fdabb8678953b88c3ba54cd28428e106f3809e2"
+      },
+      {
+        "path": "tests/test_cartesian_offline.py",
+        "sha256": "b0e198f00a936d81c08bc3645200cf3dc8d11d4dca2366e90cc7ecb36106412c"
+      },
+      {
+        "path": "tests/test_simulated_serial.py",
+        "sha256": "ad36e402b6befdfe62e5481bfe5861fc4fa039d69561d66de0f4826314e5df70"
+      },
+      {
+        "path": "tests/transient_cases.py",
+        "sha256": "98d47734240edc3cd88ccc6ff11548bfcb556e97af2b66d3efe58503e496d84f"
+      },
+      {
+        "path": "tests/wide400_cases.py",
+        "sha256": "de559c5b19865b0ac0d4c758c1562b9a9e3e1846ad1a8ef713bd3d62cbc8fe68"
+      },
+      {
+        "path": "tests/window_cases.py",
+        "sha256": "e278811e8257f23de5a40696b26869696fe3b586860997b2a4ae2a79943b70d6"
+      },
+      {
+        "path": "tools/run_cartesian_sim.py",
+        "sha256": "e823f5f22e4780b52d209dfd70a9e46b161ca8aa2b07fd9b4dca65031be97d39"
+      },
+      {
+        "path": "TRANSIENT_MOTION_NOTES.md",
+        "sha256": "3f0f1ca2917bc42f636e91200f1b8b61fa4abeb949e421a928649904a7b36d1f"
+      },
+      {
+        "path": "VISUAL_SERVO_NOTES.md",
+        "sha256": "96418f50571dd45cdec73ece78151c17abb8670800faa7f64e6057347348a98c"
+      },
+      {
+        "path": "WINDOW400_NOTES.md",
+        "sha256": "222b3a7dfc3435a12924a81220edc265954a68f260426abc93393c2cf669586b"
+      }
+    ]
+  },
+  {
+    "version": "atarm_controller_cartesian_ros_sim_20261030_v2",
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "bf5c617dad054e7a9c79272aa8c38f4e7108c41f5d1d7dc5144d9e4a7469ff0c"
+      },
+      {
+        "path": "atarm_controller/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "atarm_controller/arm_controller_lib.py",
+        "sha256": "60141e8ef8d49ce0e4cc40e7cdb052c97edeabbe88afc1c5828b4c67f3aea569"
+      },
+      {
+        "path": "atarm_controller/arm_controller_node.py",
+        "sha256": "03cfe858e563a38dc36e2c0ce8f24e8f7a72aa5515e22faecc89a2f393665eda"
+      },
+      {
+        "path": "atarm_controller/camera_cycle.py",
+        "sha256": "a37cf6c089a12f99d61070ade0eccc64d01c309d7bd9d3d8605d566550f69c28"
+      },
+      {
+        "path": "atarm_controller/camera_feedback.py",
+        "sha256": "528cf3ea07f812cc26206179c3a8305a40a7e81700dc3bea1edaf7352651c10d"
+      },
+      {
+        "path": "atarm_controller/camera_recovery.py",
+        "sha256": "fe70e0d0480ed0bbc50f853bff71bda92b15d120345308a12b550087cf69919a"
+      },
+      {
+        "path": "atarm_controller/cartesian_control.py",
+        "sha256": "7214ca27f37587aac4973fa647a9b07c8cafde91c6cc92d8c5cc00f927518e07"
+      },
+      {
+        "path": "atarm_controller/cartesian_jobs.py",
+        "sha256": "4403df5df8a9c1d2e132ca73017bd4cf94d429fd6626bfdb20e0bf11bb904f4f"
+      },
+      {
+        "path": "atarm_controller/cartesian_math.py",
+        "sha256": "cbd252f118d889e25ffd371817ed10b4aa777f408d47cbaa211452022656895c"
+      },
+      {
+        "path": "atarm_controller/cartesian_sim_node.py",
+        "sha256": "41c2e09871fea2f865a4a154c613b946802e1600c0582acb86a2e5164f5c5caf"
+      },
+      {
+        "path": "atarm_controller/cartesian_simulation.py",
+        "sha256": "d60c04c6fa6d0db5148d9119990cb9f0a4c8627187f20dbfb86198f8c2af2f4f"
+      },
+      {
+        "path": "atarm_controller/coupled_bend.py",
+        "sha256": "ff49cbf9fa7d0eb18431f49a6898d6482e3c9050614eeb9153e240b04a562993"
+      },
+      {
+        "path": "atarm_controller/end_effector_controller.py",
+        "sha256": "9ba60fc560351e5dc381f3c3d017e00a10414b15b6091e3e97720e18ec5a0e26"
+      },
+      {
+        "path": "atarm_controller/motion_checks.py",
+        "sha256": "83bb7fc5309cf291e1817a639debcb36e3ebb18346906a71a7bc9a8391fbdd5d"
+      },
+      {
+        "path": "atarm_controller/online_jacobian.py",
+        "sha256": "78239e70510daa0daeaeef06ccc8c585e1f2339f05422acb1ad73765a418f262"
+      },
+      {
+        "path": "atarm_controller/progress_window.py",
+        "sha256": "3e01f9ce37a9c849cbe29e7c830ff7771243d5673537f5c5304844e461d3a193"
+      },
+      {
+        "path": "atarm_controller/recovery_probe.py",
+        "sha256": "04f55a5244ef08bc0490c0d212dea17f33e8ea9a05c46e2f897b253e00d919d9"
+      },
+      {
+        "path": "atarm_controller/ros_control_config.py",
+        "sha256": "bf44b571ea070a07f6347fa99d7b65890b5db9f2059cdaaa436fc7549c6fe63e"
+      },
+      {
+        "path": "atarm_controller/ros_motion_worker.py",
+        "sha256": "303ac94efffb3a80b5945882dcbd3d7754b265aa13c753630a9d1c8514e46440"
+      },
+      {
+        "path": "atarm_controller/ros_pose_bridge.py",
+        "sha256": "e9e062d9a9a1fa8adc78cf7fc4b1d27c3401a1e2489085cb2859c7a5bd7fcbfb"
+      },
+      {
+        "path": "atarm_controller/serial_adapter.py",
+        "sha256": "72ad38ae1a13f8b14f2cc9bf7e21c4781607c59011e928990b4370c1da84076f"
+      },
+      {
+        "path": "atarm_controller/visual_servo.py",
+        "sha256": "b9dde56b9f25f0dbbf79dd3925211afa2324a65c5fc913d268227a67311dfea9"
+      },
+      {
+        "path": "ATARM_Usage_Guide.md",
+        "sha256": "1900e83dccd728021722e3671e6887da76eedef3336a819a3f3e476d51062bc8"
+      },
+      {
+        "path": "CAMERA_FEEDBACK_NOTES.md",
+        "sha256": "473e2fc267f4e2482777883274c2a6529ac30e06405722a25aef3b1354852acf"
+      },
+      {
+        "path": "CARTESIAN_OFFLINE_README.md",
+        "sha256": "f2090895237d73927d52774b52b617cccbe8b9bd6d2c2c9844e4735c4ce6fa9e"
+      },
+      {
+        "path": "COMPLETE_CYCLE_NOTES.md",
+        "sha256": "73bee884b18e0a961873da7b14e366d87214185b9e1335b2aa48306ee9faeee2"
+      },
+      {
+        "path": "config/ros_simulation_only.json",
+        "sha256": "1e6eec2ad7fd4f7e5da012b24fa81be2faa27dcc15a0058c71b33506489afb84"
+      },
+      {
+        "path": "CONFIRM_BUDGET_NOTES.md",
+        "sha256": "7e802cd353851086bb618977f7be94f3e941abf9b04ea3c7fbb7378c962be92c"
+      },
+      {
+        "path": "CONFIRM_PAUSE_NOTES.md",
+        "sha256": "eab06c5aac8c31c227a9e8927ced5a4935abc8dfc3dd85d5ab53b90b979f07b6"
+      },
+      {
+        "path": "COUPLED_BEND_NOTES.md",
+        "sha256": "e48e18deb50d70810140bcfe726a338f4011ba16b30e9d0384a71f7024985bb7"
+      },
+      {
+        "path": "EARLY_PROGRESS_NOTES.md",
+        "sha256": "d14e70813d391bbde02bad9d52f49a2e566203fa09f66d9b8a9a320e9809a51b"
+      },
+      {
+        "path": "INTERMITTENT_NOTES.md",
+        "sha256": "a88a2d261ff49b41b7a8416b731c2b28a89a6dbcceeb928dddc07e78373323cf"
+      },
+      {
+        "path": "LATE_JAM_NOTES.md",
+        "sha256": "096ecc0f57623733942330a7efa50a0a9867cce1920a5fef68cbcc8256130c01"
+      },
+      {
+        "path": "launch/arm_controller.launch.py",
+        "sha256": "6d3e56101484f13308011b8c4f32340699192b61385c12767b37d67c02d633ca"
+      },
+      {
+        "path": "launch/end_effector_controller.launch.py",
+        "sha256": "6b447226a405478573b496b426de099b2a3ad5b1dc7280e8a47425ca9a206ecd"
+      },
+      {
+        "path": "native/a1_serial.cpp",
+        "sha256": "43031787e666d75eb107a1193fc90bebbdd339ccc97551eaa118bfc7940c69d9"
+      },
+      {
+        "path": "native/a1_serial.h",
+        "sha256": "b96ea81ea502e48bff611ded86d1e3703924d486c9a4d4dc6e291dd7a148c7dc"
+      },
+      {
+        "path": "native/CMakeLists.txt",
+        "sha256": "0f6c74fc706fb941ec031b7272ddbe4509439b56b17f5604a8819c353e52fed9"
+      },
+      {
+        "path": "native/sdk_codec_probe.cpp",
+        "sha256": "0223c52c3ed20d19ff13555041a1c91050a7d901e28dfe20b318fb23e93e0ff4"
+      },
+      {
+        "path": "native/vendor/include/crc/crc32.h",
+        "sha256": "a6a9bfd65948430087be8bd5b09ee972c74bf41ee278dc7e20171d46eb24d30c"
+      },
+      {
+        "path": "native/vendor/include/IOPort/IOPort.h",
+        "sha256": "95a6de8c76af5ebc5498eda4ab6164172a08efd390fad5b5660d6a050e771c4d"
+      },
+      {
+        "path": "native/vendor/include/serialPort/SerialPort.h",
+        "sha256": "be00112679d84de4e5f4e969c62b2a362ec51af441396355589fcfde973b4551"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/include/motor_msg_A1B1.h",
+        "sha256": "eaba7f1e3a8fa91022487ebb7f709ad463c753e208eda4819f0e337695a38b01"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/include/motor_msg_GO-M8010-6.h",
+        "sha256": "99a124c861db085d9120642b51fd5f0ee6014c513cd67f723d560b67904fed0b"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/unitreeMotor.h",
+        "sha256": "9dc4c92405133de5d3d79e66799d048f50088daea58a7bd25ae3e9e599d56bef"
+      },
+      {
+        "path": "native/vendor/lib/libUnitreeMotorSDK_Linux64.so",
+        "sha256": "d51bc5f10cd757458ff4c34fa3bf6ecb0bb28c6c331de335aaaa527c68850c68"
+      },
+      {
+        "path": "native/vendor/LICENSE",
+        "sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d"
+      },
+      {
+        "path": "ONLINE_JACOBIAN_NOTES.md",
+        "sha256": "7fd002350600d40c4af25709b4c4eb574bbb10779c91ef81520db466603da00b"
+      },
+      {
+        "path": "package.xml",
+        "sha256": "56fabd445f26fd905218017593db29645af9248a9de60100a3776d7f32c3789e"
+      },
+      {
+        "path": "PAUSE_BUDGET_NOTES.md",
+        "sha256": "33d823cb3f8a4fad695eac06fd9e8b3cd24860677347991b23332de2cc35b465"
+      },
+      {
+        "path": "PROGRESS_WINDOW_NOTES.md",
+        "sha256": "95358bc26465e5cca9dba8fd589ae8659235182510a9ebcedd84459e5f6e5be9"
+      },
+      {
+        "path": "RECOVERY_NOTES.md",
+        "sha256": "000a39c60aa83d9e5008acb8eb8377b2c3f68832fb2d75250d88e7ea9c08297e"
+      },
+      {
+        "path": "RECOVERY_PROBE_NOTES.md",
+        "sha256": "0caef532ef8e4935f01274d41d898785ea24bde4ba9e5a4348959aebb010a05b"
+      },
+      {
+        "path": "REPAIR_NOTES.md",
+        "sha256": "14ce920f78c4238d2f55a308310f5130cb06d158b6e9097c7d4b4a1eefdc13c3"
+      },
+      {
+        "path": "REPEATED_PAUSE_NOTES.md",
+        "sha256": "bf5058426a206e35648e381f492e2fc8fe6eddae3260e7768a87a9b1dd770568"
+      },
+      {
+        "path": "resource/atarm_controller",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "ROS_CARTESIAN_README.md",
+        "sha256": "c3fdf60e291d34c68d698729b1ae2fac949d52bb2743d43111f9f3c67f309be6"
+      },
+      {
+        "path": "ROS_RUNTIME_NOTES.md",
+        "sha256": "d2c935ede477d87898447ec4c86dd2ba700359e615e346fbc8d5f94e78e1c554"
+      },
+      {
+        "path": "ROS_SOURCE_PROVENANCE.json",
+        "sha256": "42646cda47b141bd8b1e125ad34437a75d950f3f52c6b515aa937872d9de3001"
+      },
+      {
+        "path": "setup.cfg",
+        "sha256": "b2d5b3fca33e67b16cd527232120d41483422e24422e311cc3ce196a00fffa96"
+      },
+      {
+        "path": "setup.py",
+        "sha256": "777bb9ce87c0223921ce1798706356eb0873079a9ad7557be4cb88dd68646498"
+      },
+      {
+        "path": "SOURCE_PROVENANCE.json",
+        "sha256": "aa6712c12945f7db8f14a92cad4b894695d6263896da39e3d50d20f8bcd6d7c0"
+      },
+      {
+        "path": "test/test_copyright.py",
+        "sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757"
+      },
+      {
+        "path": "test/test_flake8.py",
+        "sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2"
+      },
+      {
+        "path": "test/test_pep257.py",
+        "sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda"
+      },
+      {
+        "path": "tests/adaptive_cases.py",
+        "sha256": "9f5d8e621a950bcba457d5e7e17a1a0c442f7ed8469d8c72640daf9e3944d815"
+      },
+      {
+        "path": "tests/bend_cases.py",
+        "sha256": "efcd522cac8b22d0c1bbfe5c2ddfe228a1d12c227666fd861873146bb475af6b"
+      },
+      {
+        "path": "tests/bend_model_cases.py",
+        "sha256": "e742c66d37351e5a6921f37c4e00fd18b68f72e7b5f44c3507a80f74d528bca6"
+      },
+      {
+        "path": "tests/budget_cases.py",
+        "sha256": "89a5d3bdc2ea67168b2cef6d09a0c44d1be9563f1c8b454ea54c6b109114af34"
+      },
+      {
+        "path": "tests/camera_cases.py",
+        "sha256": "1ab0e0ef3da28257a01c9cdf689a5acf537481525065ada79915b5990e5c47e8"
+      },
+      {
+        "path": "tests/confirm_pause_cases.py",
+        "sha256": "a5df8050739adb748940e29ecc31260b494acea3fa3717b0f6c5ff1de85920b4"
+      },
+      {
+        "path": "tests/cycle_cases.py",
+        "sha256": "78d2d07059f9193cf5628864224e1c27bd0d2f1c2f0e9e43bcbd138b2bac6d35"
+      },
+      {
+        "path": "tests/early_progress_cases.py",
+        "sha256": "e1f1738e04906b4887c561e37dd45386ae5071e001d568611aba8890465fb040"
+      },
+      {
+        "path": "tests/intermittent_cases.py",
+        "sha256": "71ce80e8dc5d1de676dbccd5a7cdb97bedcdf754b1fa5bec5a6f2dd3a94f970f"
+      },
+      {
+        "path": "tests/late_jam_cases.py",
+        "sha256": "fa10e00336139665e0ee90b5297842d7e075f99c6765442535d0194c51f53c72"
+      },
+      {
+        "path": "tests/original_node_snapshot.py",
+        "sha256": "1ef649d12ecf457dc6751cee792246ebb5be673a01e6264a2144026eaa391fa7"
+      },
+      {
+        "path": "tests/pause_budget_cases.py",
+        "sha256": "c3ce02c58c297e23eb08ab8f92d8f5545ddaed045c1612ac97255deb7af247da"
+      },
+      {
+        "path": "tests/probe_cases.py",
+        "sha256": "8f0aceb26535c25390e148ce612968e87ffe3a019584c73ff7e6ebc81f3bea6d"
+      },
+      {
+        "path": "tests/recovery_cases.py",
+        "sha256": "e2364fa745ac8356f90b76e56c761ed75440c7a8f253b3ea4b8c4d2fc7c58cb5"
+      },
+      {
+        "path": "tests/repeated_pause_cases.py",
+        "sha256": "e75ea8ab701a18901e18f4d0d51ca17a89b4497b4a76ff6de4b2ad09a87a9fb6"
+      },
+      {
+        "path": "tests/ros_bridge_worker_checks.py",
+        "sha256": "5c98fcd4218a6e5ec9607be7b0a945a31b8ff98de4b33740706e97b51ea0db9b"
+      },
+      {
+        "path": "tests/ros_cartesian_matrix.py",
+        "sha256": "faf2b1a2c299bb896b047f70e3d0615634f7728df78d442593c9193c7205ff38"
+      },
+      {
+        "path": "tests/ros_complete_smoke.py",
+        "sha256": "313405c922e82aaf82729007d8b419580d9972ac57dfc1cd41e302754942b574"
+      },
+      {
+        "path": "tests/ros_integration.py",
+        "sha256": "3f37aa3438cc8852a600567f17c86db74e0265da8908f6a5e63627d238c8cc6c"
+      },
+      {
+        "path": "tests/ros_legacy_red.py",
+        "sha256": "05fe713f47883aab8d217f56092fdd0ce92f5bf131aba942c8c62466b04d0c6e"
+      },
+      {
+        "path": "tests/ros_original_executor_red.py",
+        "sha256": "a7b29c1e458711d4a4bfc750e58e61d351625695cb76e83bf7b82ddec116bf5c"
+      },
+      {
+        "path": "tests/ros_smoke.py",
+        "sha256": "2a838ff3b6739597668e09618d30e7349d414af577d3ae87b2333762979b2d43"
+      },
+      {
+        "path": "tests/servo_cases.py",
+        "sha256": "c64f63f4fc1a28f1f1fdb0008fdabb8678953b88c3ba54cd28428e106f3809e2"
+      },
+      {
+        "path": "tests/test_cartesian_jobs.py",
+        "sha256": "964fd04d4e4e8423890523156e91cea645b5b37ce35ed95716fad6b212346e33"
+      },
+      {
+        "path": "tests/test_cartesian_offline.py",
+        "sha256": "b0e198f00a936d81c08bc3645200cf3dc8d11d4dca2366e90cc7ecb36106412c"
+      },
+      {
+        "path": "tests/test_simulated_serial.py",
+        "sha256": "ad36e402b6befdfe62e5481bfe5861fc4fa039d69561d66de0f4826314e5df70"
+      },
+      {
+        "path": "tests/transient_cases.py",
+        "sha256": "98d47734240edc3cd88ccc6ff11548bfcb556e97af2b66d3efe58503e496d84f"
+      },
+      {
+        "path": "tests/wide400_cases.py",
+        "sha256": "de559c5b19865b0ac0d4c758c1562b9a9e3e1846ad1a8ef713bd3d62cbc8fe68"
+      },
+      {
+        "path": "tests/window_cases.py",
+        "sha256": "e278811e8257f23de5a40696b26869696fe3b586860997b2a4ae2a79943b70d6"
+      },
+      {
+        "path": "tools/run_cartesian_sim.py",
+        "sha256": "e823f5f22e4780b52d209dfd70a9e46b161ca8aa2b07fd9b4dca65031be97d39"
+      },
+      {
+        "path": "TRANSIENT_MOTION_NOTES.md",
+        "sha256": "3f0f1ca2917bc42f636e91200f1b8b61fa4abeb949e421a928649904a7b36d1f"
+      },
+      {
+        "path": "VISUAL_SERVO_NOTES.md",
+        "sha256": "96418f50571dd45cdec73ece78151c17abb8670800faa7f64e6057347348a98c"
+      },
+      {
+        "path": "WINDOW400_NOTES.md",
+        "sha256": "222b3a7dfc3435a12924a81220edc265954a68f260426abc93393c2cf669586b"
+      }
+    ]
+  },
+  {
+    "version": "atarm_controller_cartesian_fd_20261030_v3",
+    "files": [
+      {
+        "path": ".gitignore",
+        "sha256": "bf5c617dad054e7a9c79272aa8c38f4e7108c41f5d1d7dc5144d9e4a7469ff0c"
+      },
+      {
+        "path": "atarm_controller/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "atarm_controller/actuator_io.py",
+        "sha256": "d2857a1d2364aadfb6f5cd5af556f572baa4e7e8aa115fcb4bbee3f0a5279fd4"
+      },
+      {
+        "path": "atarm_controller/arm_controller_lib.py",
+        "sha256": "60141e8ef8d49ce0e4cc40e7cdb052c97edeabbe88afc1c5828b4c67f3aea569"
+      },
+      {
+        "path": "atarm_controller/arm_controller_node.py",
+        "sha256": "03cfe858e563a38dc36e2c0ce8f24e8f7a72aa5515e22faecc89a2f393665eda"
+      },
+      {
+        "path": "atarm_controller/camera_cycle.py",
+        "sha256": "a37cf6c089a12f99d61070ade0eccc64d01c309d7bd9d3d8605d566550f69c28"
+      },
+      {
+        "path": "atarm_controller/camera_feedback.py",
+        "sha256": "528cf3ea07f812cc26206179c3a8305a40a7e81700dc3bea1edaf7352651c10d"
+      },
+      {
+        "path": "atarm_controller/camera_recovery.py",
+        "sha256": "fe70e0d0480ed0bbc50f853bff71bda92b15d120345308a12b550087cf69919a"
+      },
+      {
+        "path": "atarm_controller/cartesian_control.py",
+        "sha256": "431b724b5f85f46f1e1e07962695bcd491f79268aa7e70134d855199513f1cf5"
+      },
+      {
+        "path": "atarm_controller/cartesian_fd_node.py",
+        "sha256": "514dac3f23a343c90375fe76d07121ae6267752cbb36497d0d572e4c0c11c4eb"
+      },
+      {
+        "path": "atarm_controller/cartesian_fd_runtime.py",
+        "sha256": "a1b795bd5ff0cef72a872fe2e33a826a9e72db87f2e0354540d353d64d84fdb2"
+      },
+      {
+        "path": "atarm_controller/cartesian_jobs.py",
+        "sha256": "4403df5df8a9c1d2e132ca73017bd4cf94d429fd6626bfdb20e0bf11bb904f4f"
+      },
+      {
+        "path": "atarm_controller/cartesian_math.py",
+        "sha256": "cbd252f118d889e25ffd371817ed10b4aa777f408d47cbaa211452022656895c"
+      },
+      {
+        "path": "atarm_controller/cartesian_sim_node.py",
+        "sha256": "41c2e09871fea2f865a4a154c613b946802e1600c0582acb86a2e5164f5c5caf"
+      },
+      {
+        "path": "atarm_controller/cartesian_simulation.py",
+        "sha256": "d60c04c6fa6d0db5148d9119990cb9f0a4c8627187f20dbfb86198f8c2af2f4f"
+      },
+      {
+        "path": "atarm_controller/coupled_bend.py",
+        "sha256": "ff49cbf9fa7d0eb18431f49a6898d6482e3c9050614eeb9153e240b04a562993"
+      },
+      {
+        "path": "atarm_controller/end_effector_controller.py",
+        "sha256": "9ba60fc560351e5dc381f3c3d017e00a10414b15b6091e3e97720e18ec5a0e26"
+      },
+      {
+        "path": "atarm_controller/external_vision.py",
+        "sha256": "da0236f730c9c90a17f3c01cb2d7fe12cb886994d85d987628bda6358b90cbff"
+      },
+      {
+        "path": "atarm_controller/motion_checks.py",
+        "sha256": "83bb7fc5309cf291e1817a639debcb36e3ebb18346906a71a7bc9a8391fbdd5d"
+      },
+      {
+        "path": "atarm_controller/online_jacobian.py",
+        "sha256": "78239e70510daa0daeaeef06ccc8c585e1f2339f05422acb1ad73765a418f262"
+      },
+      {
+        "path": "atarm_controller/progress_window.py",
+        "sha256": "3e01f9ce37a9c849cbe29e7c830ff7771243d5673537f5c5304844e461d3a193"
+      },
+      {
+        "path": "atarm_controller/recovery_probe.py",
+        "sha256": "04f55a5244ef08bc0490c0d212dea17f33e8ea9a05c46e2f897b253e00d919d9"
+      },
+      {
+        "path": "atarm_controller/ros_control_config.py",
+        "sha256": "bf44b571ea070a07f6347fa99d7b65890b5db9f2059cdaaa436fc7549c6fe63e"
+      },
+      {
+        "path": "atarm_controller/ros_motion_worker.py",
+        "sha256": "303ac94efffb3a80b5945882dcbd3d7754b265aa13c753630a9d1c8514e46440"
+      },
+      {
+        "path": "atarm_controller/ros_pose_bridge.py",
+        "sha256": "e9e062d9a9a1fa8adc78cf7fc4b1d27c3401a1e2489085cb2859c7a5bd7fcbfb"
+      },
+      {
+        "path": "atarm_controller/serial_adapter.py",
+        "sha256": "72ad38ae1a13f8b14f2cc9bf7e21c4781607c59011e928990b4370c1da84076f"
+      },
+      {
+        "path": "atarm_controller/visual_servo.py",
+        "sha256": "b9dde56b9f25f0dbbf79dd3925211afa2324a65c5fc913d268227a67311dfea9"
+      },
+      {
+        "path": "ATARM_Usage_Guide.md",
+        "sha256": "1900e83dccd728021722e3671e6887da76eedef3336a819a3f3e476d51062bc8"
+      },
+      {
+        "path": "CAMERA_FEEDBACK_NOTES.md",
+        "sha256": "473e2fc267f4e2482777883274c2a6529ac30e06405722a25aef3b1354852acf"
+      },
+      {
+        "path": "CARTESIAN_OFFLINE_README.md",
+        "sha256": "f2090895237d73927d52774b52b617cccbe8b9bd6d2c2c9844e4735c4ce6fa9e"
+      },
+      {
+        "path": "COMPLETE_CYCLE_NOTES.md",
+        "sha256": "73bee884b18e0a961873da7b14e366d87214185b9e1335b2aa48306ee9faeee2"
+      },
+      {
+        "path": "config/offline_fd_validation.json",
+        "sha256": "61670b83f6f04fb9167cd386753178a93751bb99d8603ead11da31887ab06df8"
+      },
+      {
+        "path": "config/ros_simulation_only.json",
+        "sha256": "1e6eec2ad7fd4f7e5da012b24fa81be2faa27dcc15a0058c71b33506489afb84"
+      },
+      {
+        "path": "CONFIRM_BUDGET_NOTES.md",
+        "sha256": "7e802cd353851086bb618977f7be94f3e941abf9b04ea3c7fbb7378c962be92c"
+      },
+      {
+        "path": "CONFIRM_PAUSE_NOTES.md",
+        "sha256": "eab06c5aac8c31c227a9e8927ced5a4935abc8dfc3dd85d5ab53b90b979f07b6"
+      },
+      {
+        "path": "COUPLED_BEND_NOTES.md",
+        "sha256": "e48e18deb50d70810140bcfe726a338f4011ba16b30e9d0384a71f7024985bb7"
+      },
+      {
+        "path": "EARLY_PROGRESS_NOTES.md",
+        "sha256": "d14e70813d391bbde02bad9d52f49a2e566203fa09f66d9b8a9a320e9809a51b"
+      },
+      {
+        "path": "FD_CARTESIAN_README.md",
+        "sha256": "a75456ef678b9dd2215cb1f2d6761096b2fa94b4c9c6e69f4d8c85fc1ab4b964"
+      },
+      {
+        "path": "FD_SOURCE_PROVENANCE.json",
+        "sha256": "40caffc3a64607e05e53e37921d7a0a7063ca87d7e0196a02928dbdec7f90c5a"
+      },
+      {
+        "path": "INTERMITTENT_NOTES.md",
+        "sha256": "a88a2d261ff49b41b7a8416b731c2b28a89a6dbcceeb928dddc07e78373323cf"
+      },
+      {
+        "path": "LATE_JAM_NOTES.md",
+        "sha256": "096ecc0f57623733942330a7efa50a0a9867cce1920a5fef68cbcc8256130c01"
+      },
+      {
+        "path": "launch/arm_controller.launch.py",
+        "sha256": "6d3e56101484f13308011b8c4f32340699192b61385c12767b37d67c02d633ca"
+      },
+      {
+        "path": "launch/end_effector_controller.launch.py",
+        "sha256": "6b447226a405478573b496b426de099b2a3ad5b1dc7280e8a47425ca9a206ecd"
+      },
+      {
+        "path": "native/a1_serial.cpp",
+        "sha256": "43031787e666d75eb107a1193fc90bebbdd339ccc97551eaa118bfc7940c69d9"
+      },
+      {
+        "path": "native/a1_serial.h",
+        "sha256": "b96ea81ea502e48bff611ded86d1e3703924d486c9a4d4dc6e291dd7a148c7dc"
+      },
+      {
+        "path": "native/CMakeLists.txt",
+        "sha256": "0f6c74fc706fb941ec031b7272ddbe4509439b56b17f5604a8819c353e52fed9"
+      },
+      {
+        "path": "native/sdk_codec_probe.cpp",
+        "sha256": "0223c52c3ed20d19ff13555041a1c91050a7d901e28dfe20b318fb23e93e0ff4"
+      },
+      {
+        "path": "native/vendor/include/crc/crc32.h",
+        "sha256": "a6a9bfd65948430087be8bd5b09ee972c74bf41ee278dc7e20171d46eb24d30c"
+      },
+      {
+        "path": "native/vendor/include/IOPort/IOPort.h",
+        "sha256": "95a6de8c76af5ebc5498eda4ab6164172a08efd390fad5b5660d6a050e771c4d"
+      },
+      {
+        "path": "native/vendor/include/serialPort/SerialPort.h",
+        "sha256": "be00112679d84de4e5f4e969c62b2a362ec51af441396355589fcfde973b4551"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/include/motor_msg_A1B1.h",
+        "sha256": "eaba7f1e3a8fa91022487ebb7f709ad463c753e208eda4819f0e337695a38b01"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/include/motor_msg_GO-M8010-6.h",
+        "sha256": "99a124c861db085d9120642b51fd5f0ee6014c513cd67f723d560b67904fed0b"
+      },
+      {
+        "path": "native/vendor/include/unitreeMotor/unitreeMotor.h",
+        "sha256": "9dc4c92405133de5d3d79e66799d048f50088daea58a7bd25ae3e9e599d56bef"
+      },
+      {
+        "path": "native/vendor/lib/libUnitreeMotorSDK_Linux64.so",
+        "sha256": "d51bc5f10cd757458ff4c34fa3bf6ecb0bb28c6c331de335aaaa527c68850c68"
+      },
+      {
+        "path": "native/vendor/LICENSE",
+        "sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d"
+      },
+      {
+        "path": "ONLINE_JACOBIAN_NOTES.md",
+        "sha256": "7fd002350600d40c4af25709b4c4eb574bbb10779c91ef81520db466603da00b"
+      },
+      {
+        "path": "package.xml",
+        "sha256": "56fabd445f26fd905218017593db29645af9248a9de60100a3776d7f32c3789e"
+      },
+      {
+        "path": "PAUSE_BUDGET_NOTES.md",
+        "sha256": "33d823cb3f8a4fad695eac06fd9e8b3cd24860677347991b23332de2cc35b465"
+      },
+      {
+        "path": "PROGRESS_WINDOW_NOTES.md",
+        "sha256": "95358bc26465e5cca9dba8fd589ae8659235182510a9ebcedd84459e5f6e5be9"
+      },
+      {
+        "path": "RECOVERY_NOTES.md",
+        "sha256": "000a39c60aa83d9e5008acb8eb8377b2c3f68832fb2d75250d88e7ea9c08297e"
+      },
+      {
+        "path": "RECOVERY_PROBE_NOTES.md",
+        "sha256": "0caef532ef8e4935f01274d41d898785ea24bde4ba9e5a4348959aebb010a05b"
+      },
+      {
+        "path": "REPAIR_NOTES.md",
+        "sha256": "14ce920f78c4238d2f55a308310f5130cb06d158b6e9097c7d4b4a1eefdc13c3"
+      },
+      {
+        "path": "REPEATED_PAUSE_NOTES.md",
+        "sha256": "bf5058426a206e35648e381f492e2fc8fe6eddae3260e7768a87a9b1dd770568"
+      },
+      {
+        "path": "resource/atarm_controller",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "ROS_CARTESIAN_README.md",
+        "sha256": "c3fdf60e291d34c68d698729b1ae2fac949d52bb2743d43111f9f3c67f309be6"
+      },
+      {
+        "path": "ROS_RUNTIME_NOTES.md",
+        "sha256": "d2c935ede477d87898447ec4c86dd2ba700359e615e346fbc8d5f94e78e1c554"
+      },
+      {
+        "path": "ROS_SOURCE_PROVENANCE.json",
+        "sha256": "42646cda47b141bd8b1e125ad34437a75d950f3f52c6b515aa937872d9de3001"
+      },
+      {
+        "path": "setup.cfg",
+        "sha256": "b2d5b3fca33e67b16cd527232120d41483422e24422e311cc3ce196a00fffa96"
+      },
+      {
+        "path": "setup.py",
+        "sha256": "66ea7e486f9442b3df9ec25af1c811fbeee4547a298c6803d97d38eb34388db4"
+      },
+      {
+        "path": "SOURCE_PROVENANCE.json",
+        "sha256": "aa6712c12945f7db8f14a92cad4b894695d6263896da39e3d50d20f8bcd6d7c0"
+      },
+      {
+        "path": "test/test_copyright.py",
+        "sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757"
+      },
+      {
+        "path": "test/test_flake8.py",
+        "sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2"
+      },
+      {
+        "path": "test/test_pep257.py",
+        "sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda"
+      },
+      {
+        "path": "tests/adaptive_cases.py",
+        "sha256": "9f5d8e621a950bcba457d5e7e17a1a0c442f7ed8469d8c72640daf9e3944d815"
+      },
+      {
+        "path": "tests/bend_cases.py",
+        "sha256": "efcd522cac8b22d0c1bbfe5c2ddfe228a1d12c227666fd861873146bb475af6b"
+      },
+      {
+        "path": "tests/bend_model_cases.py",
+        "sha256": "e742c66d37351e5a6921f37c4e00fd18b68f72e7b5f44c3507a80f74d528bca6"
+      },
+      {
+        "path": "tests/budget_cases.py",
+        "sha256": "89a5d3bdc2ea67168b2cef6d09a0c44d1be9563f1c8b454ea54c6b109114af34"
+      },
+      {
+        "path": "tests/camera_cases.py",
+        "sha256": "1ab0e0ef3da28257a01c9cdf689a5acf537481525065ada79915b5990e5c47e8"
+      },
+      {
+        "path": "tests/confirm_pause_cases.py",
+        "sha256": "a5df8050739adb748940e29ecc31260b494acea3fa3717b0f6c5ff1de85920b4"
+      },
+      {
+        "path": "tests/cycle_cases.py",
+        "sha256": "78d2d07059f9193cf5628864224e1c27bd0d2f1c2f0e9e43bcbd138b2bac6d35"
+      },
+      {
+        "path": "tests/early_progress_cases.py",
+        "sha256": "e1f1738e04906b4887c561e37dd45386ae5071e001d568611aba8890465fb040"
+      },
+      {
+        "path": "tests/intermittent_cases.py",
+        "sha256": "71ce80e8dc5d1de676dbccd5a7cdb97bedcdf754b1fa5bec5a6f2dd3a94f970f"
+      },
+      {
+        "path": "tests/late_jam_cases.py",
+        "sha256": "fa10e00336139665e0ee90b5297842d7e075f99c6765442535d0194c51f53c72"
+      },
+      {
+        "path": "tests/original_node_snapshot.py",
+        "sha256": "1ef649d12ecf457dc6751cee792246ebb5be673a01e6264a2144026eaa391fa7"
+      },
+      {
+        "path": "tests/pause_budget_cases.py",
+        "sha256": "c3ce02c58c297e23eb08ab8f92d8f5545ddaed045c1612ac97255deb7af247da"
+      },
+      {
+        "path": "tests/probe_cases.py",
+        "sha256": "8f0aceb26535c25390e148ce612968e87ffe3a019584c73ff7e6ebc81f3bea6d"
+      },
+      {
+        "path": "tests/pty_cartesian_world.py",
+        "sha256": "92e7da09e5f48d3c66b611427d8b902b19d521026610404dcd3c5cf4fec7068c"
+      },
+      {
+        "path": "tests/recovery_cases.py",
+        "sha256": "e2364fa745ac8356f90b76e56c761ed75440c7a8f253b3ea4b8c4d2fc7c58cb5"
+      },
+      {
+        "path": "tests/repeated_pause_cases.py",
+        "sha256": "e75ea8ab701a18901e18f4d0d51ca17a89b4497b4a76ff6de4b2ad09a87a9fb6"
+      },
+      {
+        "path": "tests/ros_bridge_worker_checks.py",
+        "sha256": "5c98fcd4218a6e5ec9607be7b0a945a31b8ff98de4b33740706e97b51ea0db9b"
+      },
+      {
+        "path": "tests/ros_cartesian_matrix.py",
+        "sha256": "faf2b1a2c299bb896b047f70e3d0615634f7728df78d442593c9193c7205ff38"
+      },
+      {
+        "path": "tests/ros_complete_smoke.py",
+        "sha256": "313405c922e82aaf82729007d8b419580d9972ac57dfc1cd41e302754942b574"
+      },
+      {
+        "path": "tests/ros_fd_matrix.py",
+        "sha256": "67f3624a06a057034fe7598c8b747e6f6a49ed954d92ad59b2cb634cb8ae3059"
+      },
+      {
+        "path": "tests/ros_integration.py",
+        "sha256": "3f37aa3438cc8852a600567f17c86db74e0265da8908f6a5e63627d238c8cc6c"
+      },
+      {
+        "path": "tests/ros_legacy_red.py",
+        "sha256": "05fe713f47883aab8d217f56092fdd0ce92f5bf131aba942c8c62466b04d0c6e"
+      },
+      {
+        "path": "tests/ros_original_executor_red.py",
+        "sha256": "a7b29c1e458711d4a4bfc750e58e61d351625695cb76e83bf7b82ddec116bf5c"
+      },
+      {
+        "path": "tests/ros_smoke.py",
+        "sha256": "2a838ff3b6739597668e09618d30e7349d414af577d3ae87b2333762979b2d43"
+      },
+      {
+        "path": "tests/servo_cases.py",
+        "sha256": "c64f63f4fc1a28f1f1fdb0008fdabb8678953b88c3ba54cd28428e106f3809e2"
+      },
+      {
+        "path": "tests/test_cartesian_jobs.py",
+        "sha256": "964fd04d4e4e8423890523156e91cea645b5b37ce35ed95716fad6b212346e33"
+      },
+      {
+        "path": "tests/test_cartesian_offline.py",
+        "sha256": "b0e198f00a936d81c08bc3645200cf3dc8d11d4dca2366e90cc7ecb36106412c"
+      },
+      {
+        "path": "tests/test_fd_interfaces.py",
+        "sha256": "2b1c59bb5eb7c62aae6836ffb317341dc76508dc24be304e1a2b85e6f7a5a979"
+      },
+      {
+        "path": "tests/test_simulated_serial.py",
+        "sha256": "ad36e402b6befdfe62e5481bfe5861fc4fa039d69561d66de0f4826314e5df70"
+      },
+      {
+        "path": "tests/transient_cases.py",
+        "sha256": "98d47734240edc3cd88ccc6ff11548bfcb556e97af2b66d3efe58503e496d84f"
+      },
+      {
+        "path": "tests/wide400_cases.py",
+        "sha256": "de559c5b19865b0ac0d4c758c1562b9a9e3e1846ad1a8ef713bd3d62cbc8fe68"
+      },
+      {
+        "path": "tests/window_cases.py",
+        "sha256": "e278811e8257f23de5a40696b26869696fe3b586860997b2a4ae2a79943b70d6"
+      },
+      {
+        "path": "tools/run_cartesian_sim.py",
+        "sha256": "e823f5f22e4780b52d209dfd70a9e46b161ca8aa2b07fd9b4dca65031be97d39"
+      },
+      {
+        "path": "TRANSIENT_MOTION_NOTES.md",
+        "sha256": "3f0f1ca2917bc42f636e91200f1b8b61fa4abeb949e421a928649904a7b36d1f"
+      },
+      {
+        "path": "VISUAL_SERVO_NOTES.md",
+        "sha256": "96418f50571dd45cdec73ece78151c17abb8670800faa7f64e6057347348a98c"
+      },
+      {
+        "path": "WINDOW400_NOTES.md",
+        "sha256": "222b3a7dfc3435a12924a81220edc265954a68f260426abc93393c2cf669586b"
+      }
+    ]
+  }
+]

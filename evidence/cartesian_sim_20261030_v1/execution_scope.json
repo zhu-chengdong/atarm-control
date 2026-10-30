@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-30",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "execution": "local Windows Python with deterministic virtual time and synthetic sensor/plant I/O",
+  "hardware_adapter_provided": false,
+  "ros_runtime_used": false,
+  "real_camera_used": false,
+  "sdk_or_serial_used": false,
+  "remote_workstation_used": false,
+  "pip_install_or_native_build_performed": false,
+  "source_preservation_verified_files": 1189,
+  "new_public_entry": "CartesianController.move_position(PositionGoal)",
+  "integration_boundary": "New pure-Python module and simulation CLI. Legacy controller and ROS node remain byte-for-byte unchanged; physical and ROS adapters are not provided."
+}

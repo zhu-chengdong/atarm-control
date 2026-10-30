@@ -1,0 +1,26 @@
+{
+  "mode": "offline",
+  "physical_uart_capability": false,
+  "library": "/results/build01/offline/liba1_serial_adapter.so",
+  "library_sha256": "e95501569d97de0d12bd47e5fc1e49b02fdd6f007c209c43d1f659a0041a3b07",
+  "sdk_sha256": "d51bc5f10cd757458ff4c34fa3bf6ecb0bb28c6c331de335aaaa527c68850c68",
+  "commands": [
+    [
+      "cmake",
+      "-S",
+      "/project/native",
+      "-B",
+      "/results/build01/offline",
+      "-DATARM_ENABLE_PHYSICAL_UART=OFF"
+    ],
+    [
+      "cmake",
+      "--build",
+      "/results/build01/offline",
+      "--target",
+      "a1_serial_adapter",
+      "-j2"
+    ]
+  ],
+  "devices_opened": false
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "groups": {
+    "test_commissioning": {
+      "tests": 14,
+      "passed": true
+    },
+    "test_fd_interfaces": {
+      "tests": 12,
+      "passed": true
+    },
+    "test_cartesian_offline": {
+      "tests": 22,
+      "passed": true
+    },
+    "test_cartesian_jobs": {
+      "tests": 6,
+      "passed": true
+    },
+    "linux_kernel_and_native": {
+      "passed": true
+    },
+    "ros_matrix": {
+      "passed": true
+    }
+  }
+}

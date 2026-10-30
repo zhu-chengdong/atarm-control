@@ -1,0 +1,10 @@
+.......usage: python.exe -m unittest [-h] --site-dir SITE_DIR --native-dir NATIVE_DIR
+                              [--project PROJECT] [--connect-hardware]
+                              [--run-dir RUN_DIR]
+                              {check,run}
+python.exe -m unittest: error: run requires explicit --connect-hardware and a new --run-dir
+.......
+----------------------------------------------------------------------
+Ran 14 tests in 0.258s
+
+OK

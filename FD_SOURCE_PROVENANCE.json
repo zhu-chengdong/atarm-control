@@ -1,0 +1,45 @@
+{
+  "source": "D:\\Research\\Mark_Agricultural_Robot\\01_Source\\development\\atarm_controller_cartesian_ros_sim_20261030_v2",
+  "date": "2026-10-30",
+  "changed_inherited_files": [
+    "setup.py",
+    "atarm_controller/cartesian_control.py"
+  ],
+  "new_files": [
+    "FD_CARTESIAN_README.md",
+    "atarm_controller\\actuator_io.py",
+    "atarm_controller\\cartesian_fd_node.py",
+    "atarm_controller\\cartesian_fd_runtime.py",
+    "atarm_controller\\external_vision.py",
+    "config\\offline_fd_validation.json",
+    "tests\\pty_cartesian_world.py",
+    "tests\\ros_fd_matrix.py",
+    "tests\\test_fd_interfaces.py"
+  ],
+  "protected_old_files": 1435,
+  "native_adapter_unchanged": true,
+  "runtime_source_hashes": {
+    "atarm_controller/cartesian_jobs.py": "4403df5df8a9c1d2e132ca73017bd4cf94d429fd6626bfdb20e0bf11bb904f4f",
+    "atarm_controller/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "atarm_controller/cartesian_simulation.py": "d60c04c6fa6d0db5148d9119990cb9f0a4c8627187f20dbfb86198f8c2af2f4f",
+    "atarm_controller/cartesian_control.py": "431b724b5f85f46f1e1e07962695bcd491f79268aa7e70134d855199513f1cf5",
+    "atarm_controller/ros_pose_bridge.py": "e9e062d9a9a1fa8adc78cf7fc4b1d27c3401a1e2489085cb2859c7a5bd7fcbfb",
+    "atarm_controller/camera_feedback.py": "528cf3ea07f812cc26206179c3a8305a40a7e81700dc3bea1edaf7352651c10d",
+    "atarm_controller/cartesian_fd_node.py": "514dac3f23a343c90375fe76d07121ae6267752cbb36497d0d572e4c0c11c4eb",
+    "atarm_controller/serial_adapter.py": "72ad38ae1a13f8b14f2cc9bf7e21c4781607c59011e928990b4370c1da84076f",
+    "atarm_controller/actuator_io.py": "d2857a1d2364aadfb6f5cd5af556f572baa4e7e8aa115fcb4bbee3f0a5279fd4",
+    "atarm_controller/ros_motion_worker.py": "303ac94efffb3a80b5945882dcbd3d7754b265aa13c753630a9d1c8514e46440",
+    "atarm_controller/external_vision.py": "da0236f730c9c90a17f3c01cb2d7fe12cb886994d85d987628bda6358b90cbff",
+    "atarm_controller/cartesian_fd_runtime.py": "a1b795bd5ff0cef72a872fe2e33a826a9e72db87f2e0354540d353d64d84fdb2",
+    "atarm_controller/cartesian_sim_node.py": "41c2e09871fea2f865a4a154c613b946802e1600c0582acb86a2e5164f5c5caf",
+    "atarm_controller/cartesian_math.py": "cbd252f118d889e25ffd371817ed10b4aa777f408d47cbaa211452022656895c",
+    "config/offline_fd_validation.json": "61670b83f6f04fb9167cd386753178a93751bb99d8603ead11da31887ab06df8",
+    "tests/test_cartesian_offline.py": "b0e198f00a936d81c08bc3645200cf3dc8d11d4dca2366e90cc7ecb36106412c",
+    "tests/test_cartesian_jobs.py": "964fd04d4e4e8423890523156e91cea645b5b37ce35ed95716fad6b212346e33",
+    "tests/test_fd_interfaces.py": "2b1c59bb5eb7c62aae6836ffb317341dc76508dc24be304e1a2b85e6f7a5a979",
+    "tests/ros_fd_matrix.py": "67f3624a06a057034fe7598c8b747e6f6a49ed954d92ad59b2cb634cb8ae3059",
+    "tests/pty_cartesian_world.py": "92e7da09e5f48d3c66b611427d8b902b19d521026610404dcd3c5cf4fec7068c",
+    "native/build/liba1_serial_adapter.so": "4324580ec97bf0e3f2e1363aa1a0064a0dba7804deee35b09cc32386cfda7286",
+    "native/vendor/lib/libUnitreeMotorSDK_Linux64.so": "d51bc5f10cd757458ff4c34fa3bf6ecb0bb28c6c331de335aaaa527c68850c68"
+  }
+}

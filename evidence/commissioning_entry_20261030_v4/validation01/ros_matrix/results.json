@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "complete",
+      "passed": true,
+      "true_error_m": 0.00022171701947205222,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 1276,
+      "states_count": 69
+    },
+    {
+      "case": "coordinated",
+      "passed": true,
+      "true_error_m": 0.0002033460438700647,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 828,
+      "states_count": 44
+    },
+    {
+      "case": "cancel",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": 0.522837,
+      "native_transactions": 140,
+      "states_count": 7
+    },
+    {
+      "case": "tracking_lost",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 140,
+      "states_count": 5
+    },
+    {
+      "case": "frozen_pose",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 224,
+      "states_count": 11
+    },
+    {
+      "case": "map_reset",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 128,
+      "states_count": 6
+    },
+    {
+      "case": "wrong_frame",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 136,
+      "states_count": 7
+    },
+    {
+      "case": "delayed_pose",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 144,
+      "states_count": 7
+    },
+    {
+      "case": "nonmetric",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 120,
+      "states_count": 6
+    },
+    {
+      "case": "bad_crc",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 121,
+      "states_count": 6
+    },
+    {
+      "case": "wrong_id",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 141,
+      "states_count": 8
+    },
+    {
+      "case": "timeout",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 121,
+      "states_count": 6
+    },
+    {
+      "case": "motor_error",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 137,
+      "states_count": 7
+    },
+    {
+      "case": "stall",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 512,
+      "states_count": 28
+    },
+    {
+      "case": "false_encoder",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 932,
+      "states_count": 50
+    },
+    {
+      "case": "reference_mismatch",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 112,
+      "states_count": 3
+    },
+    {
+      "case": "hold_fault",
+      "passed": true,
+      "true_error_m": 0.00022171701947205222,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 1288,
+      "states_count": 70
+    },
+    {
+      "case": "shutdown",
+      "passed": true,
+      "true_error_m": null,
+      "cancel_to_first_stop_ms": null,
+      "native_transactions": 136,
+      "states_count": 4
+    }
+  ]
+}

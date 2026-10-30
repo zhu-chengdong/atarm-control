@@ -1,0 +1,924 @@
+{
+  "date": "2026-10-30",
+  "current_physical_parameters_verified": false,
+  "records": [
+    {
+      "name": "serial_line_profile",
+      "status": "已验证",
+      "value": {
+        "data_bits": 8,
+        "parity": "N",
+        "stop_bits": 1,
+        "flow_control": "none"
+      },
+      "verification_scope": "固定SDK声明与v4已实现/PTY验证的唯一受支持线配置；不是现场USB设置实测",
+      "source_ids": [
+        "sdk_serial_defaults",
+        "native_line_profile",
+        "native_kernel_checks"
+      ],
+      "template_paths": [
+        "site.ports.active.data_bits",
+        "site.ports.active.parity",
+        "site.ports.active.stop_bits",
+        "site.ports.active.flow_control",
+        "site.ports.deploy.data_bits",
+        "site.ports.deploy.parity",
+        "site.ports.deploy.stop_bits",
+        "site.ports.deploy.flow_control"
+      ],
+      "applied_to_template": true,
+      "current_physical_validation": false,
+      "note": "现场必须确认设备接受该配置；不能因此把其他串口参数判为已确认。"
+    },
+    {
+      "name": "a1_model_gear_ratio",
+      "status": "已验证",
+      "value": 9.1,
+      "verification_scope": "固定SDK A1型号常量查询，历史codec记录已验证；仍需现场核对实际电机型号",
+      "source_ids": [
+        "sdk_codec_result",
+        "original_radius",
+        "native_gear_conversion"
+      ],
+      "template_paths": [
+        "session.channels[0].gear_ratio",
+        "session.channels[1].gear_ratio",
+        "session.channels[2].gear_ratio",
+        "session.channels[3].gear_ratio"
+      ],
+      "applied_to_template": true,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "vision_input_topics",
+      "status": "已验证",
+      "value": {
+        "pose_topic": "/atarm/camera/pose",
+        "source_status_topic": "/atarm/camera/source_status"
+      },
+      "verification_scope": "已部署工具包与v4节点的输入接口契约，不证明现场已有符合契约的发布器",
+      "source_ids": [
+        "vision_topics",
+        "fd_node_topics"
+      ],
+      "template_paths": [
+        "site.ros.pose_topic",
+        "site.ros.source_status_topic"
+      ],
+      "applied_to_template": true,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "implemented_stop_policy",
+      "status": "已验证",
+      "value": "zero_effort_requires_external_support",
+      "verification_scope": "v4实现的停止策略；承重保持/外部支撑的实际效果未验证",
+      "source_ids": [
+        "stop_policy"
+      ],
+      "template_paths": [
+        "site.stop.policy"
+      ],
+      "applied_to_template": true,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "physical_library",
+      "status": "已验证",
+      "value": {
+        "path": "/native/physical/liba1_serial_adapter.so",
+        "sha256": "ffdec69854c8b4f2ef7cb2d3bcf638cc1dc16ed540d61d2f0b3e82c5929a23d8"
+      },
+      "verification_scope": "本次既有构建的能力、路径和文件SHA256；不证明实机通信",
+      "source_ids": [
+        "v4_physical_build"
+      ],
+      "template_paths": [
+        "site.native_library.path",
+        "site.native_library.sha256"
+      ],
+      "applied_to_template": true,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "preserved_controller_policy",
+      "status": "已验证",
+      "value": {
+        "initial_jacobian": null,
+        "cable_mix": null,
+        "reference_lengths_m": null,
+        "min_lengths_m": null,
+        "max_lengths_m": null,
+        "strategy": "alternating",
+        "position_tolerance_m": null,
+        "camera_noise_bound_m": null,
+        "max_pose_age_s": 0.15,
+        "max_motor_age_s": 0.1,
+        "stable_s": 0.1,
+        "settle_s": 0.05,
+        "poll_s": 0.01,
+        "max_speed_m_s": null,
+        "pose_step_margin_m": null,
+        "motor_tolerance_m": null,
+        "max_motor_step_m": null,
+        "min_step_m": null,
+        "max_total_travel_m": null,
+        "max_model_radius_m": null,
+        "max_steps": 100,
+        "timeout_s": 40.0,
+        "settle_timeout_s": 1.0,
+        "gain": 0.75,
+        "damping": 0.06,
+        "min_singular_value": null,
+        "max_condition": null,
+        "no_progress_steps": 8,
+        "min_progress_m": null,
+        "filter_frames": 5,
+        "online_update": false,
+        "learning_rate": 0.65,
+        "min_learning_step_m": null,
+        "max_pair_s": 2.0,
+        "max_update_fraction": 0.25
+      },
+      "verification_scope": "保持v4原有软件策略；只在既有模拟/PTY环境验证，未当作实机噪声或精度",
+      "source_ids": [
+        "v4_baseline_controller",
+        "v4_software_controls"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "原有非空算法默认保留，原有未知物理字段仍为空。online_update=false。"
+    },
+    {
+      "name": "historical_active_port",
+      "status": "历史记录",
+      "value": "/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0",
+      "verification_scope": "2026-09-17三份真实bag的6条dry_run=False启动日志，并与原代码一致",
+      "source_ids": [
+        "historical_live_ports",
+        "original_node",
+        "original_launch"
+      ],
+      "template_paths": [
+        "site.ports.active.by_id_path"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "当前设备是否仍相同未核实；不得仅由by-id字符串推断sysfs VID/PID/序列属性。"
+    },
+    {
+      "name": "historical_deploy_port",
+      "status": "历史记录",
+      "value": "/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0",
+      "verification_scope": "同上，已证实当时使用的部署路径，不是当前现场USB检查",
+      "source_ids": [
+        "historical_live_ports",
+        "original_node",
+        "original_launch"
+      ],
+      "template_paths": [
+        "site.ports.deploy.by_id_path"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "motor_ids",
+      "status": "历史默认",
+      "value": [
+        1,
+        0,
+        2,
+        2
+      ],
+      "verification_scope": "原节点、launch和控制库一致，缺少当前实物/总线逐路读回证据",
+      "source_ids": [
+        "original_node",
+        "original_launch",
+        "original_base_defaults"
+      ],
+      "template_paths": [
+        "session.channels[0].motor_id",
+        "session.channels[1].motor_id",
+        "session.channels[2].motor_id",
+        "session.channels[3].motor_id"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "bend_directions",
+      "status": "历史默认",
+      "value": [
+        1,
+        1,
+        -1
+      ],
+      "verification_scope": "原节点、launch和控制库一致，未确认当前索路安装",
+      "source_ids": [
+        "original_node",
+        "original_launch",
+        "original_base_defaults"
+      ],
+      "template_paths": [
+        "session.channels[0].direction",
+        "session.channels[1].direction",
+        "session.channels[2].direction"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "deploy_direction",
+      "status": "存在冲突",
+      "value": {
+        "node_and_library": -1,
+        "launch": 1
+      },
+      "verification_scope": "原代码不同入口给出相反值，不能自行选边",
+      "source_ids": [
+        "original_node",
+        "original_launch",
+        "original_base_defaults"
+      ],
+      "template_paths": [
+        "session.channels[3].direction"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "deploy_gain_scale",
+      "status": "存在冲突",
+      "value": {
+        "node_and_library": 3.0,
+        "launch": 1.0
+      },
+      "verification_scope": "不同入口倍率不一致，历史实际调用入口/覆盖值未确定",
+      "source_ids": [
+        "original_node",
+        "original_launch",
+        "original_base_defaults"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "v4已采用显式逐路协议增益，不再有同名倍率字段；不能直接套用。"
+    },
+    {
+      "name": "bobbin_radius",
+      "status": "历史默认",
+      "value": 0.026,
+      "verification_scope": "原A1Motor中的模型半径26mm，非实测有效绕索半径",
+      "source_ids": [
+        "original_radius"
+      ],
+      "template_paths": [
+        "session.channels[0].radius_m",
+        "session.channels[1].radius_m",
+        "session.channels[2].radius_m",
+        "session.channels[3].radius_m"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "sdk_baud_default",
+      "status": "历史默认",
+      "value": 4000000,
+      "verification_scope": "固定SDK头文件默认与仅传端口名的Python绑定相连；机器人当年安装SDK版本未确认",
+      "source_ids": [
+        "sdk_serial_defaults",
+        "sdk_python_serial_constructor",
+        "original_serial_call",
+        "sdk_version_not_verified"
+      ],
+      "template_paths": [
+        "site.ports.active.baud_rate",
+        "site.ports.deploy.baud_rate"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "不是已测现场波特率；4800000是PTY测试值，57600属于末端舵机。"
+    },
+    {
+      "name": "sdk_receive_timeout_default",
+      "status": "历史默认",
+      "value": 0.02,
+      "verification_scope": "固定SDK C++ timeOutUs=20000；不是机器人实际端到端回复时延",
+      "source_ids": [
+        "sdk_serial_defaults"
+      ],
+      "template_paths": [
+        "site.ports.active.reply_timeout_s",
+        "site.ports.deploy.reply_timeout_s"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "original_output_gains",
+      "status": "历史默认",
+      "value": {
+        "output_kp": 15.0,
+        "output_kd": 2.5,
+        "kp_divisor": 26.07,
+        "kd_multiplier": 100.0
+      },
+      "verification_scope": "原代码的输出侧参数及转换公式，不能直接赋给v4转子协议字段",
+      "source_ids": [
+        "original_gains"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "derived_rotor_gains_scale_1",
+      "status": "历史默认",
+      "value": {
+        "kp": 0.006948122124085402,
+        "kd": 3.0189590629151075
+      },
+      "verification_scope": "按已核实原公式和A1 SDK 9.1计算的参考值，非新实机整定",
+      "source_ids": [
+        "original_gains",
+        "sdk_codec_result"
+      ],
+      "template_paths": [
+        "session.channels[0].kp",
+        "session.channels[0].kd",
+        "session.channels[1].kp",
+        "session.channels[1].kd",
+        "session.channels[2].kp",
+        "session.channels[2].kd",
+        "session.channels[3].kp",
+        "session.channels[3].kd"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "derived_rotor_gains_scale_3",
+      "status": "历史默认",
+      "value": {
+        "kp": 0.020844366372256205,
+        "kd": 9.056877188745322
+      },
+      "verification_scope": "若使用节点/控制库倍率3的展开支路；launch倍率1则不同",
+      "source_ids": [
+        "original_gains",
+        "original_node",
+        "original_launch"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "冲突未解决，两种计算均保留，不写入执行参数。"
+    },
+    {
+      "name": "original_command_torque_limit",
+      "status": "历史默认",
+      "value": {
+        "base_nm": 10.0,
+        "deploy_if_scale_3_nm": 30.0
+      },
+      "verification_scope": "原代码的命令tau裁剪量，不是实测安全承载/电流或v4反馈力矩报警阈值",
+      "source_ids": [
+        "original_radius",
+        "original_torque"
+      ],
+      "template_paths": [
+        "session.channels[0].max_feedback_torque_nm",
+        "session.channels[1].max_feedback_torque_nm",
+        "session.channels[2].max_feedback_torque_nm",
+        "session.channels[3].max_feedback_torque_nm"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "original_motion_defaults",
+      "status": "历史默认",
+      "value": {
+        "deploy_delta_length_m": 0.05,
+        "micro_adjust_max_step_m": 0.01,
+        "bend_step_m": 0.002,
+        "step_rate_hz": 50.0,
+        "publish_rate_hz": 20.0,
+        "old_bend_total_error_m": 0.003
+      },
+      "verification_scope": "原动作代码默认，原完成量是命令误差，非三维末端精度，也非安全行程",
+      "source_ids": [
+        "original_node",
+        "original_step_limit",
+        "original_bend_completion"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "original_geometry",
+      "status": "历史默认",
+      "value": {
+        "stage_edge_lengths_m": [
+          0.190526,
+          0.190526,
+          0.190526,
+          0.190526
+        ],
+        "stage_saddle_lengths_m": [
+          0.123236,
+          0.123236,
+          0.123236,
+          0.123236
+        ],
+        "neutral_include_angles_deg": [
+          27.936,
+          27.936,
+          27.936
+        ],
+        "fixed_length_m": 0.155564,
+        "cable_angles_deg": [
+          0.0,
+          120.0,
+          240.0
+        ],
+        "max_bending_angle_deg": 60.0
+      },
+      "verification_scope": "王师兄运动学模型常数；不等于现场几何标定、J或安全工作区",
+      "source_ids": [
+        "original_geometry",
+        "original_bend_limit",
+        "original_fixed_length"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "reported_supply_voltage",
+      "status": "历史报告",
+      "value": 24.0,
+      "verification_scope": "Mark录音描述原电机供电标称24V；新转换器负载表现仍待测",
+      "source_ids": [
+        "mark_24v_report",
+        "mark_supply_not_tested"
+      ],
+      "template_paths": [
+        "site.electrical.nominal_voltage_v"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "recorded_camera_profile",
+      "status": "历史记录",
+      "value": {
+        "width": 848,
+        "height": 480,
+        "fps": 15,
+        "depth_encoding": "16UC1",
+        "depth_unit_m": 0.001,
+        "rgbd_depth_map_factor": 1000.0,
+        "pair_tolerance_ms": 2.0
+      },
+      "verification_scope": "历史真实bag与离线链路配置；未证明当前安装设备、原始畸变和外参不变",
+      "source_ids": [
+        "historical_depth",
+        "vision_topics"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "保留为采集参考；v4位姿控制模板没有原始相机内参字段，不将去畸变输出内参冒充raw CameraInfo。"
+    },
+    {
+      "name": "excluded_simulation_values",
+      "status": "不能采用",
+      "value": {
+        "baud_in_pty_test": 4800000,
+        "end_servo_baud_default": 57600,
+        "synthetic_base_position_m": [
+          0.3,
+          0.05,
+          0.18
+        ],
+        "initial_jacobian": "synthetic",
+        "cable_mix": "synthetic"
+      },
+      "verification_scope": "PTY速率测试、末端设备设置和合成模型均不是主臂实机参数",
+      "source_ids": [
+        "v4_simulation_excluded",
+        "native_kernel_checks"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": "绝不填入主臂波特率、初始J、控制点、零位和实际噪声。"
+    },
+    {
+      "name": "unknown_calibration",
+      "status": "待实测",
+      "value": null,
+      "verification_scope": "未找到当前编码器零位、实际索长参考、基座/工具外参、完整三维J及可用工作区的实测证据",
+      "source_ids": [
+        "historical_no_base_transform",
+        "no_synchronous_motion"
+      ],
+      "template_paths": [
+        "session.calibration_id",
+        "session.controller.initial_jacobian",
+        "session.controller.cable_mix",
+        "session.controller.reference_lengths_m",
+        "session.controller.min_lengths_m",
+        "session.controller.max_lengths_m"
+      ],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    },
+    {
+      "name": "original_bending_limit_conflict",
+      "status": "存在冲突",
+      "value": {
+        "implemented_limit_deg": 60.0,
+        "docstring_upper_limit_deg": 30.0
+      },
+      "verification_scope": "最大角度变量为60度，但函数注释写pi/6；均不能当作已验证安全工作区",
+      "source_ids": [
+        "original_bend_limit",
+        "original_bend_doc_limit"
+      ],
+      "template_paths": [],
+      "applied_to_template": false,
+      "current_physical_validation": false,
+      "note": ""
+    }
+  ],
+  "sources": {
+    "original_node": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_node.py",
+      "sha256": "204e2f7122b6894cfd72e24b23cc1d48d76ebfd478a77ab453bb47305f8a971a",
+      "line_start": 33,
+      "line_end": 51,
+      "matched_lines": [
+        42
+      ],
+      "excerpt": "        super().__init__('arm_controller_node')\n\n        self.declare_parameter('port_active',          '/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0')\n        self.declare_parameter('port_deploy',          '/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0')\n        self.declare_parameter('is_dry_run',           False)\n        self.declare_parameter('step_rate_hz',         50.0)\n        self.declare_parameter('publish_rate_hz',      20.0)\n        self.declare_parameter('auto_deploy_on_start', False)\n        self.declare_parameter('deploy_delta_length',  0.05)\n        self.declare_parameter('active_motor_0.id',         1)\n        self.declare_parameter('active_motor_1.id',         0)\n        self.declare_parameter('active_motor_2.id',         2)\n        self.declare_parameter('active_motor_0.direction',  1)\n        self.declare_parameter('active_motor_1.direction',  1)\n        self.declare_parameter('active_motor_2.direction', -1)\n        self.declare_parameter('deploy_motor.id',           2)\n        self.declare_parameter('deploy_motor.direction',   -1)\n        self.declare_parameter('micro_adjust_max_step_m',  0.01)\n        self.declare_parameter('deploy_motor_torque_gain_scale', 3.0)"
+    },
+    "original_launch": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/launch/arm_controller.launch.py",
+      "sha256": "d4809e3aaddace9129f05bee5180604503e13c257a70cb075b02845f467003be",
+      "line_start": 12,
+      "line_end": 28,
+      "matched_lines": [
+        20,
+        38
+      ],
+      "excerpt": "    port_deploy_arg                = DeclareLaunchArgument('port_deploy',                 default_value='/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0', description='Serial device for the deploy/retract A1 motor.')\n    is_dry_run_arg                 = DeclareLaunchArgument('is_dry_run',                  default_value='false', description='Run without opening Unitree serial ports.')\n    step_rate_hz_arg               = DeclareLaunchArgument('step_rate_hz',                default_value='50.0', description='ROS timer rate for stepping bend targets.')\n    publish_rate_hz_arg            = DeclareLaunchArgument('publish_rate_hz',             default_value='20.0', description='Motor status publish rate.')\n    auto_deploy_on_start_arg       = DeclareLaunchArgument('auto_deploy_on_start',        default_value='false', description='Deploy the arm immediately after node startup.')\n    deploy_delta_length_arg        = DeclareLaunchArgument('deploy_delta_length',         default_value='0.05', description='Deploy cable delta length in metres.')\n    micro_adjust_max_step_m_arg     = DeclareLaunchArgument('micro_adjust_max_step_m',     default_value='0.01', description='Max signed length increment for a micro-adjust command, in metres.')\n    deploy_motor_torque_gain_scale_arg = DeclareLaunchArgument('deploy_motor_torque_gain_scale', default_value='1.0', description='Deploy motor torque / stiffness gain multiplier to overcome external load.')\n    active_motor_0_id_arg          = DeclareLaunchArgument('active_motor_0.id',           default_value='1', description='Motor ID for active cable 0.')\n    active_motor_1_id_arg          = DeclareLaunchArgument('active_motor_1.id',           default_value='0', description='Motor ID for active cable 1.')\n    active_motor_2_id_arg          = DeclareLaunchArgument('active_motor_2.id',           default_value='2', description='Motor ID for active cable 2.')\n    active_motor_0_direction_arg   = DeclareLaunchArgument('active_motor_0.direction',    default_value='1', description='Direction for active cable 0, either 1 or -1.')\n    active_motor_1_direction_arg   = DeclareLaunchArgument('active_motor_1.direction',    default_value='1', description='Direction for active cable 1, either 1 or -1.')\n    active_motor_2_direction_arg   = DeclareLaunchArgument('active_motor_2.direction',    default_value='-1', description='Direction for active cable 2, either 1 or -1.')\n    deploy_motor_id_arg            = DeclareLaunchArgument('deploy_motor.id',             default_value='2', description='Motor ID for deploy cable.')\n    deploy_motor_direction_arg     = DeclareLaunchArgument('deploy_motor.direction',      default_value='1', description='Direction for deploy cable, either 1 or -1.')\n"
+    },
+    "original_base_defaults": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 236,
+      "line_end": 244,
+      "matched_lines": [
+        240
+      ],
+      "excerpt": "        self.dry_run = dry_run\n        self.is_debug = is_debug\n        self.deploy_motor_torque_gain_scale = max(1.0, float(deploy_motor_torque_gain_scale))\n\n        active_motor_ids        = active_motor_ids        or [1, 0, 2]\n        active_motor_directions = active_motor_directions or [1, 1, -1]\n        deploy_motor_id         = deploy_motor_id         or 2\n        deploy_motor_direction  = deploy_motor_direction  or -1\n"
+    },
+    "original_radius": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 37,
+      "line_end": 43,
+      "matched_lines": [
+        40,
+        44,
+        141,
+        142,
+        162,
+        166
+      ],
+      "excerpt": "\n        # 电机参数\n        self.gear_ratio     = queryGearRatio(MotorType.A1)\n        self.bobbin_radius  = 26 / 1000.0\n        self.max_torque_nm  = 10.0\n        if self.is_deploy_motor:\n            self.max_torque_nm *= max(1.0, torque_gain_scale)"
+    },
+    "original_gains": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 38,
+      "line_end": 56,
+      "matched_lines": [
+        47
+      ],
+      "excerpt": "        # 电机参数\n        self.gear_ratio     = queryGearRatio(MotorType.A1)\n        self.bobbin_radius  = 26 / 1000.0\n        self.max_torque_nm  = 10.0\n        if self.is_deploy_motor:\n            self.max_torque_nm *= max(1.0, torque_gain_scale)\n        print(f\"[Motor {self.motor_id}] Initialized with gear ratio: {self.gear_ratio}, bobbin radius: {self.bobbin_radius:.4f} m, max torque: {self.max_torque_nm:.2f} Nm\")\n\n        # 刚度参数 (输出侧 -> 转子侧)\n        self.output_kp = 15.0 # 26 TODO: find better kp and kd for the arm application\n        self.output_kd = 2.5 # 0.6\n        if self.is_deploy_motor:\n            self.output_kp *= max(1.0, torque_gain_scale)\n            self.output_kd *= max(1.0, torque_gain_scale)\n        self.a1_special_kp_div = 26.07\n        self.a1_special_kd_mul = 100.0\n        self.rotor_kp = (self.output_kp / (self.gear_ratio ** 2)) / self.a1_special_kp_div\n        self.rotor_kd = (self.output_kd / (self.gear_ratio ** 2)) * self.a1_special_kd_mul\n"
+    },
+    "original_torque": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 114,
+      "line_end": 120,
+      "matched_lines": [
+        117
+      ],
+      "excerpt": "        physical_angle_rad = self.direction * angle_rad\n        physical_vel_rad_s = self.direction * vel_rad_s\n        physical_tau       = self.direction * tau\n        physical_tau       = max(-self.max_torque_nm, min(self.max_torque_nm, physical_tau))\n\n        ''' A1 SDK 的接口是转子侧的角度和速度, 需要进行换算 '''\n        # 转子侧换算, 注意加上启动时的初始角度偏移 (startup_shaft_ang_rad), 以保证在开机位姿基础上的相对控制"
+    },
+    "original_serial_call": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 246,
+      "line_end": 248,
+      "matched_lines": [
+        247
+      ],
+      "excerpt": "            try:\n                self.serial_instance_active = SerialPort(serial_port_active)\n            except Exception as e:"
+    },
+    "sdk_serial_defaults": {
+      "path": "04_Test_Results/legacy_mark/outputs/Unitree_A1_SDK新帧校验核查_2026-10-27/official_sources/unitree_actuator_sdk/include/serialPort/SerialPort.h",
+      "sha256": "be00112679d84de4e5f4e969c62b2a362ec51af441396355589fcfde973b4551",
+      "line_start": 47,
+      "line_end": 61,
+      "matched_lines": [
+        54,
+        63
+      ],
+      "excerpt": "    flowcontrol_hardware\n};\n\nclass SerialPort : public IOPort{\npublic:\n    SerialPort(const std::string &portName,\n            size_t recvLength = 16,\n            uint32_t baudrate = 4000000,\n            size_t timeOutUs = 20000, \n            BlockYN blockYN = BlockYN::NO,\n            bytesize_t bytesize = bytesize_t::eightbits,\n            parity_t parity = parity_t::parity_none,\n            stopbits_t stopbits = stopbits_t::stopbits_one,\n            flowcontrol_t flowcontrol = flowcontrol_t::flowcontrol_none);\n    virtual ~SerialPort();"
+    },
+    "sdk_python_serial_constructor": {
+      "path": "04_Test_Results/legacy_mark/outputs/Unitree_A1_SDK新帧校验核查_2026-10-27/official_sources/unitree_actuator_sdk/thirdparty/python_wrapper/wrapper.cpp",
+      "sha256": "0ffdbadaacf005941a10955e30e7368b6be6db0f71607518e36932e3fc20a325",
+      "line_start": 41,
+      "line_end": 49,
+      "matched_lines": [
+        45
+      ],
+      "excerpt": "  .def_readwrite(\"dq\", &MotorData::dq)\n  .def_readwrite(\"q\", &MotorData::q)\n  .def_readwrite(\"correct\", &MotorData::correct);\n\npy::class_<SerialPort>(m, \"SerialPort\")\n  .def(py::init<const std::string &>())\n  .def(\"test\", &SerialPort::test)\n  .def(\"sendRecv\", py::overload_cast<MotorCmd*, MotorData*>(&SerialPort::sendRecv));\n"
+    },
+    "sdk_version_not_verified": {
+      "path": "04_Test_Results/legacy_mark/outputs/Unitree_A1_SDK新帧校验核查_2026-10-27/audit.json",
+      "sha256": "66db6d3ea20f932895b9be061918f1a7034d60fa2eacd268383f2ffc87c95e6e",
+      "line_start": 3,
+      "line_end": 7,
+      "matched_lines": [
+        5
+      ],
+      "excerpt": "  \"repository\": \"unitreerobotics/unitree_actuator_sdk\",\n  \"official_commit\": \"5b79a42d81cd69adac1367db79efdb972a898fd1\",\n  \"installed_robot_sdk_version_verified\": false,\n  \"project_dependencies_pin_sdk_version\": false,\n  \"python_MotorData_attributes\": ["
+    },
+    "sdk_codec_result": {
+      "path": "04_Test_Results/legacy_mark/outputs/A1串口适配与模拟验证_2026-10-27/final_run02/results.json",
+      "sha256": "e8577d5af0a9d5056d5ef72742853f55c7fb79d6a13e458c0146794469b45a19",
+      "line_start": 182,
+      "line_end": 182,
+      "matched_lines": [
+        182
+      ],
+      "excerpt": "      \"stdout\": \"gear=9.1 mode=10 command_len=34\\ncommand_hex=feee02000aff00000000000000000000bb0c00002800000c000000000000f0fd4fa4\\nchanged=-1 accepted=1 correct=1 q=47.3448944092\\n[WARNING] Receive data CRC error\\nchanged=30 accepted=0 correct=0\\n[WARNING] Receive data CRC error\\nchanged=71 accepted=0 correct=0\\nchanged=72 accepted=1 correct=1 q=47.3448944092\\nchanged=73 accepted=1 correct=1 q=47.3448944092\\n\","
+    },
+    "native_line_profile": {
+      "path": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/physical_uart.py",
+      "sha256": "08bf7765746fc21bbb43df17d9746edd7aca572e6c0db2c9d607dfbf083dbb36",
+      "line_start": 46,
+      "line_end": 48,
+      "matched_lines": [
+        47
+      ],
+      "excerpt": "            raise ValueError('UART_TERMIOS2_ABI_REQUIRES_LINUX_X86_64')\n        if (port['data_bits'],port['parity'],port['stop_bits'],port['flow_control'],port['adapter_direction_control'])!=(8,'N',1,'none','automatic'):\n            raise ValueError('UART_UNSUPPORTED_LINE_CONFIGURATION')"
+    },
+    "native_gear_conversion": {
+      "path": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/actuator_io.py",
+      "sha256": "d2857a1d2364aadfb6f5cd5af556f572baa4e7e8aa115fcb4bbee3f0a5279fd4",
+      "line_start": 37,
+      "line_end": 41,
+      "matched_lines": [
+        39
+      ],
+      "excerpt": "        if not finite_vector((self.encoder_reference_rad,self.length_reference_m),2):raise ValueError('ACTUATOR_REFERENCE_INVALID')\n\n    def length(self,angle):return self.length_reference_m+self.direction*(angle-self.encoder_reference_rad)/self.gear_ratio*self.radius_m\n    def angle(self,length):return self.encoder_reference_rad+self.direction*(length-self.length_reference_m)/self.radius_m*self.gear_ratio\n"
+    },
+    "native_kernel_checks": {
+      "path": "04_Test_Results/commissioning_entry_20261030_v4/validation01/linux_checks.json",
+      "sha256": "7fd0363284b0b8e7d1af0871e3920ac477c8ee0609aadee86b7fea05b92800ec",
+      "line_start": 1,
+      "line_end": 5,
+      "matched_lines": [
+        3
+      ],
+      "excerpt": "{\n  \"tests\": 4,\n  \"passed\": true,\n  \"physical_devices_opened\": false,\n  \"only_test_created_ptys\": true,"
+    },
+    "vision_topics": {
+      "path": "03_Experiments/fieldkit/legacy_mark/outputs/相机采集同步分析工具包_2026-10-28/camera_fieldkit/config.json",
+      "sha256": "070a48be0e98486ecb03205a1ac951d032e400d3eaca680fce343e1507b002b3",
+      "line_start": 3,
+      "line_end": 9,
+      "matched_lines": [
+        6
+      ],
+      "excerpt": "  \"expected_fps\": 15.0,\n  \"pair_tolerance_ms\": 2.0,\n  \"reference_pose_age_ms\": 150.0,\n  \"pose_topic\": \"/atarm/camera/pose\",\n  \"status_topic\": \"/atarm/camera/source_status\",\n  \"pose_camera\": \"camera1\",\n  \"camera_nodes\": [\"/camera1/camera1\", \"/camera2/camera2\"]"
+    },
+    "fd_node_topics": {
+      "path": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_fd_node.py",
+      "sha256": "514dac3f23a343c90375fe76d07121ae6267752cbb36497d0d572e4c0c11c4eb",
+      "line_start": 25,
+      "line_end": 29,
+      "matched_lines": [
+        27
+      ],
+      "excerpt": "        self.vision=ExternalVision(d['vision'],cfg.max_pose_age_s)\n        self.runner=FdJobRunner(cfg,channels,transport_factory,self.vision,speed_m_s=d['speed_m_s'],calibration_id=d['calibration_id'])\n        self.pp=self.create_subscription(PoseStamped,'atarm/camera/pose',self.pose,8)\n        self.sp=self.create_subscription(String,'atarm/camera/source_status',self.source_status,8)\n        self.ack=self.create_publisher(String,'atarm/cartesian/ack',10)"
+    },
+    "stop_policy": {
+      "path": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/commissioning_config.py",
+      "sha256": "57ea76df1f8668e7897ac9fb1ec0be982bec21cce45db37dca28ccb65a183531",
+      "line_start": 115,
+      "line_end": 121,
+      "matched_lines": [
+        118
+      ],
+      "excerpt": "    stop=site.get('stop',{})\n    if not isinstance(stop.get('external_stop_procedure'),str) or not stop.get('external_stop_procedure','').strip():\n        issue('site.stop.external_stop_procedure','explicit external stop/support procedure required')\n    if stop.get('policy')!='zero_effort_requires_external_support':issue('site.stop.policy','supported stop requires independent mechanical support')\n    if stop.get('auto_home') is not False or stop.get('auto_deploy') is not False:issue('site.stop','auto-home and auto-deploy must both be false')\n    electrical=site.get('electrical',{})\n    for field in ('nominal_voltage_v','minimum_voltage_v','maximum_voltage_v','continuous_current_a','peak_current_a'):"
+    },
+    "v4_physical_build": {
+      "path": "04_Test_Results/commissioning_entry_20261030_v4/build01/physical/build_receipt.json",
+      "sha256": "5607d8ceca2050571177b36c3a92724ea91ea82d9d8fbd76534ff682622e2f8c",
+      "line_start": 2,
+      "line_end": 8,
+      "matched_lines": [
+        5
+      ],
+      "excerpt": "  \"mode\": \"physical\",\n  \"physical_uart_capability\": true,\n  \"library\": \"/results/build01/physical/liba1_serial_adapter.so\",\n  \"library_sha256\": \"ffdec69854c8b4f2ef7cb2d3bcf638cc1dc16ed540d61d2f0b3e82c5929a23d8\",\n  \"sdk_sha256\": \"d51bc5f10cd757458ff4c34fa3bf6ecb0bb28c6c331de335aaaa527c68850c68\",\n  \"commands\": [\n    ["
+    },
+    "v4_baseline_controller": {
+      "path": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/commissioning/session.template.json",
+      "sha256": "eaf532f1908cb4d4117123e0228651214a53d534f19a9a1a6754fb88590ebba0",
+      "line_start": 5,
+      "line_end": 23,
+      "matched_lines": [
+        14
+      ],
+      "excerpt": "  \"controller\": {\n    \"initial_jacobian\": null,\n    \"cable_mix\": null,\n    \"reference_lengths_m\": null,\n    \"min_lengths_m\": null,\n    \"max_lengths_m\": null,\n    \"strategy\": \"alternating\",\n    \"position_tolerance_m\": null,\n    \"camera_noise_bound_m\": null,\n    \"max_pose_age_s\": 0.15,\n    \"max_motor_age_s\": 0.1,\n    \"stable_s\": 0.1,\n    \"settle_s\": 0.05,\n    \"poll_s\": 0.01,\n    \"max_speed_m_s\": null,\n    \"pose_step_margin_m\": null,\n    \"motor_tolerance_m\": null,\n    \"max_motor_step_m\": null,\n    \"min_step_m\": null,"
+    },
+    "v4_software_controls": {
+      "path": "01_Source/development/atarm_controller_commissioning_20261030_v4/atarm_controller/cartesian_control.py",
+      "sha256": "431b724b5f85f46f1e1e07962695bcd491f79268aa7e70134d855199513f1cf5",
+      "line_start": 29,
+      "line_end": 103,
+      "matched_lines": [
+        66
+      ],
+      "excerpt": "    orientation_reference: tuple | None = None\n    orientation_limit_rad: float | None = None\n\n    def __post_init__(self):\n        object.__setattr__(self, 'position_m', tuple(self.position_m))\n        if self.orientation_reference is not None:\n            object.__setattr__(self, 'orientation_reference', tuple(self.orientation_reference))\n        if not finite_vector(self.position_m, 3) or not all(isinstance(x, str) and x for x in self.key):\n            raise ValueError('CARTESIAN_INVALID_GOAL')\n        if (self.orientation_reference is None) != (self.orientation_limit_rad is None):\n            raise ValueError('CARTESIAN_ORIENTATION_POLICY_INCOMPLETE')\n        if self.orientation_reference is not None:\n            if not finite_vector(self.orientation_reference, 4) or abs(dot(self.orientation_reference, self.orientation_reference)-1) > .01:\n                raise ValueError('CARTESIAN_ORIENTATION_INVALID')\n            if not math.isfinite(self.orientation_limit_rad) or not 0 < self.orientation_limit_rad <= math.pi:\n                raise ValueError('CARTESIAN_ORIENTATION_LIMIT_INVALID')\n\n    @property\n    def key(self):\n        return self.parent_frame, self.child_frame, self.map_epoch\n\n\n@dataclass(frozen=True)\nclass MotorEvidence:\n    positions_m: tuple\n    frame_ids: tuple\n    captured_s: tuple\n    valid: tuple\n\n\n@dataclass(frozen=True)\nclass Observation:\n    pose: CameraPose\n    motors: MotorEvidence\n\n\n@dataclass(frozen=True)\nclass CartesianConfig:\n    initial_jacobian: tuple\n    cable_mix: tuple\n    reference_lengths_m: tuple\n    min_lengths_m: tuple\n    max_lengths_m: tuple\n    strategy: str = 'alternating'\n    position_tolerance_m: float = .0005\n    camera_noise_bound_m: float = .00006\n    max_pose_age_s: float = .150\n    max_motor_age_s: float = .100\n    stable_s: float = .100\n    settle_s: float = .050\n    poll_s: float = .010\n    max_speed_m_s: float = .6\n    pose_step_margin_m: float = .0003\n    motor_tolerance_m: float = .00010\n    max_motor_step_m: float = .0025\n    min_step_m: float = .00001\n    max_total_travel_m: float = .6\n    max_model_radius_m: float = .10\n    max_steps: int = 100\n    timeout_s: float = 40.\n    settle_timeout_s: float = 1.\n    gain: float = .75\n    damping: float = .06\n    min_singular_value: float = .15\n    max_condition: float = 15.\n    no_progress_steps: int = 8\n    min_progress_m: float = .000015\n    filter_frames: int = 5\n    online_update: bool = True\n    learning_rate: float = .65\n    min_learning_step_m: float = .00015\n    max_pair_s: float = 2.\n    max_update_fraction: float = .25\n\n    def __post_init__(self):"
+    },
+    "v4_simulation_excluded": {
+      "path": "01_Source/development/atarm_controller_commissioning_20261030_v4/config/offline_fd_validation.json",
+      "sha256": "61670b83f6f04fb9167cd386753178a93751bb99d8603ead11da31887ab06df8",
+      "line_start": 1,
+      "line_end": 12,
+      "matched_lines": [
+        6
+      ],
+      "excerpt": "{\n  \"schema_version\": 1,\n  \"calibration_id\": \"synthetic-pty-v3-001\",\n  \"calibration_kind\": \"synthetic-pty-validation\",\n  \"controller\": {\n    \"initial_jacobian\": [\n      [\n        1.0,\n        0.1,\n        0.1\n      ],\n      ["
+    },
+    "original_geometry": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 417,
+      "line_end": 473,
+      "matched_lines": [
+        445
+      ],
+      "excerpt": "                    f\"actuation angle: {act_degs} | \"\n                    f\"delta L: {lengths} mm | \"\n                    # f\"temperature: {temps}°C\"\n                )\n\n        total_error = sum(abs(self.final_target_actuation_lengths[i] - self.last_commanded_lengths[i]) for i in range(3))\n        if total_error < 0.003:\n            print(f\"[Arm] Reached target bend angles within tolerance. Total length error: {total_error:.4f} m\") if self.is_debug else None\n            for i in range(3):\n                self.motors[i].set_target_actuation_length(self.final_target_actuation_lengths[i])  # 确保最终达到目标长度\n                self.last_commanded_lengths[i] = self.final_target_actuation_lengths[i]\n            return True\n\n        return False\n\n    def get_feedbacks(self):\n        return [motor.get_current_status() for motor in self.motors]\n\n\n# ================================================================\n# 张拉整体机械臂运动学\n# ================================================================\n\nclass TensegrityArmKinematics:\n\n    def __init__(self, *, is_debug: bool) -> None:\n        self.is_debug = is_debug\n        \n        self.stage_1_edge_length = 190.526/1000.0\n        self.stage_2_edge_length = 190.526/1000.0\n        self.stage_3_edge_length = 190.526/1000.0\n        self.stage_4_edge_length = 190.526/1000.0\n\n        self.stage_12_neutral_include_angle = 27.936 * math.pi / 180.0\n        self.stage_23_neutral_include_angle = 27.936 * math.pi / 180.0\n        self.stage_34_neutral_include_angle = 27.936 * math.pi / 180.0\n        \n        self.stage_1_saddle_length = 123.236/1000.0\n        self.stage_2_saddle_length = 123.236/1000.0\n        self.stage_3_saddle_length = 123.236/1000.0\n        self.stage_4_saddle_length = 123.236/1000.0\n\n        ''' 三根绳间隔 120°, 单位向量 '''\n        self.phi_cable_1 = 0\n        self.phi_cable_2 = 2 * math.pi / 3\n        self.phi_cable_3 = 4 * math.pi / 3\n        self.cable_1_unit_vector = [math.cos(self.phi_cable_1), math.sin(self.phi_cable_1)]\n        self.cable_2_unit_vector = [math.cos(self.phi_cable_2), math.sin(self.phi_cable_2)]\n        self.cable_3_unit_vector = [math.cos(self.phi_cable_3), math.sin(self.phi_cable_3)]\n\n        self.max_bending_angle = 60 / 180.0 * math.pi  # 最大弯折角度 (rad)\n\n        self.neutral_total_length = self.calculate_total_cable_length(0.0)\n        \n        if self.is_debug:\n            print(\"-\" * 60)\n            print(f\"[Kinematics] 初始化中性位弦长...\")"
+    },
+    "original_bend_limit": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 466,
+      "line_end": 468,
+      "matched_lines": [
+        467
+      ],
+      "excerpt": "\n        self.max_bending_angle = 60 / 180.0 * math.pi  # 最大弯折角度 (rad)\n"
+    },
+    "original_fixed_length": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 500,
+      "line_end": 502,
+      "matched_lines": [
+        501
+      ],
+      "excerpt": "            total_length += segment_length\n        total_length = total_length + (155.564/1000.0)  # 加上第一段固定长度\n        print(f\"[Kinematics] 计算得到分弦弯折角度: {component_theta:.3f} rad, 对应分弦总弦长: {total_length:.4f} m\") if self.is_debug else None"
+    },
+    "original_step_limit": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 395,
+      "line_end": 399,
+      "matched_lines": [
+        397
+      ],
+      "excerpt": "            error = self.final_target_actuation_lengths[i] - self.last_commanded_lengths[i]\n            k = 50.0           # 增大k可以让控制更接近于阶跃函数\n            max_step = 0.002   # 每周期最多改 2 mm\n            control_signal = max_step * math.tanh(k * error)\n            next_length = self.last_commanded_lengths[i] + control_signal"
+    },
+    "original_bend_completion": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 421,
+      "line_end": 425,
+      "matched_lines": [
+        423
+      ],
+      "excerpt": "\n        total_error = sum(abs(self.final_target_actuation_lengths[i] - self.last_commanded_lengths[i]) for i in range(3))\n        if total_error < 0.003:\n            print(f\"[Arm] Reached target bend angles within tolerance. Total length error: {total_error:.4f} m\") if self.is_debug else None\n            for i in range(3):"
+    },
+    "historical_depth": {
+      "path": "02_Documents/legacy_mark/outputs/Scout_RGBD离线定位验证_2026-10-26/首轮离线定位验证报告.md",
+      "sha256": "a8dae7ec6e8c811098f40ea87cebb0f1fd786b12215147d2af8ed94a8be52748",
+      "line_start": 49,
+      "line_end": 51,
+      "matched_lines": [
+        50
+      ],
+      "excerpt": "\n深度原始编码为 16UC1。用 camera1 同时间戳点云的 309,565 个点逐点比较 `Z / raw_depth`，所得比例为约 0.001 米/整数单位；camera2 的独立检查也得到相同比例。本次保存的配准深度仍以毫米编码，ORB 配置 `RGBD.DepthMapFactor` 为 1000。\n"
+    },
+    "historical_no_base_transform": {
+      "path": "02_Documents/legacy_mark/outputs/Scout_RGBD离线定位验证_2026-10-26/首轮离线定位验证报告.md",
+      "sha256": "a8dae7ec6e8c811098f40ea87cebb0f1fd786b12215147d2af8ed94a8be52748",
+      "line_start": 68,
+      "line_end": 70,
+      "matched_lines": [
+        69
+      ],
+      "excerpt": "\n发布的变换为 `T_wc = inverse(T_cw)`，表示相机在 ORB 地图参考系中的位姿，初始地图原点由第一帧确定。它尚未变换到机械臂基座坐标系，本轮也没有核实 camera1 与具体机械臂安装位的对应关系或安装外参。\n"
+    },
+    "no_synchronous_motion": {
+      "path": "04_Test_Results/legacy_mark/outputs/Scout_主臂同步数据核查/audit/all_eight_ros2_sync_audit.json",
+      "sha256": "2d5cf746d201cd19f3390a7b66037f01c5278f4db0e7110d8f0361cc13dada6f",
+      "line_start": 781,
+      "line_end": 781,
+      "matched_lines": [
+        781
+      ],
+      "excerpt": "  \"qualified_mainarm_RGBD_overlap_samples\": 0"
+    },
+    "mark_24v_report": {
+      "path": "C:\\Users\\43767\\.codex\\attachments\\6fa4e9d1-b709-4765-8ca3-ce4da8f9854d\\Pasted text.txt",
+      "sha256": "aa7a4cc050b5fc07d52801b0411fdcd58905de5ffb72f2aac5c3b1756e9e45d9",
+      "line_start": 103,
+      "line_end": 107,
+      "matched_lines": [
+        105
+      ],
+      "excerpt": "2. 原来的供电方案存在问题\n英文原文\nSo this was plugged into the onboard voltage converter, providing 24 volts to these motors.\n\nThat onboard voltage converter on the robot is not high enough current for all these motors."
+    },
+    "mark_supply_not_tested": {
+      "path": "C:\\Users\\43767\\.codex\\attachments\\6fa4e9d1-b709-4765-8ca3-ce4da8f9854d\\Pasted text.txt",
+      "sha256": "aa7a4cc050b5fc07d52801b0411fdcd58905de5ffb72f2aac5c3b1756e9e45d9",
+      "line_start": 122,
+      "line_end": 126,
+      "matched_lines": [
+        124,
+        136
+      ],
+      "excerpt": "So we put this voltage converter on the battery directly.\n\nAnd what this does is it basically provides, it should be providing, higher current for these motors.\n\nEnough current that they can work reliably."
+    },
+    "historical_live_ports": {
+      "path": "04_Test_Results/legacy_mark/outputs/Scout_主臂同步数据核查/audit/all_eight_ros2_sync_audit.json",
+      "sha256": "2d5cf746d201cd19f3390a7b66037f01c5278f4db0e7110d8f0361cc13dada6f",
+      "line_start": 237,
+      "line_end": 241,
+      "matched_lines": [
+        239,
+        243,
+        601,
+        609,
+        733,
+        741
+      ],
+      "excerpt": "        {\n          \"time_s\": 56.895234681,\n          \"message\": \"Unitree tensegrity controller initialised. dry_run=False, active_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT6CAQYY-if00-port0, deploy_port=/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FT5N1XWM-if00-port0.\"\n        },\n        {"
+    },
+    "original_bend_doc_limit": {
+      "path": "01_Source/original_snapshot/legacy_mark/outputs/atarm_controller源码核查/源码快照_468fcfd39fa6/atarm_controller/arm_controller_lib.py",
+      "sha256": "2e1d29f8f906c0813ad70cc5a25f8917d220826759c8e2b577a61d69110abf78",
+      "line_start": 508,
+      "line_end": 510,
+      "matched_lines": [
+        509
+      ],
+      "excerpt": "\n        theta: 弯折角度 (pitch) - 范围 [0, π/6]\n        phi:   旋转角度 (yaw)   - 范围 [0, 2π]"
+    }
+  },
+  "policy": "Only explicitly applied values enter launch templates; history is never auto-promoted."
+}
