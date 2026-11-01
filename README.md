@@ -17,6 +17,8 @@
 | R1 参数、冲突、工作站部署与到场顺序 | [实机准备](docs/COMMISSIONING.md) |
 | 哪些结果已经验证、哪些仍须实测 | [验证与剩余事项](docs/VALIDATION.md) |
 | 原始来源、版本、许可状态及未上传内容 | [来源与版本](docs/PROVENANCE.md) |
+| 代码来源及公开范围 | [代码来源核查](docs/CODE_PROVENANCE.md) |
+| 第三方组件及许可 | [第三方许可说明](THIRD_PARTY_NOTICES.md) |
 
 ## 先运行纯离线示例
 
